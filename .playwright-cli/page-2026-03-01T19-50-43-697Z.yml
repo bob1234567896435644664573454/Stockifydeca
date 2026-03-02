@@ -1,0 +1,158 @@
+- generic [ref=e2]:
+  - generic [ref=e100]:
+    - generic [ref=e101]: Competition Active
+    - generic [ref=e102]:
+      - complementary [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]: Stockify
+          - button "Collapse sidebar" [ref=e106] [cursor=pointer]:
+            - img [ref=e107]
+        - navigation "Main Navigation" [ref=e110]:
+          - button "Dashboard" [ref=e111] [cursor=pointer]:
+            - img [ref=e112]
+            - generic [ref=e115]: Dashboard
+          - button "Trade" [ref=e116] [cursor=pointer]:
+            - img [ref=e117]
+            - generic [ref=e119]: Trade
+          - button "Portfolio" [ref=e120] [cursor=pointer]:
+            - img [ref=e121]
+            - generic [ref=e124]: Portfolio
+          - button "Leaderboard" [ref=e125] [cursor=pointer]:
+            - img [ref=e126]
+            - generic [ref=e132]: Leaderboard
+          - button "Learn" [ref=e133] [cursor=pointer]:
+            - img [ref=e134]
+            - generic [ref=e136]: Learn
+          - button "Journal" [ref=e137] [cursor=pointer]:
+            - img [ref=e138]
+            - generic [ref=e140]: Journal
+          - button "Challenges" [ref=e141] [cursor=pointer]:
+            - img [ref=e142]
+            - generic [ref=e146]: Challenges
+        - generic [ref=e147]:
+          - generic [ref=e148]:
+            - generic [ref=e150]: S
+            - generic [ref=e151]:
+              - paragraph [ref=e152]: student1@stockify.dev
+              - paragraph [ref=e153]: student
+          - generic [ref=e154]:
+            - generic [ref=e155]: Theme
+            - button "Toggle theme" [ref=e156] [cursor=pointer]:
+              - img [ref=e157]
+              - generic [ref=e163]: Toggle theme
+          - button "Logout" [ref=e164] [cursor=pointer]:
+            - img [ref=e165]
+            - text: Logout
+      - main [ref=e169]:
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - paragraph [ref=e173]: Spring Trading Challenge
+              - heading "$100,000.00" [level=1] [ref=e174]
+              - generic [ref=e175]:
+                - generic [ref=e176]:
+                  - img [ref=e177]
+                  - text: +0.00%
+                - generic [ref=e180]: (+$0.00) all time
+            - button "Trade Now" [ref=e181] [cursor=pointer]:
+              - img [ref=e182]
+              - text: Trade Now
+          - generic [ref=e185]:
+            - generic [ref=e186]:
+              - button "1D" [ref=e187] [cursor=pointer]
+              - button "1W" [ref=e188] [cursor=pointer]
+              - button "1M" [ref=e189] [cursor=pointer]
+              - button "ALL" [ref=e190] [cursor=pointer]
+            - generic [ref=e191]: No data yet
+          - generic [ref=e194]:
+            - img [ref=e196]
+            - generic [ref=e199]:
+              - generic [ref=e200]:
+                - generic [ref=e201]: Daily Brief
+                - generic [ref=e202]: AI · cached
+              - paragraph [ref=e203]: Markets are mixed today. Your portfolio is up 0.3% with AAPL as the main driver. AAPL (+0.9%) is largest gainer.
+              - button "Review Diversification →" [ref=e204] [cursor=pointer]
+          - generic [ref=e205]:
+            - generic [ref=e207]:
+              - generic [ref=e208]:
+                - generic [ref=e209]: Total Equity
+                - img [ref=e211]
+              - generic [ref=e213]: $100,000.00
+            - generic [ref=e215]:
+              - generic [ref=e216]:
+                - generic [ref=e217]: Cash Available
+                - img [ref=e219]
+              - generic [ref=e222]: $100,000.00
+              - generic [ref=e224]: 100% of portfolio
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - generic [ref=e228]: Invested
+                - img [ref=e230]
+              - generic [ref=e233]: $0.00
+              - generic [ref=e235]: 0 positions
+            - generic [ref=e237]:
+              - generic [ref=e238]:
+                - generic [ref=e239]: Day P&L
+                - img [ref=e241]
+              - generic [ref=e243]: "--"
+              - generic [ref=e245]: Updates during market hours
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - heading "Biggest Drivers Today" [level=3] [ref=e251]
+                  - paragraph [ref=e252]: Your positions with the largest impact.
+                - img [ref=e254]
+              - generic [ref=e257]:
+                - img [ref=e259]
+                - heading "No positions yet" [level=3] [ref=e263]
+                - paragraph [ref=e264]: Place your first trade to see drivers here.
+                - button "Start Trading" [ref=e265] [cursor=pointer]
+            - generic [ref=e266]:
+              - heading "Quick Actions" [level=3] [ref=e268]
+              - generic [ref=e269]:
+                - button "Place a Trade Buy or sell stocks" [ref=e270] [cursor=pointer]:
+                  - img [ref=e272]
+                  - generic [ref=e274]:
+                    - generic [ref=e275]: Place a Trade
+                    - generic [ref=e276]: Buy or sell stocks
+                - button "Leaderboard See class rankings" [ref=e277] [cursor=pointer]:
+                  - img [ref=e279]
+                  - generic [ref=e285]:
+                    - generic [ref=e286]: Leaderboard
+                    - generic [ref=e287]: See class rankings
+                - button "Learn Hub Coming soon" [disabled]:
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Learn Hub
+                    - generic: Coming soon
+          - generic [ref=e288]:
+            - generic [ref=e289]:
+              - generic [ref=e292]:
+                - heading "Holdings" [level=3] [ref=e293]
+                - paragraph [ref=e294]: 0 active positions
+              - generic [ref=e296]:
+                - img [ref=e298]
+                - heading "Your portfolio is empty" [level=3] [ref=e301]
+                - paragraph [ref=e302]: Head to the Trade page to buy your first stock and start building your portfolio.
+                - button "Start Trading" [ref=e303] [cursor=pointer]
+            - generic [ref=e304]:
+              - generic [ref=e306]:
+                - generic [ref=e307]:
+                  - heading "Recent Activity" [level=3] [ref=e308]
+                  - paragraph [ref=e309]: Latest orders and fills.
+                - img [ref=e311]
+              - generic [ref=e315]:
+                - img [ref=e317]
+                - heading "No recent activity" [level=3] [ref=e319]
+                - paragraph [ref=e320]: Your latest orders and fills will appear here.
+  - generic:
+    - contentinfo:
+      - button "Open TanStack Router Devtools" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]:
+          - img [ref=e23]
+          - img [ref=e58]
+        - generic [ref=e92]: "-"
+        - generic [ref=e93]: TanStack Router
+  - region "Notifications alt+T"

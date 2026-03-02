@@ -1,0 +1,793 @@
+{
+  "teacher.login": {
+    "request": {
+      "method": "supabase.auth.signInWithPassword",
+      "url": "<sdk>"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "ok": true
+      }
+    },
+    "at": "2026-02-16T02:45:54.775Z"
+  },
+  "teacher.competition_upsert_rules": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/teacher-console/competition/upsert_rules",
+      "body": {
+        "class_id": "33333333-3333-3333-3333-333333333333",
+        "competition_id": "55555555-5555-5555-5555-555555555555",
+        "name": "Spring Trading Challenge",
+        "status": "active",
+        "rules_json": {
+          "market_hours_mode": "relaxed"
+        }
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "competition": {
+          "id": "55555555-5555-5555-5555-555555555555",
+          "class_id": "33333333-3333-3333-3333-333333333333",
+          "name": "Spring Trading Challenge",
+          "status": "active",
+          "rules_json": {
+            "fee_model": {
+              "bps": 0,
+              "type": "bps"
+            },
+            "min_price": 5,
+            "score_mode": "rules_compliance_weighted",
+            "no_daytrade": false,
+            "news_blackout": false,
+            "starting_cash": 100000,
+            "banned_symbols": [],
+            "daytrade_limit": 4,
+            "max_order_size": 500,
+            "max_spread_pct": 5,
+            "slippage_model": {
+              "bps": 5,
+              "type": "bps"
+            },
+            "allowed_symbols": [
+              "AAPL",
+              "MSFT",
+              "SPY",
+              "TSLA",
+              "NVDA"
+            ],
+            "leverage_enabled": false,
+            "market_hours_mode": "relaxed",
+            "max_trades_per_day": 30,
+            "allowed_asset_types": [
+              "stock",
+              "etf"
+            ],
+            "max_orders_per_minute": 8,
+            "max_position_size_pct": 25,
+            "penny_stocks_disabled": true,
+            "short_selling_enabled": false,
+            "delayed_quotes_seconds": 15,
+            "min_limit_distance_bps": 3,
+            "research_tools_enabled": true,
+            "trade_cooldown_seconds": 10,
+            "auto_liquidate_on_rule_break": false
+          },
+          "created_at": "2026-02-15T16:55:49.334183+00:00",
+          "updated_at": "2026-02-16T02:45:55.858984+00:00"
+        }
+      }
+    },
+    "at": "2026-02-16T02:45:56.251Z"
+  },
+  "teacher.freeze_class": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/teacher-console/freeze",
+      "body": {
+        "scope_type": "class",
+        "scope_id": "33333333-3333-3333-3333-333333333333",
+        "is_trading_enabled": false,
+        "reason": "e2e freeze test"
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "control": {
+          "scope_type": "class",
+          "scope_id": "33333333-3333-3333-3333-333333333333",
+          "is_trading_enabled": false,
+          "reason": "e2e freeze test",
+          "updated_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "updated_at": "2026-02-15T16:55:49.334183+00:00"
+        }
+      }
+    },
+    "at": "2026-02-16T02:45:57.269Z"
+  },
+  "student.login": {
+    "request": {
+      "method": "supabase.auth.signInWithPassword",
+      "url": "<sdk>"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "ok": true
+      }
+    },
+    "at": "2026-02-16T02:45:57.348Z"
+  },
+  "student.symbols_search": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/symbols/search?q=AAPL"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "items": [
+          {
+            "symbol": "AAPL",
+            "name": "Apple Inc.",
+            "exchange": "NASDAQ",
+            "asset_type": "stock",
+            "is_active": true,
+            "symbol_aliases": {
+              "primary_exchange": "NASDAQ",
+              "tradingview_symbol": "NASDAQ:AAPL"
+            }
+          }
+        ],
+        "page_size": 25,
+        "offset": 0
+      }
+    },
+    "at": "2026-02-16T02:45:58.395Z"
+  },
+  "student.symbols_featured": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/symbols/featured?competition_id=55555555-5555-5555-5555-555555555555"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "items": [
+          {
+            "id": "77777777-7777-7777-7777-777777777771",
+            "class_id": "33333333-3333-3333-3333-333333333333",
+            "competition_id": "55555555-5555-5555-5555-555555555555",
+            "symbol": "AAPL",
+            "reason": "Earnings momentum",
+            "rank": 1,
+            "updated_at": "2026-02-15T16:55:49.334183+00:00",
+            "tradingview_symbol": "NASDAQ:AAPL",
+            "primary_exchange": "NASDAQ"
+          },
+          {
+            "id": "77777777-7777-7777-7777-777777777772",
+            "class_id": "33333333-3333-3333-3333-333333333333",
+            "competition_id": "55555555-5555-5555-5555-555555555555",
+            "symbol": "SPY",
+            "reason": "Macro benchmark",
+            "rank": 2,
+            "updated_at": "2026-02-15T16:55:49.334183+00:00",
+            "tradingview_symbol": "AMEX:SPY",
+            "primary_exchange": "ARCA"
+          }
+        ],
+        "page_size": 25,
+        "offset": 0
+      }
+    },
+    "at": "2026-02-16T02:45:59.360Z"
+  },
+  "student.watchlists_list": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/watchlists"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "items": [
+          {
+            "id": "8d9fc42a-7506-4560-8dbf-5c08197a03f4",
+            "owner_type": "user",
+            "owner_id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "name": "E2E Watchlist 2026-02-16T01:38:11.045Z",
+            "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "created_at": "2026-02-16T01:38:11.91378+00:00",
+            "watchlist_items": [
+              {
+                "symbol": "AAPL",
+                "added_at": "2026-02-16T01:38:12.591695+00:00"
+              }
+            ]
+          },
+          {
+            "id": "0a5f4806-d63a-4dae-add9-6250e0df7de8",
+            "owner_type": "user",
+            "owner_id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "name": "E2E Watchlist 2026-02-16T01:28:13.462Z",
+            "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "created_at": "2026-02-16T01:28:14.140027+00:00",
+            "watchlist_items": [
+              {
+                "symbol": "AAPL",
+                "added_at": "2026-02-16T01:28:15.371512+00:00"
+              }
+            ]
+          },
+          {
+            "id": "58cd30ec-573f-49dd-95f4-d11de7a08418",
+            "owner_type": "user",
+            "owner_id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "name": "E2E Watchlist 2026-02-16T01:25:10.272Z",
+            "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "created_at": "2026-02-16T01:25:10.991306+00:00",
+            "watchlist_items": [
+              {
+                "symbol": "AAPL",
+                "added_at": "2026-02-16T01:25:11.846092+00:00"
+              }
+            ]
+          },
+          {
+            "id": "3985dd5c-19f6-4b1f-ba34-e82d24af9ac5",
+            "owner_type": "user",
+            "owner_id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "name": "Smoke WL",
+            "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "created_at": "2026-02-15T17:07:11.415187+00:00",
+            "watchlist_items": []
+          },
+          {
+            "id": "66666666-6666-6666-6666-666666666662",
+            "owner_type": "user",
+            "owner_id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "name": "Alex Watchlist",
+            "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+            "created_at": "2026-02-15T16:55:49.334183+00:00",
+            "watchlist_items": [
+              {
+                "symbol": "TSLA",
+                "added_at": "2026-02-15T16:55:49.334183+00:00"
+              }
+            ]
+          },
+          {
+            "id": "66666666-6666-6666-6666-666666666661",
+            "owner_type": "class",
+            "owner_id": "33333333-3333-3333-3333-333333333333",
+            "name": "Class Core Symbols",
+            "created_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+            "created_at": "2026-02-15T16:55:49.334183+00:00",
+            "watchlist_items": [
+              {
+                "symbol": "AAPL",
+                "added_at": "2026-02-15T16:55:49.334183+00:00"
+              },
+              {
+                "symbol": "MSFT",
+                "added_at": "2026-02-15T16:55:49.334183+00:00"
+              },
+              {
+                "symbol": "SPY",
+                "added_at": "2026-02-15T16:55:49.334183+00:00"
+              }
+            ]
+          }
+        ],
+        "page_size": 25,
+        "offset": 0
+      }
+    },
+    "at": "2026-02-16T02:46:00.376Z"
+  },
+  "student.watchlists_create": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/watchlists/create",
+      "body": {
+        "owner_type": "user",
+        "name": "E2E Watchlist 2026-02-16T02:46:00.376Z"
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "watchlist": {
+          "id": "b9f14d29-312b-4e20-ad42-b98129a36cdf",
+          "owner_type": "user",
+          "owner_id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+          "name": "E2E Watchlist 2026-02-16T02:46:00.376Z",
+          "created_by": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+          "created_at": "2026-02-16T02:46:01.619061+00:00"
+        }
+      }
+    },
+    "at": "2026-02-16T02:46:01.510Z"
+  },
+  "student.watchlists_add_item": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/watchlists/add_item",
+      "body": {
+        "watchlist_id": "b9f14d29-312b-4e20-ad42-b98129a36cdf",
+        "symbol": "AAPL"
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "item": {
+          "watchlist_id": "b9f14d29-312b-4e20-ad42-b98129a36cdf",
+          "symbol": "AAPL",
+          "added_at": "2026-02-16T02:46:02.904861+00:00"
+        }
+      }
+    },
+    "at": "2026-02-16T02:46:02.793Z"
+  },
+  "student.charts_context": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/charts/context?symbol=AAPL&competition_id=55555555-5555-5555-5555-555555555555"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "symbol": "AAPL",
+        "tradingview_symbol": "NASDAQ:AAPL",
+        "primary_exchange": "NASDAQ",
+        "competition_id": "55555555-5555-5555-5555-555555555555",
+        "class_id": "33333333-3333-3333-3333-333333333333",
+        "chart_rules": {
+          "delayed_quotes_seconds": 15,
+          "symbol_allowed": true,
+          "market_hours_mode": "relaxed",
+          "short_selling_enabled": false
+        },
+        "overlays": {
+          "account_id": "44444444-4444-4444-4444-444444444441",
+          "position": {
+            "qty": 6,
+            "avg_cost": 256.33477,
+            "realized_pnl": 0
+          },
+          "fills": [
+            {
+              "id": "50058b3f-de9b-4075-bd09-11ce8eeee2df",
+              "order_id": "5c826c7a-aeb1-4f67-a17d-81850337fc42",
+              "side": "buy",
+              "qty": 1,
+              "price": 257.18853,
+              "fees": 0,
+              "slippage": 5,
+              "filled_at": "2026-02-15T17:07:05.899541+00:00"
+            },
+            {
+              "id": "418ed377-1491-4d23-833b-96e8e44125fe",
+              "order_id": "2a351ab5-40c4-42af-a9a4-46d8e05e1916",
+              "side": "buy",
+              "qty": 1,
+              "price": 257.18853,
+              "fees": 0,
+              "slippage": 5,
+              "filled_at": "2026-02-15T17:25:00.990926+00:00"
+            },
+            {
+              "id": "8810d9ca-a85c-44e3-87d2-56304ea1775a",
+              "order_id": "a1e3702e-a0d5-42b9-a9b2-5e1e20005c55",
+              "side": "buy",
+              "qty": 1,
+              "price": 255.907889,
+              "fees": 0,
+              "slippage": 5,
+              "filled_at": "2026-02-16T01:26:00.307265+00:00"
+            },
+            {
+              "id": "1f42db41-d89b-495b-8e4a-5e5beee87c65",
+              "order_id": "8a9eb41c-dda3-4c5e-98e4-afa87393bcc4",
+              "side": "buy",
+              "qty": 1,
+              "price": 255.907889,
+              "fees": 0,
+              "slippage": 5,
+              "filled_at": "2026-02-16T01:27:00.546934+00:00"
+            },
+            {
+              "id": "0d68cead-461c-4f7c-b75a-ff87d6e787ec",
+              "order_id": "2a4cfdba-55c6-4a2a-82fd-ba4b89885c90",
+              "side": "buy",
+              "qty": 1,
+              "price": 255.907889,
+              "fees": 0,
+              "slippage": 5,
+              "filled_at": "2026-02-16T01:29:00.491935+00:00"
+            },
+            {
+              "id": "c92eba54-94a7-4244-966c-2026748382fe",
+              "order_id": "aacc4bb5-3818-4840-817b-0c9c50c59fef",
+              "side": "buy",
+              "qty": 1,
+              "price": 255.907889,
+              "fees": 0,
+              "slippage": 5,
+              "filled_at": "2026-02-16T01:39:00.488654+00:00"
+            }
+          ],
+          "avg_cost": 256.33477,
+          "current_position_qty": 6,
+          "day_pnl": 4.35138
+        }
+      }
+    },
+    "at": "2026-02-16T02:46:04.726Z"
+  },
+  "student.trade_place_blocked": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/trade/place",
+      "body": {
+        "account_id": "44444444-4444-4444-4444-444444444441",
+        "client_request_id": "e2e-freeze-19e40a54-28f6-4438-bee6-da69cdfbb08a",
+        "payload": {
+          "symbol": "AAPL",
+          "side": "buy",
+          "qty": 1,
+          "order_type": "market",
+          "tif": "day"
+        }
+      }
+    },
+    "response": {
+      "status": 400,
+      "ok": false,
+      "json": {
+        "error": "trading disabled for account"
+      }
+    },
+    "at": "2026-02-16T02:46:06.045Z"
+  },
+  "teacher.unfreeze_class": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/teacher-console/freeze",
+      "body": {
+        "scope_type": "class",
+        "scope_id": "33333333-3333-3333-3333-333333333333",
+        "is_trading_enabled": true,
+        "reason": "e2e unfreeze test"
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "control": {
+          "scope_type": "class",
+          "scope_id": "33333333-3333-3333-3333-333333333333",
+          "is_trading_enabled": true,
+          "reason": "e2e unfreeze test",
+          "updated_by": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "updated_at": "2026-02-15T16:55:49.334183+00:00"
+        }
+      }
+    },
+    "at": "2026-02-16T02:46:07.052Z"
+  },
+  "student.trade_place": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/trade/place",
+      "body": {
+        "account_id": "44444444-4444-4444-4444-444444444441",
+        "client_request_id": "e2e-place-3e682b9e-307a-4a92-a3dd-d717fb7fa3bc",
+        "payload": {
+          "symbol": "AAPL",
+          "side": "buy",
+          "qty": 1,
+          "order_type": "market",
+          "tif": "day"
+        }
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "result": {
+          "status": "open",
+          "order_id": "84e533bd-2824-4675-b445-63f1c0145fcb",
+          "idempotent": false
+        }
+      }
+    },
+    "at": "2026-02-16T02:46:07.710Z"
+  },
+  "student.trade_fills_poll": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/trade/fills?account_id=44444444-4444-4444-4444-444444444441&page_size=50"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "items": [
+          {
+            "id": "e935e105-1d99-4ce4-aefb-6afda90b9345",
+            "order_id": "84e533bd-2824-4675-b445-63f1c0145fcb",
+            "account_id": "44444444-4444-4444-4444-444444444441",
+            "symbol": "AAPL",
+            "qty": 1,
+            "price": 257.18853,
+            "fees": 0,
+            "slippage": 5,
+            "filled_at": "2026-02-16T02:47:01.297123+00:00"
+          },
+          {
+            "id": "c92eba54-94a7-4244-966c-2026748382fe",
+            "order_id": "aacc4bb5-3818-4840-817b-0c9c50c59fef",
+            "account_id": "44444444-4444-4444-4444-444444444441",
+            "symbol": "AAPL",
+            "qty": 1,
+            "price": 255.907889,
+            "fees": 0,
+            "slippage": 5,
+            "filled_at": "2026-02-16T01:39:00.488654+00:00"
+          },
+          {
+            "id": "0d68cead-461c-4f7c-b75a-ff87d6e787ec",
+            "order_id": "2a4cfdba-55c6-4a2a-82fd-ba4b89885c90",
+            "account_id": "44444444-4444-4444-4444-444444444441",
+            "symbol": "AAPL",
+            "qty": 1,
+            "price": 255.907889,
+            "fees": 0,
+            "slippage": 5,
+            "filled_at": "2026-02-16T01:29:00.491935+00:00"
+          },
+          {
+            "id": "1f42db41-d89b-495b-8e4a-5e5beee87c65",
+            "order_id": "8a9eb41c-dda3-4c5e-98e4-afa87393bcc4",
+            "account_id": "44444444-4444-4444-4444-444444444441",
+            "symbol": "AAPL",
+            "qty": 1,
+            "price": 255.907889,
+            "fees": 0,
+            "slippage": 5,
+            "filled_at": "2026-02-16T01:27:00.546934+00:00"
+          },
+          {
+            "id": "8810d9ca-a85c-44e3-87d2-56304ea1775a",
+            "order_id": "a1e3702e-a0d5-42b9-a9b2-5e1e20005c55",
+            "account_id": "44444444-4444-4444-4444-444444444441",
+            "symbol": "AAPL",
+            "qty": 1,
+            "price": 255.907889,
+            "fees": 0,
+            "slippage": 5,
+            "filled_at": "2026-02-16T01:26:00.307265+00:00"
+          },
+          {
+            "id": "418ed377-1491-4d23-833b-96e8e44125fe",
+            "order_id": "2a351ab5-40c4-42af-a9a4-46d8e05e1916",
+            "account_id": "44444444-4444-4444-4444-444444444441",
+            "symbol": "AAPL",
+            "qty": 1,
+            "price": 257.18853,
+            "fees": 0,
+            "slippage": 5,
+            "filled_at": "2026-02-15T17:25:00.990926+00:00"
+          },
+          {
+            "id": "50058b3f-de9b-4075-bd09-11ce8eeee2df",
+            "order_id": "5c826c7a-aeb1-4f67-a17d-81850337fc42",
+            "account_id": "44444444-4444-4444-4444-444444444441",
+            "symbol": "AAPL",
+            "qty": 1,
+            "price": 257.18853,
+            "fees": 0,
+            "slippage": 5,
+            "filled_at": "2026-02-15T17:07:05.899541+00:00"
+          }
+        ],
+        "page_size": 50,
+        "offset": 0
+      }
+    },
+    "at": "2026-02-16T02:47:05.057Z"
+  },
+  "student.fill_found": {
+    "request": {
+      "method": "poll",
+      "url": "<derived>",
+      "body": {
+        "order_id": "84e533bd-2824-4675-b445-63f1c0145fcb"
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "fill": {
+          "id": "e935e105-1d99-4ce4-aefb-6afda90b9345",
+          "order_id": "84e533bd-2824-4675-b445-63f1c0145fcb",
+          "account_id": "44444444-4444-4444-4444-444444444441",
+          "symbol": "AAPL",
+          "qty": 1,
+          "price": 257.18853,
+          "fees": 0,
+          "slippage": 5,
+          "filled_at": "2026-02-16T02:47:01.297123+00:00"
+        }
+      }
+    },
+    "at": "2026-02-16T02:47:05.057Z"
+  },
+  "student.realtime_fill_observed": {
+    "request": {
+      "method": "realtime",
+      "url": "<ws>",
+      "body": {
+        "table": "fills",
+        "account_id": "44444444-4444-4444-4444-444444444441"
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "order_id": "84e533bd-2824-4675-b445-63f1c0145fcb"
+      }
+    },
+    "at": "2026-02-16T02:47:05.057Z"
+  },
+  "student.trade_positions": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/trade/positions?account_id=44444444-4444-4444-4444-444444444441"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "items": [
+          {
+            "symbol": "AAPL",
+            "qty": 7,
+            "avg_cost": 256.456736,
+            "realized_pnl": 0,
+            "updated_at": "2026-02-16T02:47:01.297123+00:00",
+            "market_price": 257.06,
+            "market_value": 1799.42,
+            "unrealized_pnl": 4.222848
+          }
+        ],
+        "page_size": 25,
+        "offset": 0
+      }
+    },
+    "at": "2026-02-16T02:47:05.954Z"
+  },
+  "student.trade_equity": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/trade/equity?account_id=44444444-4444-4444-4444-444444444441"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "equity": {
+          "cash": 98204.802854,
+          "equity": 100004.222854,
+          "as_of_ts": "2026-02-16T02:47:06.86413+00:00",
+          "account_id": "44444444-4444-4444-4444-444444444441",
+          "positions_value": 1799.42
+        }
+      }
+    },
+    "at": "2026-02-16T02:47:06.743Z"
+  },
+  "student.rls_other_equity_denied": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/trade/equity?account_id=44444444-4444-4444-4444-444444444442"
+    },
+    "response": {
+      "status": 403,
+      "ok": false,
+      "json": {
+        "error": "forbidden"
+      }
+    },
+    "at": "2026-02-16T02:47:08.231Z"
+  },
+  "teacher.exports_request": {
+    "request": {
+      "method": "POST",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/teacher-console/exports/request",
+      "body": {
+        "class_id": "33333333-3333-3333-3333-333333333333",
+        "competition_id": "55555555-5555-5555-5555-555555555555",
+        "type": "trades_orders_fills",
+        "filters": {}
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "job_id": "75f8b2c8-d25d-4065-8b5e-dfcfa8e7beb8",
+        "status": "queued"
+      }
+    },
+    "at": "2026-02-16T02:47:09.045Z"
+  },
+  "teacher.exports_download_poll": {
+    "request": {
+      "method": "GET",
+      "url": "https://lbdmxtssrnflfawsccow.supabase.co/functions/v1/teacher-console/exports/download?job_id=75f8b2c8-d25d-4065-8b5e-dfcfa8e7beb8"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "job_id": "75f8b2c8-d25d-4065-8b5e-dfcfa8e7beb8",
+        "status": "done",
+        "signed_url": "<redacted>"
+      }
+    },
+    "at": "2026-02-16T02:48:02.301Z"
+  },
+  "teacher.export_signed_url_ready": {
+    "request": {
+      "method": "poll",
+      "url": "<derived>",
+      "body": {
+        "job_id": "75f8b2c8-d25d-4065-8b5e-dfcfa8e7beb8"
+      }
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "signed_url": "<redacted>"
+      }
+    },
+    "at": "2026-02-16T02:48:02.301Z"
+  },
+  "teacher.export_signed_url_fetch": {
+    "request": {
+      "method": "GET",
+      "url": "<signed_url_redacted>"
+    },
+    "response": {
+      "status": 200,
+      "ok": true,
+      "json": {
+        "sample": "fill_id,order_id,account_id,student,symbol,qty,price,fees,slippage,side,order_type,tif,filled_at\ne935e105-1d99-4ce4-aefb-6afda90b9345,84e533bd-2824-4675-b445-63f1c0145fcb,44444444-4444-4444-4444-44444"
+      }
+    },
+    "at": "2026-02-16T02:48:02.710Z"
+  }
+}

@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stockify Frontend E2E Harness</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #0b0f19;
+        --panel: #0f172a;
+        --text: #e5e7eb;
+        --muted: #94a3b8;
+        --ok: #22c55e;
+        --bad: #ef4444;
+        --warn: #f59e0b;
+        --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+      }
+      body {
+        margin: 0;
+        font-family: var(--sans);
+        background: radial-gradient(1200px 800px at 30% -10%, #1d2a5f 0%, rgba(29, 42, 95, 0) 50%),
+          radial-gradient(1200px 800px at 110% 10%, #0f766e 0%, rgba(15, 118, 110, 0) 55%),
+          var(--bg);
+        color: var(--text);
+      }
+      .wrap {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 28px 16px 64px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-weight: 750;
+        letter-spacing: -0.02em;
+        font-size: 28px;
+      }
+      p {
+        margin: 0 0 18px;
+        color: var(--muted);
+        line-height: 1.4;
+      }
+      .row {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 14px 0 18px;
+      }
+      button {
+        appearance: none;
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        background: rgba(15, 23, 42, 0.85);
+        color: var(--text);
+        padding: 10px 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 650;
+        letter-spacing: 0.01em;
+      }
+      button:hover {
+        border-color: rgba(148, 163, 184, 0.55);
+      }
+      button:disabled {
+        opacity: 0.55;
+        cursor: not-allowed;
+      }
+      .pill {
+        font-family: var(--mono);
+        font-size: 12px;
+        color: var(--muted);
+        border: 1px solid rgba(148, 163, 184, 0.25);
+        background: rgba(15, 23, 42, 0.55);
+        padding: 6px 10px;
+        border-radius: 999px;
+      }
+      .panel {
+        border: 1px solid rgba(148, 163, 184, 0.2);
+        background: rgba(15, 23, 42, 0.72);
+        border-radius: 14px;
+        padding: 14px;
+        overflow: hidden;
+      }
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-break: break-word;
+        font-family: var(--mono);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+      .ok {
+        color: var(--ok);
+      }
+      .bad {
+        color: var(--bad);
+      }
+      .warn {
+        color: var(--warn);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Stockify Frontend E2E Harness</h1>
+      <p>
+        Runs the student + teacher flows against a live Supabase project from a real browser context (CORS + JWT +
+        Realtime), and collects “golden” request/response snapshots for regression testing.
+      </p>
+      <div class="row">
+        <button id="run" disabled>Run Remote E2E</button>
+        <span class="pill" id="cfg">Config: not set</span>
+        <span class="pill" id="state">State: idle</span>
+      </div>
+      <div class="panel">
+        <pre id="log"></pre>
+      </div>
+    </div>
+
+    <script type="module">
+      import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.1";
+
+      const logEl = document.getElementById("log");
+      const cfgEl = document.getElementById("cfg");
+      const stateEl = document.getElementById("state");
+      const runBtn = document.getElementById("run");
+
+      /** @type {{ supabaseUrl: string, anonKey: string, classId: string, competitionId: string, studentAccountId: string, otherStudentAccountId: string } | null} */
+      let CONFIG = null;
+
+      // Golden snapshots written by this harness (Playwright reads them via `eval`).
+      window.__stockify_golden = {};
+      window.__stockify_results = { ok: false, started_at: null, finished_at: null, steps: [] };
+
+      function setState(text) {
+        stateEl.textContent = `State: ${text}`;
+      }
+
+      function log(line, cls = "") {
+        const prefix = cls ? `[${cls.toUpperCase()}] ` : "";
+        logEl.textContent += `${prefix}${line}\n`;
+        // Keep console readable during Playwright runs.
+        console.log(prefix + line);
+      }
+
+      function redact(obj) {
+        if (obj && typeof obj === "object") {
+          const copy = Array.isArray(obj) ? [...obj] : { ...obj };
+          if (!Array.isArray(copy)) {
+            if (typeof copy.signed_url === "string") copy.signed_url = "<redacted>";
+            if (typeof copy.access_token === "string") copy.access_token = "<redacted>";
+            if (typeof copy.refresh_token === "string") copy.refresh_token = "<redacted>";
+          }
+          for (const k of Object.keys(copy)) copy[k] = redact(copy[k]);
+          return copy;
+        }
+        return obj;
+      }
+
+      async function sleep(ms) {
+        await new Promise((r) => setTimeout(r, ms));
+      }
+
+      async function fetchJson(url, { method = "GET", headers = {}, body = undefined } = {}) {
+        const resp = await fetch(url, {
+          method,
+          headers,
+          body: body === undefined ? undefined : JSON.stringify(body),
+        });
+        const text = await resp.text();
+        let json = null;
+        try {
+          json = text ? JSON.parse(text) : null;
+        } catch {
+          json = { __non_json__: text };
+        }
+        return { status: resp.status, ok: resp.ok, json };
+      }
+
+      function recordGolden(name, req, resp) {
+        // Never store secrets/tokens in snapshots.
+        const safeReq = {
+          ...req,
+          headers: undefined,
+        };
+        window.__stockify_golden[name] = {
+          request: safeReq,
+          response: { ...resp, json: redact(resp.json) },
+          at: new Date().toISOString(),
+        };
+      }
+
+      async function login(supabase, email, password, label) {
+        const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+        if (error || !data?.session?.access_token) {
+          throw new Error(`${label} login failed: ${error?.message ?? "no session"}`);
+        }
+        return data.session;
+      }
+
+      function fnUrl(path) {
+        return `${CONFIG.supabaseUrl}/functions/v1${path}`;
+      }
+
+      async function callFn(name, path, session, { method = "GET", body = undefined } = {}) {
+        const url = fnUrl(path);
+        const headers = {
+          "apikey": CONFIG.anonKey,
+          "authorization": `Bearer ${session.access_token}`,
+        };
+        if (body !== undefined) headers["Content-Type"] = "application/json";
+
+        const resp = await fetchJson(url, { method, headers, body });
+        recordGolden(name, { method, url, body }, resp);
+        return resp;
+      }
+
+      async function requireStatus(resp, expected, label) {
+        if (resp.status !== expected) {
+          throw new Error(`${label}: expected ${expected}, got ${resp.status} (${JSON.stringify(resp.json).slice(0, 160)})`);
+        }
+      }
+
+      async function waitForFill(studentSession, orderId, timeoutMs = 90000) {
+        const start = Date.now();
+        while (Date.now() - start < timeoutMs) {
+          const fills = await callFn(
+            "student.trade_fills_poll",
+            `/trade/fills?account_id=${encodeURIComponent(CONFIG.studentAccountId)}&page_size=50`,
+            studentSession,
+          );
+          if (fills.ok) {
+            const items = Array.isArray(fills.json?.items) ? fills.json.items : [];
+            const found = items.find((f) => f.order_id === orderId);
+            if (found) return found;
+          }
+          await sleep(4000);
+        }
+        throw new Error("timed out waiting for fill (cron engine-tick may not be firing)");
+      }
+
+      async function waitForExportReady(teacherSession, jobId, timeoutMs = 120000) {
+        const start = Date.now();
+        while (Date.now() - start < timeoutMs) {
+          const dl = await callFn(
+            "teacher.exports_download_poll",
+            `/teacher-console/exports/download?job_id=${encodeURIComponent(jobId)}`,
+            teacherSession,
+          );
+          if (dl.status === 200 && typeof dl.json?.signed_url === "string") return dl.json.signed_url;
+          await sleep(5000);
+        }
+        throw new Error("timed out waiting for export to be ready (cron report-jobs may not be firing)");
+      }
+
+      async function runE2E() {
+        window.__stockify_results = { ok: false, started_at: new Date().toISOString(), finished_at: null, steps: [] };
+        window.__stockify_golden = {};
+        logEl.textContent = "";
+        setState("running");
+        runBtn.disabled = true;
+
+        const projectHost = (() => {
+          try {
+            return new URL(CONFIG.supabaseUrl).host;
+          } catch {
+            return CONFIG.supabaseUrl;
+          }
+        })();
+        log(`Target project: ${projectHost}`);
+
+        const teacherClient = createClient(CONFIG.supabaseUrl, CONFIG.anonKey, {
+          auth: { persistSession: false, autoRefreshToken: false, storageKey: "stockify-e2e-teacher" },
+        });
+        const studentClient = createClient(CONFIG.supabaseUrl, CONFIG.anonKey, {
+          auth: { persistSession: false, autoRefreshToken: false, storageKey: "stockify-e2e-student" },
+        });
+
+        // Teacher flow: login -> set relaxed hours -> freeze/unfreeze -> export -> download
+        log("Teacher: login");
+        const teacherSession = await login(teacherClient, "teacher@stockify.dev", "Password123!", "teacher");
+        recordGolden("teacher.login", { method: "supabase.auth.signInWithPassword", url: "<sdk>" }, { status: 200, ok: true, json: { ok: true } });
+
+        log("Teacher: set competition rules (market_hours_mode=relaxed)");
+        const upsertRules = await callFn(
+          "teacher.competition_upsert_rules",
+          "/teacher-console/competition/upsert_rules",
+          teacherSession,
+          {
+            method: "POST",
+            body: {
+              class_id: CONFIG.classId,
+              competition_id: CONFIG.competitionId,
+              name: "Spring Trading Challenge",
+              status: "active",
+              rules_json: { market_hours_mode: "relaxed" },
+            },
+          },
+        );
+        await requireStatus(upsertRules, 200, "teacher upsert_rules");
+
+        log("Teacher: freeze trading (class)");
+        const freeze = await callFn(
+          "teacher.freeze_class",
+          "/teacher-console/freeze",
+          teacherSession,
+          {
+            method: "POST",
+            body: {
+              scope_type: "class",
+              scope_id: CONFIG.classId,
+              is_trading_enabled: false,
+              reason: "e2e freeze test",
+            },
+          },
+        );
+        await requireStatus(freeze, 200, "teacher freeze");
+
+        // Student flow: login -> symbols -> featured -> watchlists -> charts/context -> (blocked order) -> unfreeze -> place -> wait fill via cron -> positions/equity -> RLS denial
+        log("Student: login");
+        const studentSession = await login(studentClient, "student1@stockify.dev", "Password123!", "student");
+        recordGolden("student.login", { method: "supabase.auth.signInWithPassword", url: "<sdk>" }, { status: 200, ok: true, json: { ok: true } });
+
+        log("Student: symbols search");
+        const sym = await callFn("student.symbols_search", `/symbols/search?q=AAPL`, studentSession);
+        await requireStatus(sym, 200, "student symbols search");
+
+        log("Student: featured symbols");
+        const featured = await callFn(
+          "student.symbols_featured",
+          `/symbols/featured?competition_id=${encodeURIComponent(CONFIG.competitionId)}`,
+          studentSession,
+        );
+        await requireStatus(featured, 200, "student featured symbols");
+
+        log("Student: watchlists list");
+        const wlList = await callFn("student.watchlists_list", `/watchlists`, studentSession);
+        await requireStatus(wlList, 200, "student watchlists list");
+
+        log("Student: create watchlist");
+        const wlCreate = await callFn("student.watchlists_create", `/watchlists/create`, studentSession, {
+          method: "POST",
+          body: {
+            owner_type: "user",
+            name: `E2E Watchlist ${new Date().toISOString()}`,
+          },
+        });
+        await requireStatus(wlCreate, 200, "student watchlists create");
+        const watchlistId = wlCreate.json?.watchlist?.id;
+        if (typeof watchlistId !== "string") throw new Error("watchlist create did not return id");
+
+        log("Student: add watchlist item");
+        const wlAdd = await callFn("student.watchlists_add_item", `/watchlists/add_item`, studentSession, {
+          method: "POST",
+          body: { watchlist_id: watchlistId, symbol: "AAPL" },
+        });
+        await requireStatus(wlAdd, 200, "student watchlists add item");
+
+        log("Student: charts context (with overlays)");
+        const ctx = await callFn(
+          "student.charts_context",
+          `/charts/context?symbol=AAPL&competition_id=${encodeURIComponent(CONFIG.competitionId)}`,
+          studentSession,
+        );
+        await requireStatus(ctx, 200, "student charts context");
+
+        log("Student: place order while frozen (expect rejection)");
+        const blocked = await callFn("student.trade_place_blocked", `/trade/place`, studentSession, {
+          method: "POST",
+          body: {
+            account_id: CONFIG.studentAccountId,
+            client_request_id: `e2e-freeze-${crypto.randomUUID()}`,
+            payload: { symbol: "AAPL", side: "buy", qty: 1, order_type: "market", tif: "day" },
+          },
+        });
+        if (blocked.status === 200) throw new Error("expected freeze to block trading, but order was accepted");
+
+        log("Teacher: unfreeze trading (class)");
+        const unfreeze = await callFn(
+          "teacher.unfreeze_class",
+          "/teacher-console/freeze",
+          teacherSession,
+          {
+            method: "POST",
+            body: {
+              scope_type: "class",
+              scope_id: CONFIG.classId,
+              is_trading_enabled: true,
+              reason: "e2e unfreeze test",
+            },
+          },
+        );
+        await requireStatus(unfreeze, 200, "teacher unfreeze");
+
+        log("Student: subscribe to realtime fill inserts (defense-in-depth check)");
+        let rtFill = null;
+        const channel = studentClient
+          .channel("stockify-e2e-fills")
+          .on(
+            "postgres_changes",
+            { event: "INSERT", schema: "public", table: "fills", filter: `account_id=eq.${CONFIG.studentAccountId}` },
+            (payload) => {
+              rtFill = payload?.new ?? null;
+            },
+          );
+        await channel.subscribe();
+
+        log("Student: place order (market buy)");
+        const place = await callFn("student.trade_place", `/trade/place`, studentSession, {
+          method: "POST",
+          body: {
+            account_id: CONFIG.studentAccountId,
+            client_request_id: `e2e-place-${crypto.randomUUID()}`,
+            payload: { symbol: "AAPL", side: "buy", qty: 1, order_type: "market", tif: "day" },
+          },
+        });
+        await requireStatus(place, 200, "student trade place");
+        const orderId = place.json?.order_id ?? place.json?.result?.order_id;
+        if (typeof orderId !== "string") throw new Error("trade/place did not return order_id");
+
+        log("Student: wait for fill (cron-driven engine tick)");
+        const fill = await waitForFill(studentSession, orderId, 90000);
+        recordGolden("student.fill_found", { method: "poll", url: "<derived>", body: { order_id: orderId } }, { status: 200, ok: true, json: { fill } });
+
+        // Realtime should deliver the INSERT as well (this is what the actual frontend relies on).
+        log("Student: confirm realtime fill event");
+        const rtStart = Date.now();
+        while (Date.now() - rtStart < 10000) {
+          if (rtFill && rtFill.order_id === orderId) break;
+          await sleep(250);
+        }
+        if (!rtFill || rtFill.order_id !== orderId) {
+          throw new Error("realtime fill event not observed (check Realtime publication / WS connectivity)");
+        }
+        recordGolden(
+          "student.realtime_fill_observed",
+          { method: "realtime", url: "<ws>", body: { table: "fills", account_id: CONFIG.studentAccountId } },
+          { status: 200, ok: true, json: { order_id: orderId } },
+        );
+
+        log("Student: positions");
+        const pos = await callFn("student.trade_positions", `/trade/positions?account_id=${encodeURIComponent(CONFIG.studentAccountId)}`, studentSession);
+        await requireStatus(pos, 200, "student positions");
+
+        log("Student: equity");
+        const eq = await callFn("student.trade_equity", `/trade/equity?account_id=${encodeURIComponent(CONFIG.studentAccountId)}`, studentSession);
+        await requireStatus(eq, 200, "student equity");
+
+        log("Student: RLS denial (read other student equity should 403)");
+        const denied = await callFn(
+          "student.rls_other_equity_denied",
+          `/trade/equity?account_id=${encodeURIComponent(CONFIG.otherStudentAccountId)}`,
+          studentSession,
+        );
+        if (denied.status !== 403) throw new Error(`expected 403, got ${denied.status}`);
+
+        // Teacher export (cron-driven report worker)
+        log("Teacher: request export (trades_orders_fills)");
+        const exportReq = await callFn("teacher.exports_request", `/teacher-console/exports/request`, teacherSession, {
+          method: "POST",
+          body: { class_id: CONFIG.classId, competition_id: CONFIG.competitionId, type: "trades_orders_fills", filters: {} },
+        });
+        await requireStatus(exportReq, 200, "teacher exports request");
+        const jobId = exportReq.json?.job_id;
+        if (typeof jobId !== "string") throw new Error("export request did not return job_id");
+
+        log("Teacher: wait for signed URL (cron-driven report-jobs)");
+        const signedUrl = await waitForExportReady(teacherSession, jobId, 120000);
+        recordGolden("teacher.export_signed_url_ready", { method: "poll", url: "<derived>", body: { job_id: jobId } }, { status: 200, ok: true, json: { signed_url: "<redacted>" } });
+
+        log("Teacher: fetch signed URL (should 200 CSV)");
+        const csvResp = await fetch(signedUrl);
+        const csvText = await csvResp.text();
+        recordGolden("teacher.export_signed_url_fetch", { method: "GET", url: "<signed_url_redacted>" }, { status: csvResp.status, ok: csvResp.ok, json: { sample: csvText.slice(0, 200) } });
+        if (!csvResp.ok) throw new Error(`signed URL fetch failed: ${csvResp.status}`);
+
+        await channel.unsubscribe();
+
+        window.__stockify_results.ok = true;
+        window.__stockify_results.finished_at = new Date().toISOString();
+        setState("ok");
+        log("E2E complete", "ok");
+      }
+
+      window.setStockifyE2EConfig = (cfg) => {
+        if (!cfg || typeof cfg.supabaseUrl !== "string" || typeof cfg.anonKey !== "string") {
+          throw new Error("Invalid config");
+        }
+        CONFIG = cfg;
+        cfgEl.textContent = "Config: set";
+        runBtn.disabled = false;
+        log("Config applied.");
+      };
+
+      window.runStockifyE2E = async () => {
+        if (!CONFIG) throw new Error("Config not set");
+        await runE2E();
+      };
+
+      runBtn.addEventListener("click", async () => {
+        try {
+          await window.runStockifyE2E();
+        } catch (e) {
+          setState("failed");
+          runBtn.disabled = false;
+          const msg = e instanceof Error ? e.message : String(e);
+          log(`FAILED: ${msg}`, "bad");
+          window.__stockify_results.ok = false;
+          window.__stockify_results.finished_at = new Date().toISOString();
+          throw e;
+        }
+      });
+    </script>
+  </body>
+</html>

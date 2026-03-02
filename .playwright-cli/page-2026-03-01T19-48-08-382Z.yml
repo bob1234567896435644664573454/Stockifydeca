@@ -1,0 +1,20 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - heading "Stockify" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Sign in to your account
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - text: Email
+        - textbox "Email" [ref=e10]:
+          - /placeholder: student@school.edu
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - generic [ref=e13]: Password
+          - button "Forgot password?" [ref=e14] [cursor=pointer]
+        - textbox "Password" [ref=e15]
+      - button "Sign In" [ref=e16] [cursor=pointer]
+    - generic [ref=e17]:
+      - button "Need an account? Sign up" [ref=e18] [cursor=pointer]
+      - button "Did not receive confirmation email?" [ref=e19] [cursor=pointer]
+  - region "Notifications alt+T"

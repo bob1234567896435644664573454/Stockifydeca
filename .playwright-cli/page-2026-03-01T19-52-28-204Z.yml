@@ -1,0 +1,53 @@
+- generic [ref=e2]:
+  - generic [ref=e755]:
+    - complementary [ref=e756]:
+      - generic [ref=e757]:
+        - heading "Stockify" [level=2] [ref=e759]
+        - generic [ref=e760]:
+          - button "Dashboard" [ref=e761] [cursor=pointer]:
+            - img [ref=e762]
+            - text: Dashboard
+          - button "Trade" [ref=e765] [cursor=pointer]:
+            - img [ref=e766]
+            - text: Trade
+          - button "Leaderboard" [ref=e768] [cursor=pointer]:
+            - img [ref=e769]
+            - text: Leaderboard
+        - button "Logout" [ref=e776] [cursor=pointer]:
+          - img [ref=e777]
+          - text: Logout
+    - main [ref=e781]:
+      - generic [ref=e783]:
+        - generic [ref=e786]:
+          - heading "Competition Leaderboard" [level=3] [ref=e787]
+          - paragraph [ref=e788]: Real-time rankings based on risk-adjusted performance.
+        - table [ref=e793]:
+          - rowgroup [ref=e794]:
+            - row "Rank Student Score Return Equity" [ref=e795]:
+              - columnheader "Rank" [ref=e796]
+              - columnheader "Student" [ref=e797]
+              - columnheader "Score" [ref=e798]
+              - columnheader "Return" [ref=e799]
+              - columnheader "Equity" [ref=e800]
+          - rowgroup [ref=e801]:
+            - row "1 Alex Student YOU 98.50 1.90% $101,900.00" [ref=e802]:
+              - cell "1" [ref=e803]:
+                - generic [ref=e804]:
+                  - generic [ref=e805]: "1"
+                  - img [ref=e806]
+              - cell "Alex Student YOU" [ref=e809]:
+                - generic [ref=e810] [cursor=pointer]:
+                  - text: Alex Student
+                  - generic [ref=e811]: YOU
+              - cell "98.50" [ref=e812]
+              - cell "1.90%" [ref=e813]
+              - cell "$101,900.00" [ref=e814]
+  - generic:
+    - contentinfo:
+      - button "Open TanStack Router Devtools" [ref=e299] [cursor=pointer]:
+        - generic [ref=e300]:
+          - img [ref=e302]
+          - img [ref=e337]
+        - generic [ref=e371]: "-"
+        - generic [ref=e372]: TanStack Router
+  - region "Notifications alt+T"

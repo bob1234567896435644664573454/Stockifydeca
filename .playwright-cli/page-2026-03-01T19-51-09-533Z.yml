@@ -1,0 +1,47 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]: Competition Ended
+    - generic [ref=e5]:
+      - complementary [ref=e6]:
+        - generic [ref=e7]:
+          - generic [ref=e8]: Stockify
+          - button "Collapse sidebar" [ref=e9] [cursor=pointer]:
+            - img [ref=e10]
+        - navigation "Main Navigation" [ref=e13]:
+          - button "Dashboard" [ref=e14] [cursor=pointer]:
+            - img [ref=e15]
+            - generic [ref=e18]: Dashboard
+          - button "Trade" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+            - generic [ref=e22]: Trade
+          - button "Portfolio" [ref=e23] [cursor=pointer]:
+            - img [ref=e24]
+            - generic [ref=e27]: Portfolio
+          - button "Leaderboard" [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+            - generic [ref=e35]: Leaderboard
+          - button "Learn" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Learn
+          - button "Journal" [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+            - generic [ref=e43]: Journal
+          - button "Challenges" [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+            - generic [ref=e49]: Challenges
+        - generic [ref=e50]:
+          - generic [ref=e51]:
+            - generic [ref=e53]: S
+            - generic [ref=e54]:
+              - paragraph [ref=e55]: student1@stockify.dev
+              - paragraph [ref=e56]: student
+          - generic [ref=e57]:
+            - generic [ref=e58]: Theme
+            - button "Toggle theme" [ref=e59] [cursor=pointer]:
+              - img [ref=e60]
+              - generic [ref=e66]: Toggle theme
+          - button "Logout" [ref=e67] [cursor=pointer]:
+            - img [ref=e68]
+            - text: Logout
+      - main [ref=e72]
+  - region "Notifications alt+T"

@@ -1,0 +1,159 @@
+- generic [ref=e2]:
+  - generic [ref=e703]:
+    - generic [ref=e704]: Competition Active
+    - generic [ref=e705]:
+      - complementary [ref=e706]:
+        - generic [ref=e707]:
+          - generic [ref=e708]: Stockify
+          - button "Collapse sidebar" [ref=e709] [cursor=pointer]:
+            - img [ref=e710]
+        - navigation "Main Navigation" [ref=e713]:
+          - button "Dashboard" [ref=e714] [cursor=pointer]:
+            - img [ref=e715]
+            - generic [ref=e718]: Dashboard
+          - button "Trade" [ref=e719] [cursor=pointer]:
+            - img [ref=e720]
+            - generic [ref=e722]: Trade
+          - button "Portfolio" [ref=e723] [cursor=pointer]:
+            - img [ref=e724]
+            - generic [ref=e727]: Portfolio
+          - button "Leaderboard" [ref=e728] [cursor=pointer]:
+            - img [ref=e729]
+            - generic [ref=e735]: Leaderboard
+          - button "Learn" [ref=e736] [cursor=pointer]:
+            - img [ref=e737]
+            - generic [ref=e739]: Learn
+          - button "Journal" [ref=e740] [cursor=pointer]:
+            - img [ref=e741]
+            - generic [ref=e743]: Journal
+          - button "Challenges" [ref=e744] [cursor=pointer]:
+            - img [ref=e745]
+            - generic [ref=e749]: Challenges
+        - generic [ref=e750]:
+          - generic [ref=e751]:
+            - generic [ref=e753]: S
+            - generic [ref=e754]:
+              - paragraph [ref=e755]: student1@stockify.dev
+              - paragraph [ref=e756]: student
+          - generic [ref=e757]:
+            - generic [ref=e758]: Theme
+            - button "Toggle theme" [ref=e759] [cursor=pointer]:
+              - img [ref=e760]
+              - generic [ref=e766]: Toggle theme
+          - button "Logout" [ref=e767] [cursor=pointer]:
+            - img [ref=e768]
+            - text: Logout
+      - main [ref=e772]:
+        - generic [ref=e773]:
+          - generic [ref=e774]:
+            - generic [ref=e775]:
+              - heading "Challenges & Achievements" [level=1] [ref=e776]
+              - paragraph [ref=e777]: Complete missions and unlock badges to prove your skills.
+            - generic [ref=e778]:
+              - generic [ref=e779]:
+                - img [ref=e780]
+                - generic [ref=e786]: 2/9
+                - generic [ref=e787]: badges
+              - generic [ref=e788]:
+                - img [ref=e789]
+                - generic [ref=e791]: "0"
+                - generic [ref=e792]: XP earned
+          - generic [ref=e793]:
+            - tablist [ref=e794]:
+              - tab "Weekly Challenges" [selected] [ref=e795] [cursor=pointer]:
+                - img [ref=e796]
+                - text: Weekly Challenges
+              - tab "Achievements" [ref=e800] [cursor=pointer]:
+                - img [ref=e801]
+                - text: Achievements
+            - tabpanel "Weekly Challenges" [ref=e807]:
+              - generic [ref=e808]:
+                - generic [ref=e811]:
+                  - img [ref=e813]
+                  - generic [ref=e815]:
+                    - generic [ref=e816]:
+                      - heading "Diversify Your Portfolio" [level=3] [ref=e817]
+                      - generic [ref=e818]: medium
+                    - paragraph [ref=e819]: Hold positions in at least 5 different stocks.
+                    - generic [ref=e821]:
+                      - generic [ref=e822]: 2/5 stocks
+                      - generic [ref=e823]:
+                        - generic [ref=e824]:
+                          - img [ref=e825]
+                          - text: 200 XP
+                        - generic [ref=e827]:
+                          - img [ref=e828]
+                          - text: 5d
+                - generic [ref=e835]:
+                  - img [ref=e837]
+                  - generic [ref=e840]:
+                    - generic [ref=e841]:
+                      - heading "Beat the Market" [level=3] [ref=e842]
+                      - generic [ref=e843]: hard
+                    - paragraph [ref=e844]: Outperform SPY over the past 7 days.
+                    - generic [ref=e846]:
+                      - generic [ref=e847]: 0/1 week
+                      - generic [ref=e848]:
+                        - generic [ref=e849]:
+                          - img [ref=e850]
+                          - text: 300 XP
+                        - generic [ref=e852]:
+                          - img [ref=e853]
+                          - text: 5d
+                - generic [ref=e859]:
+                  - img [ref=e861]
+                  - generic [ref=e863]:
+                    - generic [ref=e864]:
+                      - heading "Trade Journalist" [level=3] [ref=e865]
+                      - generic [ref=e866]: easy
+                    - paragraph [ref=e867]: Write 3 high-quality trade reflections.
+                    - generic [ref=e869]:
+                      - generic [ref=e870]: 1/3 reflections
+                      - generic [ref=e871]:
+                        - generic [ref=e872]:
+                          - img [ref=e873]
+                          - text: 150 XP
+                        - generic [ref=e875]:
+                          - img [ref=e876]
+                          - text: 5d
+                - generic [ref=e883]:
+                  - img [ref=e885]
+                  - generic [ref=e887]:
+                    - generic [ref=e888]:
+                      - heading "Risk Manager" [level=3] [ref=e889]
+                      - generic [ref=e890]: medium
+                    - paragraph [ref=e891]: Reduce your portfolio concentration (HHI) below 2500.
+                    - generic [ref=e893]:
+                      - generic [ref=e894]: 0/1 goal
+                      - generic [ref=e895]:
+                        - generic [ref=e896]:
+                          - img [ref=e897]
+                          - text: 250 XP
+                        - generic [ref=e899]:
+                          - img [ref=e900]
+                          - text: 5d
+                - generic [ref=e906]:
+                  - img [ref=e908]
+                  - generic [ref=e910]:
+                    - generic [ref=e911]:
+                      - heading "Learning Machine" [level=3] [ref=e912]
+                      - generic [ref=e913]: easy
+                    - paragraph [ref=e914]: Complete 3 lessons this week.
+                    - generic [ref=e916]:
+                      - generic [ref=e917]: 0/3 lessons
+                      - generic [ref=e918]:
+                        - generic [ref=e919]:
+                          - img [ref=e920]
+                          - text: 150 XP
+                        - generic [ref=e922]:
+                          - img [ref=e923]
+                          - text: 5d
+  - generic:
+    - contentinfo:
+      - button "Open TanStack Router Devtools" [ref=e74] [cursor=pointer]:
+        - generic [ref=e75]:
+          - img [ref=e77]
+          - img [ref=e112]
+        - generic [ref=e146]: "-"
+        - generic [ref=e147]: TanStack Router
+  - region "Notifications alt+T"

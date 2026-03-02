@@ -1,0 +1,119 @@
+- generic [ref=e2]:
+  - generic [ref=e607]:
+    - generic [ref=e608]: Competition Active
+    - generic [ref=e609]:
+      - complementary [ref=e610]:
+        - generic [ref=e611]:
+          - generic [ref=e612]: Stockify
+          - button "Collapse sidebar" [ref=e613] [cursor=pointer]:
+            - img [ref=e614]
+        - navigation "Main Navigation" [ref=e617]:
+          - button "Dashboard" [ref=e618] [cursor=pointer]:
+            - img [ref=e619]
+            - generic [ref=e622]: Dashboard
+          - button "Trade" [ref=e623] [cursor=pointer]:
+            - img [ref=e624]
+            - generic [ref=e626]: Trade
+          - button "Portfolio" [ref=e627] [cursor=pointer]:
+            - img [ref=e628]
+            - generic [ref=e631]: Portfolio
+          - button "Leaderboard" [ref=e632] [cursor=pointer]:
+            - img [ref=e633]
+            - generic [ref=e639]: Leaderboard
+          - button "Learn" [ref=e640] [cursor=pointer]:
+            - img [ref=e641]
+            - generic [ref=e643]: Learn
+          - button "Journal" [ref=e644] [cursor=pointer]:
+            - img [ref=e645]
+            - generic [ref=e647]: Journal
+          - button "Challenges" [ref=e648] [cursor=pointer]:
+            - img [ref=e649]
+            - generic [ref=e653]: Challenges
+        - generic [ref=e654]:
+          - generic [ref=e655]:
+            - generic [ref=e657]: S
+            - generic [ref=e658]:
+              - paragraph [ref=e659]: student1@stockify.dev
+              - paragraph [ref=e660]: student
+          - generic [ref=e661]:
+            - generic [ref=e662]: Theme
+            - button "Toggle theme" [ref=e663] [cursor=pointer]:
+              - img [ref=e664]
+              - generic [ref=e670]: Toggle theme
+          - button "Logout" [ref=e671] [cursor=pointer]:
+            - img [ref=e672]
+            - text: Logout
+      - main [ref=e676]:
+        - generic [ref=e677]:
+          - generic [ref=e678]:
+            - heading "Portfolio Analytics" [level=1] [ref=e679]
+            - paragraph [ref=e680]: Deep dive into your performance, risk, and allocation.
+          - generic [ref=e681]:
+            - tablist [ref=e682]:
+              - tab "Overview" [selected] [ref=e683] [cursor=pointer]
+              - tab "Holdings" [ref=e684] [cursor=pointer]
+              - tab "Performance" [ref=e685] [cursor=pointer]
+              - tab "Risk" [ref=e686] [cursor=pointer]
+              - tab "History" [ref=e687] [cursor=pointer]
+            - tabpanel "Overview" [ref=e688]:
+              - generic [ref=e689]:
+                - generic [ref=e690]:
+                  - heading "Key Metrics" [level=3] [ref=e692]:
+                    - img [ref=e693]
+                    - text: Key Metrics
+                  - generic [ref=e695]:
+                    - generic [ref=e696]:
+                      - generic [ref=e697]:
+                        - generic [ref=e698]: Total Equity
+                        - img [ref=e699]
+                      - generic [ref=e701]: $101,900.00
+                    - generic [ref=e702]:
+                      - generic [ref=e703]:
+                        - generic [ref=e704]: Total Return
+                        - img [ref=e705]
+                      - generic [ref=e707]: +1.90%
+                    - generic [ref=e708]:
+                      - generic [ref=e709]:
+                        - generic [ref=e710]: Cash
+                        - img [ref=e711]
+                      - generic [ref=e713]: $100,000.00
+                    - generic [ref=e714]:
+                      - generic [ref=e715]:
+                        - generic [ref=e716]: Positions
+                        - img [ref=e717]
+                      - generic [ref=e719]: "1"
+                    - generic [ref=e720]:
+                      - generic [ref=e721]:
+                        - generic [ref=e722]: Max Drawdown
+                        - img [ref=e723]
+                      - generic [ref=e725]: "-0.00%"
+                - generic [ref=e726]:
+                  - generic [ref=e727]:
+                    - heading "Allocation" [level=3] [ref=e728]:
+                      - img [ref=e729]
+                      - text: Allocation
+                    - paragraph [ref=e732]: How your capital is distributed across positions.
+                  - generic [ref=e733]:
+                    - generic [ref=e734]:
+                      - img [ref=e735]
+                      - generic [ref=e739]:
+                        - generic [ref=e740]:
+                          - generic [ref=e742]: AAPL
+                          - generic [ref=e743]: 1.9%
+                        - generic [ref=e744]:
+                          - generic [ref=e746]: Cash
+                          - generic [ref=e747]: 98.1%
+                    - generic [ref=e749]:
+                      - generic [ref=e750]:
+                        - generic [ref=e751]: Concentration (HHI)
+                        - img [ref=e752]
+                      - generic [ref=e754]: "10000"
+  - generic:
+    - contentinfo:
+      - button "Open TanStack Router Devtools" [ref=e299] [cursor=pointer]:
+        - generic [ref=e300]:
+          - img [ref=e302]
+          - img [ref=e337]
+        - generic [ref=e371]: "-"
+        - generic [ref=e372]: TanStack Router
+  - region "Notifications alt+T"

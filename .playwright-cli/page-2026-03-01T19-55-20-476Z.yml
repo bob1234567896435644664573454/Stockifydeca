@@ -1,0 +1,417 @@
+- generic:
+  - generic:
+    - generic:
+      - generic: Competition Active
+      - generic:
+        - complementary:
+          - generic:
+            - generic: Stockify
+            - button:
+              - img
+          - generic:
+            - navigation:
+              - button:
+                - img
+                - generic: Dashboard
+              - button:
+                - img
+                - generic: Trade
+              - button:
+                - img
+                - generic: Portfolio
+              - button:
+                - img
+                - generic: Leaderboard
+              - button:
+                - img
+                - generic: Learn
+              - button:
+                - img
+                - generic: Journal
+              - button:
+                - img
+                - generic: Challenges
+          - generic:
+            - generic:
+              - generic:
+                - generic: S
+              - generic:
+                - paragraph: student1@stockify.dev
+                - paragraph: student
+            - generic:
+              - generic: Theme
+              - button:
+                - img
+                - generic: Toggle theme
+            - button:
+              - img
+              - text: Logout
+        - generic:
+          - main:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - textbox:
+                      - /placeholder: Search symbol (e.g. AAPL)...
+                - generic:
+                  - generic:
+                    - heading [level=3]: Watchlist
+                    - generic: "5"
+                  - generic:
+                    - generic:
+                      - link:
+                        - /url: /student/trade/AAPL
+                        - generic:
+                          - generic: AAPL
+                          - generic: US
+                        - generic:
+                          - generic:
+                            - generic: $190.00
+                            - generic: +1.00 (0.53%)
+                          - button:
+                            - img
+                      - link:
+                        - /url: /student/trade/GOOGL
+                        - generic:
+                          - generic: GOOGL
+                          - generic: US
+                        - generic:
+                          - generic:
+                            - generic: $190.00
+                            - generic: +1.00 (0.53%)
+                          - button:
+                            - img
+                      - link:
+                        - /url: /student/trade/MSFT
+                        - generic:
+                          - generic: MSFT
+                          - generic: US
+                        - generic:
+                          - generic:
+                            - generic: $190.00
+                            - generic: +1.00 (0.53%)
+                          - button:
+                            - img
+                      - link:
+                        - /url: /student/trade/TSLA
+                        - generic:
+                          - generic: TSLA
+                          - generic: US
+                        - generic:
+                          - generic:
+                            - generic: $190.00
+                            - generic: +1.00 (0.53%)
+                          - button:
+                            - img
+                      - link:
+                        - /url: /student/trade/AMZN
+                        - generic:
+                          - generic: AMZN
+                          - generic: US
+                        - generic:
+                          - generic:
+                            - generic: $190.00
+                            - generic: +1.00 (0.53%)
+                          - button:
+                            - img
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=2]: AAPL
+                    - generic: US
+                    - button:
+                      - img
+                  - generic:
+                    - generic:
+                      - generic: Pos
+                      - generic: "10"
+                    - generic:
+                      - generic: Avg
+                      - generic: "180.00"
+                    - generic:
+                      - generic: Price
+                      - generic: "190.00"
+                - generic:
+                  - generic:
+                    - button: 1M
+                    - button: 5M
+                    - button: 1H
+                    - button: 1D
+                  - generic:
+                    - button [pressed]: Vol
+                    - button: SMA
+                    - button: EMA
+                    - button: VWAP
+                    - button: RSI
+                  - button:
+                    - img
+                    - text: Pro Chart
+                - iframe [ref=e1343]:
+                  - generic [ref=f3e2]:
+                    - toolbar [ref=f3e29]:
+                      - generic [ref=f3e33]:
+                        - generic [ref=f3e35]:
+                          - radiogroup [ref=f3e36]:
+                            - radio "1 minute" [ref=f3e37]:
+                              - generic [ref=f3e39]: 1m
+                            - radio "30 minutes" [ref=f3e40]:
+                              - generic [ref=f3e42]: 30m
+                            - radio "1 hour" [ref=f3e43]:
+                              - generic [ref=f3e45]: 1h
+                            - radio "1 day" [checked] [ref=f3e46]:
+                              - generic [ref=f3e48]: D
+                          - button "Chart interval" [ref=f3e49]:
+                            - img [ref=f3e52]:
+                              - img [ref=f3e53]
+                        - generic [ref=f3e58]:
+                          - radiogroup [ref=f3e59]:
+                            - radio "Bars" [ref=f3e60]:
+                              - img [ref=f3e61]:
+                                - img [ref=f3e62]
+                            - radio "Candles" [checked] [ref=f3e64]:
+                              - img [ref=f3e65]:
+                                - img [ref=f3e66]
+                            - radio "Area" [ref=f3e71]:
+                              - img [ref=f3e72]:
+                                - img [ref=f3e73]
+                          - button "Bar's style" [ref=f3e75]:
+                            - img [ref=f3e78]:
+                              - img [ref=f3e79]
+                        - button "Compare or Add Symbol" [ref=f3e84]:
+                          - img [ref=f3e85]:
+                            - img [ref=f3e86]
+                        - button "Indicators, metrics, and strategies" [ref=f3e93]:
+                          - img [ref=f3e94]:
+                            - img [ref=f3e95]
+                        - button "Take a snapshot" [ref=f3e99]:
+                          - img [ref=f3e101]:
+                            - img [ref=f3e102]
+                    - toolbar [ref=f3e106]:
+                      - generic [ref=f3e110]:
+                        - generic [ref=f3e111]:
+                          - generic [ref=f3e114]:
+                            - button "Cross" [ref=f3e116]:
+                              - img [ref=f3e117]:
+                                - img [ref=f3e118]
+                            - button "Cursors" [pressed] [ref=f3e122]:
+                              - img [ref=f3e123]:
+                                - img [ref=f3e124]
+                          - generic [ref=f3e128]:
+                            - button "Trend Line" [ref=f3e130]:
+                              - img [ref=f3e131]:
+                                - img [ref=f3e132]
+                            - button "Trend line tools" [ref=f3e136]:
+                              - img [ref=f3e137]:
+                                - img [ref=f3e138]
+                          - generic [ref=f3e142]:
+                            - button "Fib Retracement" [ref=f3e144]:
+                              - img [ref=f3e145]:
+                                - img [ref=f3e146]
+                            - button "Gann and Fibonacci tools" [ref=f3e153]:
+                              - img [ref=f3e154]:
+                                - img [ref=f3e155]
+                          - generic [ref=f3e159]:
+                            - button "XABCD Pattern" [ref=f3e161]:
+                              - img [ref=f3e162]:
+                                - img [ref=f3e163]
+                            - button "Patterns" [ref=f3e167]:
+                              - img [ref=f3e168]:
+                                - img [ref=f3e169]
+                          - generic [ref=f3e173]:
+                            - button "Long Position" [ref=f3e175]:
+                              - img [ref=f3e176]:
+                                - img [ref=f3e177]
+                            - button "Forecasting and measurement tools" [ref=f3e180]:
+                              - img [ref=f3e181]:
+                                - img [ref=f3e182]
+                          - generic [ref=f3e186]:
+                            - button "Brush" [ref=f3e188]:
+                              - img [ref=f3e189]:
+                                - img [ref=f3e190]
+                            - button "Geometric shapes" [ref=f3e194]:
+                              - img [ref=f3e195]:
+                                - img [ref=f3e196]
+                          - generic [ref=f3e200]:
+                            - button "Text" [ref=f3e202]:
+                              - img [ref=f3e203]:
+                                - img [ref=f3e204]
+                            - button "Annotation tools" [ref=f3e206]:
+                              - img [ref=f3e207]:
+                                - img [ref=f3e208]
+                          - generic [ref=f3e211]:
+                            - button "Icon" [ref=f3e213]:
+                              - img [ref=f3e214]:
+                                - img [ref=f3e215]
+                            - button "Icons" [ref=f3e217]:
+                              - img [ref=f3e218]:
+                                - img [ref=f3e219]
+                        - generic [ref=f3e221]:
+                          - button "Measure" [ref=f3e222]:
+                            - img [ref=f3e223]:
+                              - img [ref=f3e224]
+                          - button "Zoom In" [ref=f3e226]:
+                            - img [ref=f3e227]:
+                              - img [ref=f3e228]
+                        - generic [ref=f3e236]:
+                          - button "Magnet Mode snaps drawings placed near price bars to the closest OHLC value" [ref=f3e238]:
+                            - img [ref=f3e239]:
+                              - img [ref=f3e240]
+                          - button "Magnets" [ref=f3e244]:
+                            - img [ref=f3e245]:
+                              - img [ref=f3e246]
+                    - generic [ref=f3e3]:
+                      - 'region "Chart #1" [ref=f3e6]':
+                        - generic [ref=f3e10]:
+                          - generic:
+                            - generic:
+                              - toolbar:
+                                - generic:
+                                  - generic [ref=f3e249]:
+                                    - generic [ref=f3e250]:
+                                      - generic [ref=f3e251]:
+                                        - img [ref=f3e253]
+                                        - generic [ref=f3e254]: A
+                                      - generic [ref=f3e255]: Apple Inc
+                                    - text: · ·
+                                  - generic:
+                                    - generic:
+                                      - button "More":
+                                        - generic:
+                                          - img
+                                  - button "Market closed · Data is delayed" [ref=f3e257]:
+                                    - img [ref=f3e258]:
+                                      - img [ref=f3e259]
+                                    - img [ref=f3e261]:
+                                      - img [ref=f3e262]
+                                - generic [ref=f3e265]:
+                                  - generic [ref=f3e266]:
+                                    - generic [ref=f3e267]: C
+                                    - generic [ref=f3e268]: "264.18"
+                                  - generic [ref=f3e270]: −8.77 (−3.21%)
+                            - generic:
+                              - button "Hide indicator legend" [ref=f3e271]:
+                                - img [ref=f3e273]
+                              - generic:
+                                - toolbar:
+                                  - generic:
+                                    - generic "Volume" [ref=f3e276]:
+                                      - generic [ref=f3e277]: Vol
+                                    - generic:
+                                      - generic:
+                                        - button "Hide":
+                                          - generic:
+                                            - img
+                                        - button "Settings":
+                                          - generic:
+                                            - img
+                                        - button "Remove":
+                                          - generic:
+                                            - img
+                                        - button "More":
+                                          - generic:
+                                            - img
+                                  - generic "Volume" [ref=f3e281]: 72.36 M
+                          - generic "Chart for BATS_DLY:AAPL, 1 day" [ref=f3e282]
+                      - toolbar [ref=f3e283]:
+                        - button "Date Range" [ref=f3e286]:
+                          - text: Date Range
+                          - img [ref=f3e289]:
+                            - img [ref=f3e290]
+                        - generic [ref=f3e292]:
+                          - button "19:55:19 UTC" [disabled] [ref=f3e295]:
+                            - generic [ref=f3e296]: 19:55:19 UTC
+                          - button "Adjust data for dividends" [ref=f3e300]:
+                            - generic [ref=f3e301]: ADJ
+                - generic:
+                  - heading [level=3]: Activity
+                  - generic: Recent orders for AAPL
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]:
+                      - generic: Order Ticket
+                      - generic: AAPL @ $190.00
+                  - generic:
+                    - generic:
+                      - generic:
+                        - button: Buy
+                        - button: Sell
+                      - generic:
+                        - tablist:
+                          - tab [selected]: Market
+                          - tab: Limit
+                          - tab: Stop
+                        - generic:
+                          - generic:
+                            - text: Quantity
+                            - spinbutton: "1"
+                      - generic:
+                        - generic:
+                          - generic: Est. Price
+                          - generic: $190.00
+                        - generic:
+                          - generic: Est. Total
+                          - generic: $190.00
+                        - generic:
+                          - generic: "Pos: 10"
+                          - button: Close Position
+                      - generic:
+                        - button: 25%
+                        - button: 50%
+                        - button: 75%
+                        - button: 100%
+                      - generic:
+                        - generic:
+                          - generic: Estimated Portfolio Impact
+                          - generic:
+                            - generic:
+                              - generic: Estimated trade as % of portfolio
+                              - generic: 0.2%
+                            - generic:
+                              - generic: Estimated cash after trade
+                              - generic: $99,809.71
+                            - generic:
+                              - generic: Estimated impact if price drops 5%
+                              - generic: "-$9.50"
+                            - generic:
+                              - generic: Estimated impact if price rises 5%
+                              - generic: +$9.50
+                      - button: Review Order
+    - button [ref=e1398] [cursor=pointer]:
+      - generic [ref=e75]:
+        - img [ref=e77]
+        - img [ref=e112]
+      - generic [ref=e146]: "-"
+      - generic [ref=e147]: TanStack Router
+    - region "Notifications alt+T"
+  - dialog "Confirm Order" [ref=e1400]:
+    - generic [ref=e1401]:
+      - heading "Confirm Order" [level=2] [ref=e1402]
+      - paragraph [ref=e1403]: Please review your order details before placing.
+    - generic [ref=e1404]:
+      - generic [ref=e1405]:
+        - generic [ref=e1406]: Action
+        - generic [ref=e1407]: buy
+      - generic [ref=e1408]:
+        - generic [ref=e1409]: Symbol
+        - generic [ref=e1410]: AAPL
+      - generic [ref=e1411]:
+        - generic [ref=e1412]: Quantity
+        - generic [ref=e1413]: "1"
+      - generic [ref=e1414]:
+        - generic [ref=e1415]: Type
+        - generic [ref=e1416]: market
+      - generic [ref=e1417]:
+        - generic [ref=e1418]: Est. Total
+        - generic [ref=e1419]: $190.00
+      - generic [ref=e1420]:
+        - generic [ref=e1421]: Est. Commission
+        - generic [ref=e1422]: $1.00
+    - generic [ref=e1423]:
+      - button "Cancel" [active] [ref=e1424] [cursor=pointer]
+      - button "Confirm Order" [ref=e1425] [cursor=pointer]
+    - button "Close" [ref=e1426] [cursor=pointer]:
+      - img [ref=e1427]
+      - generic [ref=e1430]: Close

@@ -1,0 +1,171 @@
+- generic [ref=e2]:
+  - generic [ref=e927]:
+    - generic [ref=e928]: Competition Active
+    - generic [ref=e929]:
+      - complementary [ref=e930]:
+        - generic [ref=e931]:
+          - generic [ref=e932]: Stockify
+          - button "Collapse sidebar" [ref=e933] [cursor=pointer]:
+            - img [ref=e934]
+        - navigation "Main Navigation" [ref=e937]:
+          - button "Dashboard" [ref=e938] [cursor=pointer]:
+            - img [ref=e939]
+            - generic [ref=e942]: Dashboard
+          - button "Trade" [ref=e943] [cursor=pointer]:
+            - img [ref=e944]
+            - generic [ref=e946]: Trade
+          - button "Portfolio" [ref=e947] [cursor=pointer]:
+            - img [ref=e948]
+            - generic [ref=e951]: Portfolio
+          - button "Leaderboard" [ref=e952] [cursor=pointer]:
+            - img [ref=e953]
+            - generic [ref=e959]: Leaderboard
+          - button "Learn" [ref=e960] [cursor=pointer]:
+            - img [ref=e961]
+            - generic [ref=e963]: Learn
+          - button "Journal" [ref=e964] [cursor=pointer]:
+            - img [ref=e965]
+            - generic [ref=e967]: Journal
+          - button "Challenges" [ref=e968] [cursor=pointer]:
+            - img [ref=e969]
+            - generic [ref=e973]: Challenges
+        - generic [ref=e974]:
+          - generic [ref=e975]:
+            - generic [ref=e977]: S
+            - generic [ref=e978]:
+              - paragraph [ref=e979]: student1@stockify.dev
+              - paragraph [ref=e980]: student
+          - generic [ref=e981]:
+            - generic [ref=e982]: Theme
+            - button "Toggle theme" [ref=e983] [cursor=pointer]:
+              - img [ref=e984]
+              - generic [ref=e990]: Toggle theme
+          - button "Logout" [ref=e991] [cursor=pointer]:
+            - img [ref=e992]
+            - text: Logout
+      - main [ref=e996]:
+        - generic [ref=e997]:
+          - generic [ref=e998]:
+            - generic [ref=e999]:
+              - paragraph [ref=e1000]: Spring Trading Challenge
+              - heading "$101,900.00" [level=1] [ref=e1001]
+              - generic [ref=e1002]:
+                - generic [ref=e1003]:
+                  - img [ref=e1004]
+                  - text: +1.90%
+                - generic [ref=e1007]: (+$1,900.00) all time
+            - button "Trade Now" [ref=e1008] [cursor=pointer]:
+              - img [ref=e1009]
+              - text: Trade Now
+          - generic [ref=e1012]:
+            - generic [ref=e1013]:
+              - button "1D" [ref=e1014] [cursor=pointer]
+              - button "1W" [ref=e1015] [cursor=pointer]
+              - button "1M" [ref=e1016] [cursor=pointer]
+              - button "ALL" [ref=e1017] [cursor=pointer]
+            - generic [ref=e1018]: No data yet
+          - generic [ref=e1021]:
+            - img [ref=e1023]
+            - generic [ref=e1026]:
+              - generic [ref=e1027]:
+                - generic [ref=e1028]: Daily Brief
+                - generic [ref=e1029]: AI · cached
+              - paragraph [ref=e1030]: Markets are mixed today. Your portfolio is up 0.3% with AAPL as the main driver. AAPL (+0.9%) is largest gainer.
+              - button "Review Diversification →" [ref=e1031] [cursor=pointer]
+          - generic [ref=e1032]:
+            - generic [ref=e1034]:
+              - generic [ref=e1035]:
+                - generic [ref=e1036]: Total Equity
+                - img [ref=e1038]
+              - generic [ref=e1040]: $101,900.00
+              - generic [ref=e1042]:
+                - img [ref=e1043]
+                - text: +1.90%
+            - generic [ref=e1047]:
+              - generic [ref=e1048]:
+                - generic [ref=e1049]: Cash Available
+                - img [ref=e1051]
+              - generic [ref=e1054]: $100,000.00
+              - generic [ref=e1056]: 98% of portfolio
+            - generic [ref=e1058]:
+              - generic [ref=e1059]:
+                - generic [ref=e1060]: Invested
+                - img [ref=e1062]
+              - generic [ref=e1065]: $1,900.00
+              - generic [ref=e1067]: 1 position
+            - generic [ref=e1069]:
+              - generic [ref=e1070]:
+                - generic [ref=e1071]: Day P&L
+                - img [ref=e1073]
+              - generic [ref=e1075]: "--"
+              - generic [ref=e1077]: Updates during market hours
+          - generic [ref=e1078]:
+            - generic [ref=e1079]:
+              - generic [ref=e1081]:
+                - generic [ref=e1082]:
+                  - heading "Biggest Drivers Today" [level=3] [ref=e1083]
+                  - paragraph [ref=e1084]: Your positions with the largest impact.
+                - img [ref=e1086]
+              - generic [ref=e1089] [cursor=pointer]:
+                - generic [ref=e1092]: AA
+                - generic [ref=e1093]:
+                  - generic [ref=e1094]: AAPL
+                  - generic [ref=e1095]: 10 shares · Avg $180.00
+                - generic [ref=e1096]:
+                  - generic [ref=e1097]: $1,900.00
+                  - generic [ref=e1098]: +$100.00 (+5.6%)
+                - img [ref=e1099]
+            - generic [ref=e1101]:
+              - heading "Quick Actions" [level=3] [ref=e1103]
+              - generic [ref=e1104]:
+                - button "Place a Trade Buy or sell stocks" [ref=e1105] [cursor=pointer]:
+                  - img [ref=e1107]
+                  - generic [ref=e1109]:
+                    - generic [ref=e1110]: Place a Trade
+                    - generic [ref=e1111]: Buy or sell stocks
+                - button "Leaderboard See class rankings" [ref=e1112] [cursor=pointer]:
+                  - img [ref=e1114]
+                  - generic [ref=e1120]:
+                    - generic [ref=e1121]: Leaderboard
+                    - generic [ref=e1122]: See class rankings
+                - button "Learn Hub Coming soon" [disabled]:
+                  - generic:
+                    - img
+                  - generic:
+                    - generic: Learn Hub
+                    - generic: Coming soon
+          - generic [ref=e1123]:
+            - generic [ref=e1124]:
+              - generic [ref=e1127]:
+                - heading "Holdings" [level=3] [ref=e1128]
+                - paragraph [ref=e1129]: 1 active position
+              - generic [ref=e1132] [cursor=pointer]:
+                - generic [ref=e1135]: AA
+                - generic [ref=e1136]:
+                  - generic [ref=e1137]: AAPL
+                  - generic [ref=e1138]: 10 shares · Avg $180.00
+                - generic [ref=e1139]:
+                  - generic [ref=e1140]: $1,900.00
+                  - generic [ref=e1141]: +$100.00 (+5.6%)
+                - img [ref=e1142]
+            - generic [ref=e1144]:
+              - generic [ref=e1146]:
+                - generic [ref=e1147]:
+                  - heading "Recent Activity" [level=3] [ref=e1148]
+                  - paragraph [ref=e1149]: Latest orders and fills.
+                - img [ref=e1151]
+              - generic [ref=e1155]:
+                - img [ref=e1157]
+                - generic [ref=e1160]:
+                  - generic [ref=e1161]: BUY 10 AAPL
+                  - generic [ref=e1162]: Feb 28, 07:00 PM
+                - generic [ref=e1163]: filled
+  - generic:
+    - contentinfo:
+      - button "Open TanStack Router Devtools" [ref=e74] [cursor=pointer]:
+        - generic [ref=e75]:
+          - img [ref=e77]
+          - img [ref=e112]
+        - generic [ref=e146]: "-"
+        - generic [ref=e147]: TanStack Router
+  - region "Notifications alt+T"

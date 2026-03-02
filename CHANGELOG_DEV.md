@@ -1,0 +1,67 @@
+# CHANGELOG_DEV
+
+- Fixed pre-existing strict TypeScript compile failures across frontend feature files to restore a green baseline; this was required before any correctness refactor work.
+- Updated icon prop typings in learning/challenges pages to allow existing `style` usage without changing rendering behavior.
+- Removed unused imports/locals in several feature modules (journal, portfolio, dashboard, class control) to satisfy strict TS settings.
+- Fixed `useExportStatus` polling callback typing in teacher hooks to match React Query v5 API.
+- Added missing `toast` import in realtime provider to resolve runtime/type reference error.
+- Normalized position price mapping in student hooks so API `market_price` consistently maps to `current_price` for downstream portfolio math and previews.
+- Replaced duplicated dashboard/portfolio metric math with shared `portfolio-calc` helpers:
+  - `StudentDashboard` now derives equity/return/cash metrics from `computePortfolioMetrics`.
+  - `PortfolioPage` now derives allocation/HHI/returns from `computePortfolioMetrics` and drawdown from `computeMaxDrawdown`.
+- Hardened order impact preview assumptions in `OrderTicket`:
+  - Removed hardcoded `$100000` sizing basis in quick-amount buttons and switched to live account cash / position sizing.
+  - Updated preview copy to clearly mark impact values as estimated.
+  - Removed fallback `100000` assumptions in preview calc inputs.
+- Passed chart/trade position context through `TradePage` -> `MarketContext` so order ticket sell/close helpers can use real position quantities.
+- Added non-blocking invariant reporting helper (`web/src/lib/portfolio-invariants.ts`) and wired it into:
+  - Trade placement pre-submit path (`usePlaceOrder`)
+  - Onboarding account-init checks after join/finish flow (`OnboardingPage`)
+  - Violations are logged/reported via warnings and never crash UI.
+- Extended class backend API compatibility to match frontend onboarding/join usage:
+  - Added `POST /class/resolve-code`
+  - Added `POST /class/join`
+  - Refactored `POST /class/join_via_code` and `POST /class/join` to reuse shared enrollment/account-init logic.
+  - RLS/auth scope protections remain enforced (student role + org checks).
+- Removed duplicate root-level auth/realtime wiring in `web/src/routes/__root.tsx` so the app uses the single provider chain from `main.tsx` (prevents duplicate realtime subscriptions/invalidation churn).
+- Validation run after this chunk:
+  - `deno check supabase/functions/class/index.ts` (pass)
+- Validation run after this chunk:
+  - `cd web && npx tsc -b` (pass)
+  - `cd web && npm test -- --run` (pass; 21 tests)
+- Added centralized portfolio query refresh helper (`web/src/lib/portfolio-refresh.ts`) and applied it to trade submission + realtime event handlers for consistent orders/positions/equity/account invalidation.
+- Improved trade-page performance by gating heavy pro-mode data work:
+  - `useChartData` and `useRealtimeChart` now support `enabled` and are only active in pro mode.
+  - `useOrders` now supports `enabled`; trade markers fetch only in pro mode.
+- Added debounce for order impact preview recomputation and removed stale inline implementation comments from `OrderTicket`.
+- Increased portfolio polling interval in student hooks to reduce refetch pressure (`5s` -> `30s`) while realtime invalidations keep critical updates responsive.
+- Standardized additional empty states with `components/ui/states.tsx` and removed legacy duplicate state components:
+  - Deleted `web/src/components/ui/error-state.tsx`
+  - Deleted `web/src/components/ui/empty-state.tsx`
+- Tightened Supabase query hygiene:
+  - Frontend: removed remaining `select("*")` in active account/teacher class hooks.
+  - Backend: narrowed `teacher-console` selects for competitions and rule violations endpoints.
+- Implemented AI runtime contract enforcement:
+  - Added Zod schemas + parse/safe-parse helpers in `web/src/lib/ai-contracts.ts`.
+  - Added stable encoded v1 AI cache key format.
+  - Wired mentor + daily brief surfaces through safe parsing with graceful fallback.
+  - Enforced visible `dataSource` badge on Daily Brief.
+  - Applied `ClientRateLimiter` only to AI interactions (mentor chat / daily brief action), never core trade flows.
+- Removed dead duplicate trade hook module (`web/src/features/trade/hooks.ts`) to eliminate stale query-key usage and reduce maintenance surface.
+- Validation run after this chunk:
+  - `cd web && npx tsc -b` (pass)
+  - `cd web && npm test -- --run` (pass; 21 tests)
+  - `deno check supabase/functions/class/index.ts` (pass)
+  - `deno check supabase/functions/teacher-console/index.ts` (pass)
+- Completed P2-3 documentation consistency pass:
+  - Updated `docs/frontend-contracts.md` to reflect current endpoint contracts (including `/class/resolve-code`, `/class/join`, compatibility `/class/join_via_code`, wrapped trade placement payload, current OHLC field names, and cleaned duplicate leaderboard/analytics sections).
+  - Updated `docs/ux-map.md` to match current provider/layout/data-flow architecture (`RealtimeProvider` mounted in `main.tsx`, `AppShell` as primary shell, current student/trade hook flows).
+- Closed remaining frontend/backend export history contract gap:
+  - Added `GET /teacher-console/exports/list` in `supabase/functions/teacher-console/index.ts`.
+  - Endpoint enforces existing class-scope authorization and returns bounded recent jobs with normalized statuses (`queued|processing|done|failed`) and `error` mapped from `last_error`.
+  - Updated docs/tracker references to remove the previous mismatch note.
+- Validation run after this chunk:
+  - `deno check supabase/functions/teacher-console/index.ts` (pass)
+  - `deno check supabase/functions/class/index.ts` (pass)
+  - `cd web && npx tsc -b` (pass)
+  - `cd web && npm test -- --run` (pass; 21 tests)

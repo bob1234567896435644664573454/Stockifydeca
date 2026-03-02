@@ -1,0 +1,7 @@
+- generic [ref=e2]:
+  - heading "Stockify Frontend E2E Harness" [level=1] [ref=e3]
+  - paragraph [ref=e4]: Runs the student + teacher flows against a live Supabase project from a real browser context (CORS + JWT + Realtime), and collects “golden” request/response snapshots for regression testing.
+  - generic [ref=e5]:
+    - button "Run Remote E2E" [disabled] [ref=e6]
+    - generic [ref=e7]: "Config: not set"
+    - generic [ref=e8]: "State: idle"

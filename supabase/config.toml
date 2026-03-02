@@ -1,0 +1,69 @@
+project_id = "stockify"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[realtime]
+enabled = true
+
+[studio]
+enabled = true
+port = 54323
+
+[edge_runtime]
+enabled = true
+policy = "per_worker"
+inspector_port = 8083
+
+# JWT signing keys are incompatible with gateway verify_jwt; we verify JWTs in-function via JWKS.
+[functions.org]
+verify_jwt = false
+
+[functions.school]
+verify_jwt = false
+
+[functions.class]
+verify_jwt = false
+
+[functions.user]
+verify_jwt = false
+
+[functions.trade]
+verify_jwt = false
+
+[functions.symbols]
+verify_jwt = false
+
+[functions.watchlists]
+verify_jwt = false
+
+[functions.charts]
+verify_jwt = false
+
+[functions."engine-tick"]
+verify_jwt = false
+
+[functions."competition-jobs"]
+verify_jwt = false
+
+[functions."report-jobs"]
+verify_jwt = false
+
+[functions."market-data"]
+verify_jwt = false
+
+[functions."teacher-console"]
+verify_jwt = false

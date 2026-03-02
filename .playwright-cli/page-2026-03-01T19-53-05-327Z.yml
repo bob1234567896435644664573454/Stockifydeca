@@ -1,0 +1,207 @@
+- generic [ref=e2]:
+  - generic [ref=e148]:
+    - generic [ref=e149]: Competition Active
+    - generic [ref=e150]:
+      - complementary [ref=e151]:
+        - generic [ref=e152]:
+          - generic [ref=e153]: Stockify
+          - button "Collapse sidebar" [ref=e154] [cursor=pointer]:
+            - img [ref=e155]
+        - navigation "Main Navigation" [ref=e158]:
+          - button "Dashboard" [ref=e159] [cursor=pointer]:
+            - img [ref=e160]
+            - generic [ref=e163]: Dashboard
+          - button "Trade" [ref=e164] [cursor=pointer]:
+            - img [ref=e165]
+            - generic [ref=e167]: Trade
+          - button "Portfolio" [ref=e168] [cursor=pointer]:
+            - img [ref=e169]
+            - generic [ref=e172]: Portfolio
+          - button "Leaderboard" [ref=e173] [cursor=pointer]:
+            - img [ref=e174]
+            - generic [ref=e180]: Leaderboard
+          - button "Learn" [ref=e181] [cursor=pointer]:
+            - img [ref=e182]
+            - generic [ref=e184]: Learn
+          - button "Journal" [ref=e185] [cursor=pointer]:
+            - img [ref=e186]
+            - generic [ref=e188]: Journal
+          - button "Challenges" [ref=e189] [cursor=pointer]:
+            - img [ref=e190]
+            - generic [ref=e194]: Challenges
+        - generic [ref=e195]:
+          - generic [ref=e196]:
+            - generic [ref=e198]: S
+            - generic [ref=e199]:
+              - paragraph [ref=e200]: student1@stockify.dev
+              - paragraph [ref=e201]: student
+          - generic [ref=e202]:
+            - generic [ref=e203]: Theme
+            - button "Toggle theme" [ref=e204] [cursor=pointer]:
+              - img [ref=e205]
+              - generic [ref=e211]: Toggle theme
+          - button "Logout" [ref=e212] [cursor=pointer]:
+            - img [ref=e213]
+            - text: Logout
+      - main [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - generic [ref=e221]:
+              - img [ref=e222]
+              - textbox "Search symbol (e.g. AAPL)..." [ref=e225]
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - heading "Watchlist" [level=3] [ref=e228]
+                - generic [ref=e229]: "5"
+              - generic [ref=e231]:
+                - link "AAPL US $190.00 +1.00 (0.53%)" [ref=e232] [cursor=pointer]:
+                  - /url: /student/trade/AAPL
+                  - generic [ref=e233]:
+                    - generic [ref=e234]: AAPL
+                    - generic [ref=e235]: US
+                  - generic [ref=e236]:
+                    - generic [ref=e237]:
+                      - generic [ref=e238]: $190.00
+                      - generic [ref=e239]: +1.00 (0.53%)
+                    - button [ref=e240]:
+                      - img [ref=e241]
+                - link "GOOGL US $190.00 +1.00 (0.53%)" [ref=e244] [cursor=pointer]:
+                  - /url: /student/trade/GOOGL
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: GOOGL
+                    - generic [ref=e247]: US
+                  - generic [ref=e248]:
+                    - generic [ref=e249]:
+                      - generic [ref=e250]: $190.00
+                      - generic [ref=e251]: +1.00 (0.53%)
+                    - button [ref=e252]:
+                      - img [ref=e253]
+                - link "MSFT US $190.00 +1.00 (0.53%)" [ref=e256] [cursor=pointer]:
+                  - /url: /student/trade/MSFT
+                  - generic [ref=e257]:
+                    - generic [ref=e258]: MSFT
+                    - generic [ref=e259]: US
+                  - generic [ref=e260]:
+                    - generic [ref=e261]:
+                      - generic [ref=e262]: $190.00
+                      - generic [ref=e263]: +1.00 (0.53%)
+                    - button [ref=e264]:
+                      - img [ref=e265]
+                - link "TSLA US $190.00 +1.00 (0.53%)" [ref=e268] [cursor=pointer]:
+                  - /url: /student/trade/TSLA
+                  - generic [ref=e269]:
+                    - generic [ref=e270]: TSLA
+                    - generic [ref=e271]: US
+                  - generic [ref=e272]:
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: $190.00
+                      - generic [ref=e275]: +1.00 (0.53%)
+                    - button [ref=e276]:
+                      - img [ref=e277]
+                - link "AMZN US $190.00 +1.00 (0.53%)" [ref=e280] [cursor=pointer]:
+                  - /url: /student/trade/AMZN
+                  - generic [ref=e281]:
+                    - generic [ref=e282]: AMZN
+                    - generic [ref=e283]: US
+                  - generic [ref=e284]:
+                    - generic [ref=e285]:
+                      - generic [ref=e286]: $190.00
+                      - generic [ref=e287]: +1.00 (0.53%)
+                    - button [ref=e288]:
+                      - img [ref=e289]
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - generic [ref=e294]:
+                - heading "AAPL" [level=2] [ref=e295]
+                - generic [ref=e296]: US
+                - button [ref=e297] [cursor=pointer]:
+                  - img [ref=e298]
+              - generic [ref=e300]:
+                - generic [ref=e301]:
+                  - generic [ref=e302]: Pos
+                  - generic [ref=e303]: "10"
+                - generic [ref=e304]:
+                  - generic [ref=e305]: Avg
+                  - generic [ref=e306]: "180.00"
+                - generic [ref=e307]:
+                  - generic [ref=e308]: Price
+                  - generic [ref=e309]: "190.00"
+            - generic [ref=e310]:
+              - generic [ref=e311]:
+                - button "1M" [ref=e312] [cursor=pointer]
+                - button "5M" [ref=e313] [cursor=pointer]
+                - button "1H" [ref=e314] [cursor=pointer]
+                - button "1D" [ref=e315] [cursor=pointer]
+              - generic [ref=e316]:
+                - button "Toggle Volume" [pressed] [ref=e317] [cursor=pointer]: Vol
+                - button "Toggle SMA" [ref=e318] [cursor=pointer]: SMA
+                - button "Toggle EMA" [ref=e319] [cursor=pointer]: EMA
+                - button "Toggle VWAP" [ref=e320] [cursor=pointer]: VWAP
+                - button "Toggle RSI" [ref=e321] [cursor=pointer]: RSI
+              - button "Pro Chart" [ref=e322] [cursor=pointer]:
+                - img [ref=e323]
+                - text: Pro Chart
+            - iframe [ref=e327]:
+              
+            - generic [ref=e328]:
+              - heading "Activity" [level=3] [ref=e329]
+              - generic [ref=e330]: Recent orders for AAPL
+          - generic [ref=e332]:
+            - heading "Order Ticket AAPL @ $190.00" [level=3] [ref=e334]:
+              - generic [ref=e335]: Order Ticket
+              - generic [ref=e336]: AAPL @ $190.00
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - button "Buy" [ref=e340] [cursor=pointer]
+                - button "Sell" [ref=e341] [cursor=pointer]
+              - generic [ref=e342]:
+                - tablist [ref=e343]:
+                  - tab "Market" [selected] [ref=e344] [cursor=pointer]
+                  - tab "Limit" [ref=e345] [cursor=pointer]
+                  - tab "Stop" [ref=e346] [cursor=pointer]
+                - generic [ref=e348]:
+                  - text: Quantity
+                  - spinbutton [ref=e349]: "1"
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - generic [ref=e352]: Est. Price
+                  - generic [ref=e353]: $190.00
+                - generic [ref=e354]:
+                  - generic [ref=e355]: Est. Total
+                  - generic [ref=e356]: $190.00
+                - generic [ref=e357]:
+                  - generic [ref=e358]: "Pos: 10"
+                  - button "Close Position" [ref=e359] [cursor=pointer]
+              - generic [ref=e360]:
+                - button "25%" [ref=e361] [cursor=pointer]
+                - button "50%" [ref=e362] [cursor=pointer]
+                - button "75%" [ref=e363] [cursor=pointer]
+                - button "100%" [ref=e364] [cursor=pointer]
+              - generic [ref=e366]:
+                - generic [ref=e367]: Estimated Portfolio Impact
+                - generic [ref=e368]:
+                  - generic [ref=e369]:
+                    - generic [ref=e370]: Estimated trade as % of portfolio
+                    - generic [ref=e371]: 0.2%
+                  - generic [ref=e372]:
+                    - generic [ref=e373]: Estimated cash after trade
+                    - generic [ref=e374]: $99,809.71
+                  - generic [ref=e375]:
+                    - generic [ref=e376]: Estimated impact if price drops 5%
+                    - generic [ref=e377]: "-$9.50"
+                  - generic [ref=e378]:
+                    - generic [ref=e379]: Estimated impact if price rises 5%
+                    - generic [ref=e380]: +$9.50
+                  - generic [ref=e381]:
+                    - generic [ref=e382]: Concentration change
+                    - generic [ref=e383]: HHI +10000 → Concentrated
+              - button "Review Order" [ref=e384] [cursor=pointer]
+  - generic:
+    - contentinfo:
+      - button "Open TanStack Router Devtools" [ref=e74] [cursor=pointer]:
+        - generic [ref=e75]:
+          - img [ref=e77]
+          - img [ref=e112]
+        - generic [ref=e146]: "-"
+        - generic [ref=e147]: TanStack Router
+  - region "Notifications alt+T"

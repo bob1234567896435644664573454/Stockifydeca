@@ -1,0 +1,105 @@
+
+> web@0.0.0 lint
+> eslint .
+
+
+/Users/alt/deca/web/src/components/layout/AppShell.tsx
+  156:93  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/components/ui/badge.tsx
+  35:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/alt/deca/web/src/components/ui/button.tsx
+  55:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/alt/deca/web/src/components/ui/toggle.tsx
+  43:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/alt/deca/web/src/features/analytics/StudentProfile.tsx
+  13:15  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/auth/AuthContext.tsx
+  59:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/alt/deca/web/src/features/auth/AuthPage.tsx
+  87:23  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/charts/ProCandlestickChart.tsx
+   97:40  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  108:41  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  111:40  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  134:8   warning  React Hook useEffect has missing dependencies: 'backgroundColor', 'colors.downColor', 'colors.upColor', 'colors.wickDownColor', 'colors.wickUpColor', 'gridColor', 'ref', 'textColor', and 'volume'. Either include them or remove the dependency array. If 'ref' changes too often, find the parent component that defines it and wrap that definition in useCallback  react-hooks/exhaustive-deps
+  181:49  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  203:37  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+  210:45  warning  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/charts/hooks.ts
+  67:51  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/leaderboard/hooks.ts
+  10:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/onboarding/JoinClassWizard.tsx
+  37:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  52:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/student/StudentDashboard.tsx
+  48:75  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/student/hooks.ts
+   65:27  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   85:37  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   97:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  111:13  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  118:14  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/teacher/components/AnnouncementsManager.tsx
+  87:47  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/teacher/components/MarketStatusTile.tsx
+  21:13  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/Users/alt/deca/web/src/features/teacher/components/MarketStatusTile.tsx:21:13
+  19 |             return () => clearInterval(interval)
+  20 |         } else {
+> 21 |             setIsLive(false)
+     |             ^^^^^^^^^ Avoid calling setState() directly within an effect
+  22 |         }
+  23 |     }, [status?.timestamp, isLoading, isError])
+  24 |  react-hooks/set-state-in-effect
+
+/Users/alt/deca/web/src/features/teacher/components/RulesEditor.tsx
+  45:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  48:60  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/teacher/hooks.ts
+   89:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  106:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  118:15  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  139:49  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  156:24  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  165:48  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  176:40  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/trade/TradePage.tsx
+   97:77  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  106:77  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  120:80  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  130:79  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  262:64  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  262:94  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/Users/alt/deca/web/src/features/trade/components/MarketContext.tsx
+  24:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/Users/alt/deca/web/src/features/trade/components/OrderTicket.tsx
+  51:47  warning  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 43 problems (1 error, 42 warnings)
+

@@ -1,0 +1,145 @@
+- generic [ref=e2]:
+  - generic [ref=e385]:
+    - generic [ref=e386]: Competition Active
+    - generic [ref=e387]:
+      - complementary [ref=e388]:
+        - generic [ref=e389]:
+          - generic [ref=e390]: Stockify
+          - button "Collapse sidebar" [ref=e391] [cursor=pointer]:
+            - img [ref=e392]
+        - navigation "Main Navigation" [ref=e395]:
+          - button "Dashboard" [ref=e396] [cursor=pointer]:
+            - img [ref=e397]
+            - generic [ref=e400]: Dashboard
+          - button "Trade" [ref=e401] [cursor=pointer]:
+            - img [ref=e402]
+            - generic [ref=e404]: Trade
+          - button "Portfolio" [ref=e405] [cursor=pointer]:
+            - img [ref=e406]
+            - generic [ref=e409]: Portfolio
+          - button "Leaderboard" [ref=e410] [cursor=pointer]:
+            - img [ref=e411]
+            - generic [ref=e417]: Leaderboard
+          - button "Learn" [ref=e418] [cursor=pointer]:
+            - img [ref=e419]
+            - generic [ref=e421]: Learn
+          - button "Journal" [ref=e422] [cursor=pointer]:
+            - img [ref=e423]
+            - generic [ref=e425]: Journal
+          - button "Challenges" [ref=e426] [cursor=pointer]:
+            - img [ref=e427]
+            - generic [ref=e431]: Challenges
+        - generic [ref=e432]:
+          - generic [ref=e433]:
+            - generic [ref=e435]: S
+            - generic [ref=e436]:
+              - paragraph [ref=e437]: student1@stockify.dev
+              - paragraph [ref=e438]: student
+          - generic [ref=e439]:
+            - generic [ref=e440]: Theme
+            - button "Toggle theme" [ref=e441] [cursor=pointer]:
+              - img [ref=e442]
+              - generic [ref=e448]: Toggle theme
+          - button "Logout" [ref=e449] [cursor=pointer]:
+            - img [ref=e450]
+            - text: Logout
+      - main [ref=e454]:
+        - generic [ref=e455]:
+          - generic [ref=e456]:
+            - generic [ref=e457]:
+              - heading "Learn Hub" [level=1] [ref=e458]
+              - paragraph [ref=e459]: Build investing instincts through interactive lessons.
+            - generic [ref=e460]:
+              - generic [ref=e461]:
+                - img [ref=e462]
+                - generic [ref=e464]: "125"
+                - generic [ref=e465]: XP
+              - generic [ref=e466]: 2/23 completed
+          - generic [ref=e467]:
+            - generic [ref=e470] [cursor=pointer]:
+              - img [ref=e472]
+              - generic [ref=e474]:
+                - generic [ref=e475]:
+                  - heading "Investing Foundations" [level=3] [ref=e476]
+                  - generic [ref=e477]: beginner
+                - paragraph [ref=e478]: Learn what stocks are, how markets work, and why people invest.
+                - generic [ref=e480]:
+                  - generic [ref=e481]: 2/5 lessons
+                  - generic [ref=e482]:
+                    - img [ref=e483]
+                    - text: 125/350 XP
+              - img [ref=e487]
+            - generic [ref=e491] [cursor=pointer]:
+              - img [ref=e493]
+              - generic [ref=e496]:
+                - generic [ref=e497]:
+                  - heading "Market Mechanics" [level=3] [ref=e498]
+                  - generic [ref=e499]: beginner
+                - paragraph [ref=e500]: Order types, bid-ask spreads, and how fills actually work.
+                - generic [ref=e502]:
+                  - generic [ref=e503]: 0/4 lessons
+                  - generic [ref=e504]:
+                    - img [ref=e505]
+                    - text: 0/275 XP
+              - img [ref=e508]
+            - generic [ref=e512] [cursor=pointer]:
+              - img [ref=e514]
+              - generic [ref=e516]:
+                - generic [ref=e517]:
+                  - heading "Portfolio Building" [level=3] [ref=e518]
+                  - generic [ref=e519]: intermediate
+                - paragraph [ref=e520]: Diversification, allocation, and building a balanced portfolio.
+                - generic [ref=e522]:
+                  - generic [ref=e523]: 0/4 lessons
+                  - generic [ref=e524]:
+                    - img [ref=e525]
+                    - text: 0/350 XP
+              - img [ref=e528]
+            - generic [ref=e532] [cursor=pointer]:
+              - img [ref=e534]
+              - generic [ref=e536]:
+                - generic [ref=e537]:
+                  - heading "Risk & Psychology" [level=3] [ref=e538]
+                  - generic [ref=e539]: intermediate
+                - paragraph [ref=e540]: Managing drawdowns, avoiding biases, and thinking long-term.
+                - generic [ref=e542]:
+                  - generic [ref=e543]: 0/4 lessons
+                  - generic [ref=e544]:
+                    - img [ref=e545]
+                    - text: 0/325 XP
+              - img [ref=e548]
+            - generic [ref=e552] [cursor=pointer]:
+              - img [ref=e554]
+              - generic [ref=e557]:
+                - generic [ref=e558]:
+                  - heading "Macro & News" [level=3] [ref=e559]
+                  - generic [ref=e560]: advanced
+                - paragraph [ref=e561]: How economic data, earnings, and world events move markets.
+                - generic [ref=e563]:
+                  - generic [ref=e564]: 0/3 lessons
+                  - generic [ref=e565]:
+                    - img [ref=e566]
+                    - text: 0/275 XP
+              - img [ref=e569]
+            - generic [ref=e573] [cursor=pointer]:
+              - img [ref=e575]
+              - generic [ref=e583]:
+                - generic [ref=e584]:
+                  - heading "Strategy Sandbox" [level=3] [ref=e585]
+                  - generic [ref=e586]: advanced
+                - paragraph [ref=e587]: Momentum, value investing, and building your own approach.
+                - generic [ref=e589]:
+                  - generic [ref=e590]: 0/3 lessons
+                  - generic [ref=e591]:
+                    - img [ref=e592]
+                    - text: 0/250 XP
+              - img [ref=e595]
+  - generic:
+    - contentinfo:
+      - button "Open TanStack Router Devtools" [ref=e74] [cursor=pointer]:
+        - generic [ref=e75]:
+          - img [ref=e77]
+          - img [ref=e112]
+        - generic [ref=e146]: "-"
+        - generic [ref=e147]: TanStack Router
+  - region "Notifications alt+T"
