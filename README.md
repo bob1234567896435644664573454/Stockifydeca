@@ -247,3 +247,4 @@ It runs on push to `main` (for Supabase files) and `workflow_dispatch`, and perf
 Required repository secrets:
 - `SUPABASE_ACCESS_TOKEN`
 - `SUPABASE_PROJECT_REF`
+# Stockify1
