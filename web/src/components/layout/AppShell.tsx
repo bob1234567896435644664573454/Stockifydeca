@@ -4,7 +4,7 @@ import type { LinkProps } from "@tanstack/react-router"
 import { useAuth } from "@/features/auth/AuthContextObject"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Home, Activity, Trophy, GraduationCap, LogOut, ChevronLeft, ChevronRight, PieChart, BookOpen, PenLine, Target } from "lucide-react"
+import { Menu, Home, Activity, Trophy, GraduationCap, LogOut, ChevronLeft, ChevronRight, PieChart, BookOpen, PenLine, Target, Settings } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { CompetitionBanner } from "@/components/competition-banner"
@@ -166,6 +166,16 @@ export function AppShell({ children, role }: AppShellProps) {
 
                         <Button
                             variant="ghost"
+                            className={cn("w-full justify-start gap-3", !sidebarOpen && "justify-center px-2", location.pathname === "/settings" && "bg-primary/10 text-primary font-semibold")}
+                            title={!sidebarOpen ? "Settings" : undefined}
+                            aria-label="Settings"
+                            onClick={() => navigate({ to: "/settings" })}
+                        >
+                            <Settings className="h-5 w-5 shrink-0" aria-hidden="true" />
+                            {sidebarOpen && "Settings"}
+                        </Button>
+                        <Button
+                            variant="ghost"
                             className={cn("w-full justify-start gap-3 text-destructive hover:bg-destructive/10", !sidebarOpen && "justify-center px-2")}
                             onClick={() => logout()}
                         >
@@ -216,7 +226,15 @@ export function AppShell({ children, role }: AppShellProps) {
                                                 })}
                                             </div>
                                         </div>
-                                        <div className="p-4 border-t">
+                                        <div className="p-4 border-t space-y-1">
+                                            <Button
+                                                variant="ghost"
+                                                className="w-full justify-start gap-2"
+                                                onClick={() => { navigate({ to: "/settings" }); setMobileOpen(false) }}
+                                            >
+                                                <Settings className="h-4 w-4" />
+                                                Settings
+                                            </Button>
                                             <Button
                                                 variant="ghost"
                                                 className="w-full justify-start gap-2 text-destructive"
