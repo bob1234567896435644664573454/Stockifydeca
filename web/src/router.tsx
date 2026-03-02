@@ -10,6 +10,7 @@ import React, { Suspense } from "react"
 import { Loading } from "./components/ui/loading"
 import { StudentLeaderboardContainer } from "./features/leaderboard/StudentLeaderboardContainer"
 import { HomePage } from "./features/home/HomePage"
+const SettingsPage = React.lazy(() => import("./features/settings/SettingsPage").then(m => ({ default: m.SettingsPage })))
 
 // Lazy Load Heavy Components
 const TradePage = React.lazy(() => import("./features/trade/TradePage").then(m => ({ default: m.TradePage })))
@@ -212,6 +213,16 @@ const appHeatmapRoute = createRoute({
     ),
 })
 
+const appSettingsRoute = createRoute({
+    getParentRoute: () => authenticatedRoute,
+    path: "/settings",
+    component: () => (
+        <Suspense fallback={<Loading />}>
+            <SettingsPage />
+        </Suspense>
+    ),
+})
+
 const routeTree = rootRoute.addChildren([
     indexRoute,
     authRoute,
@@ -233,6 +244,7 @@ const routeTree = rootRoute.addChildren([
             classControlRoute,
             lessonBuilderRoute,
         ]),
+        appSettingsRoute,
     ]),
 ])
 
