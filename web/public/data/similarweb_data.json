@@ -1,0 +1,202 @@
+{
+  "investopedia.com": {
+    "global_rank": {
+      "meta": {
+        "request": {
+          "main_domain_only": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "investopedia.com",
+          "start_date": null,
+          "end_date": null,
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-02-28"
+      },
+      "global_rank": [
+        {
+          "date": "2026-02",
+          "global_rank": 4302
+        }
+      ]
+    },
+    "visits_total": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"investopedia.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "bounce_rate": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"investopedia.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_sources_desktop": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"investopedia.com\",\"start_date\":\"2025-11-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_by_country": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"main_domain_only\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"investopedia.com\",\"start_date\":\"2025-12-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    }
+  },
+  "robinhood.com": {
+    "global_rank": {
+      "meta": {
+        "request": {
+          "main_domain_only": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "robinhood.com",
+          "start_date": null,
+          "end_date": null,
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-02-28"
+      },
+      "global_rank": [
+        {
+          "date": "2026-02",
+          "global_rank": 1038
+        }
+      ]
+    },
+    "visits_total": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"robinhood.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "bounce_rate": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"robinhood.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_sources_desktop": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"robinhood.com\",\"start_date\":\"2025-11-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_by_country": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"main_domain_only\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"robinhood.com\",\"start_date\":\"2025-12-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    }
+  },
+  "finance.yahoo.com": {
+    "global_rank": {
+      "meta": {
+        "request": {
+          "main_domain_only": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "finance.yahoo.com",
+          "start_date": null,
+          "end_date": null,
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-02-28"
+      },
+      "global_rank": [
+        {
+          "date": "2026-02",
+          "global_rank": 198
+        }
+      ]
+    },
+    "visits_total": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"finance.yahoo.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "bounce_rate": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"finance.yahoo.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_sources_desktop": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"finance.yahoo.com\",\"start_date\":\"2025-11-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_by_country": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"main_domain_only\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"finance.yahoo.com\",\"start_date\":\"2025-12-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    }
+  },
+  "tradingview.com": {
+    "global_rank": {
+      "meta": {
+        "request": {
+          "main_domain_only": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "tradingview.com",
+          "start_date": null,
+          "end_date": null,
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-02-28"
+      },
+      "global_rank": [
+        {
+          "date": "2026-02",
+          "global_rank": 96
+        }
+      ]
+    },
+    "visits_total": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"tradingview.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "bounce_rate": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"tradingview.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_sources_desktop": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"tradingview.com\",\"start_date\":\"2025-11-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_by_country": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"main_domain_only\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"tradingview.com\",\"start_date\":\"2025-12-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    }
+  },
+  "marketwatch.com": {
+    "global_rank": {
+      "meta": {
+        "request": {
+          "main_domain_only": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "marketwatch.com",
+          "start_date": null,
+          "end_date": null,
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-02-28"
+      },
+      "global_rank": [
+        {
+          "date": "2026-02",
+          "global_rank": 1865
+        }
+      ]
+    },
+    "visits_total": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"marketwatch.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "bounce_rate": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"marketwatch.com\",\"start_date\":\"2025-09-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_sources_desktop": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"granularity\":\"Monthly\",\"main_domain_only\":false,\"mtd\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"marketwatch.com\",\"start_date\":\"2025-11-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    },
+    "traffic_by_country": {
+      "code": "failed_precondition",
+      "message": "api call failed: internal: api call failed, status code: 400, body: {\"meta\":{\"request\":{\"main_domain_only\":false,\"show_verified\":false,\"state\":null,\"format\":\"json\",\"domain\":\"marketwatch.com\",\"start_date\":\"2025-12-01\",\"end_date\":\"2026-02-28\",\"country\":\"world\"},\"status\":\"Error\",\"error_code\":101,\"error_message\":\"Dates not in range. Dates must be between 2025-02 and 2026-01. Issue a GET request to the 'describe' endpoint on the API you're using to list its per-country supported date ranges. (e.g. for descrption of [...]/total-traffic-and-engagement/visits?[...] call [...]/total-traffic-and-engagement/describe)\"}}"
+    }
+  }
+}

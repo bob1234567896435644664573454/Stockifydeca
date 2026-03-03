@@ -1,0 +1,2830 @@
+[
+  {
+    "symbol": "AAPL",
+    "price": 264.72,
+    "high52w": 288.62,
+    "low52w": 169.21,
+    "volume": 41576035,
+    "name": "Apple Inc",
+    "exchange": "NasdaqGS",
+    "previousClose": 241.84,
+    "dayHigh": 266.53,
+    "dayLow": 260.2,
+    "change": 22.88,
+    "changePercent": 9.46,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 284.15
+      },
+      {
+        "date": "2025-12-04",
+        "close": 280.7
+      },
+      {
+        "date": "2025-12-05",
+        "close": 278.78
+      },
+      {
+        "date": "2025-12-08",
+        "close": 277.89
+      },
+      {
+        "date": "2025-12-09",
+        "close": 277.18
+      },
+      {
+        "date": "2025-12-10",
+        "close": 278.78
+      },
+      {
+        "date": "2025-12-11",
+        "close": 278.03
+      },
+      {
+        "date": "2025-12-12",
+        "close": 278.28
+      },
+      {
+        "date": "2025-12-15",
+        "close": 274.11
+      },
+      {
+        "date": "2025-12-16",
+        "close": 274.61
+      },
+      {
+        "date": "2025-12-17",
+        "close": 271.84
+      },
+      {
+        "date": "2025-12-18",
+        "close": 272.19
+      },
+      {
+        "date": "2025-12-19",
+        "close": 273.67
+      },
+      {
+        "date": "2025-12-22",
+        "close": 270.97
+      },
+      {
+        "date": "2025-12-23",
+        "close": 272.36
+      },
+      {
+        "date": "2025-12-24",
+        "close": 273.81
+      },
+      {
+        "date": "2025-12-26",
+        "close": 273.4
+      },
+      {
+        "date": "2025-12-29",
+        "close": 273.76
+      },
+      {
+        "date": "2025-12-30",
+        "close": 273.08
+      },
+      {
+        "date": "2025-12-31",
+        "close": 271.86
+      },
+      {
+        "date": "2026-01-02",
+        "close": 271.01
+      },
+      {
+        "date": "2026-01-05",
+        "close": 267.26
+      },
+      {
+        "date": "2026-01-06",
+        "close": 262.36
+      },
+      {
+        "date": "2026-01-07",
+        "close": 260.33
+      },
+      {
+        "date": "2026-01-08",
+        "close": 259.04
+      },
+      {
+        "date": "2026-01-09",
+        "close": 259.37
+      },
+      {
+        "date": "2026-01-12",
+        "close": 260.25
+      },
+      {
+        "date": "2026-01-13",
+        "close": 261.05
+      },
+      {
+        "date": "2026-01-14",
+        "close": 259.96
+      },
+      {
+        "date": "2026-01-15",
+        "close": 258.21
+      },
+      {
+        "date": "2026-01-16",
+        "close": 255.53
+      },
+      {
+        "date": "2026-01-20",
+        "close": 246.7
+      },
+      {
+        "date": "2026-01-21",
+        "close": 247.65
+      },
+      {
+        "date": "2026-01-22",
+        "close": 248.35
+      },
+      {
+        "date": "2026-01-23",
+        "close": 248.04
+      },
+      {
+        "date": "2026-01-26",
+        "close": 255.41
+      },
+      {
+        "date": "2026-01-27",
+        "close": 258.27
+      },
+      {
+        "date": "2026-01-28",
+        "close": 256.44
+      },
+      {
+        "date": "2026-01-29",
+        "close": 258.28
+      },
+      {
+        "date": "2026-01-30",
+        "close": 259.48
+      },
+      {
+        "date": "2026-02-02",
+        "close": 270.01
+      },
+      {
+        "date": "2026-02-03",
+        "close": 269.48
+      },
+      {
+        "date": "2026-02-04",
+        "close": 276.49
+      },
+      {
+        "date": "2026-02-05",
+        "close": 275.91
+      },
+      {
+        "date": "2026-02-06",
+        "close": 278.12
+      },
+      {
+        "date": "2026-02-09",
+        "close": 274.62
+      },
+      {
+        "date": "2026-02-10",
+        "close": 273.68
+      },
+      {
+        "date": "2026-02-11",
+        "close": 275.5
+      },
+      {
+        "date": "2026-02-12",
+        "close": 261.73
+      },
+      {
+        "date": "2026-02-13",
+        "close": 255.78
+      },
+      {
+        "date": "2026-02-17",
+        "close": 263.88
+      },
+      {
+        "date": "2026-02-18",
+        "close": 264.35
+      },
+      {
+        "date": "2026-02-19",
+        "close": 260.58
+      },
+      {
+        "date": "2026-02-20",
+        "close": 264.58
+      },
+      {
+        "date": "2026-02-23",
+        "close": 266.18
+      },
+      {
+        "date": "2026-02-24",
+        "close": 272.14
+      },
+      {
+        "date": "2026-02-25",
+        "close": 274.23
+      },
+      {
+        "date": "2026-02-26",
+        "close": 272.95
+      },
+      {
+        "date": "2026-02-27",
+        "close": 264.18
+      },
+      {
+        "date": "2026-03-02",
+        "close": 264.72
+      }
+    ],
+    "sector": "Technology",
+    "industry": "Consumer Electronics",
+    "description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; and wearables, home, and accessories comprising AirPods, Apple Vision Pro, Apple TV, Apple Watch, Beats products, and HomePod, as well as Apple branded and third-party accessories. It also provides AppleCare support and cloud services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts, as well as advertising services include third-party licensing arrangements and its own advertising platforms. In addition, the company offers various subscription-based services, such as Apple Arcade, a game subscription service; Apple Fitness+, a personalized fitness service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV, which offers exclusive original content and live sports; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers and resellers. The company was formerly known as Apple Computer, Inc. and changed its name to Apple Inc. in January 2007. Apple Inc. was founded in 1976 and is headquartered in Cupertino, California.",
+    "website": "https://www.apple.com",
+    "employees": 150000,
+    "city": "Cupertino",
+    "state": "CA",
+    "country": "United States",
+    "shortTermOutlook": "Bearish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Bullish",
+    "support": 229.4,
+    "resistance": 271.41,
+    "stopLoss": 251.699813,
+    "valuationDescription": "Overvalued",
+    "valuationDiscount": "-4%",
+    "relativeValue": "Premium",
+    "targetPrice": 325.0,
+    "rating": "BUY",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 100,
+    "hiring": 95,
+    "sustainability": 17,
+    "insiderSentiment": 33,
+    "earningsReports": 86,
+    "dividends": 7,
+    "sigDevs": [
+      {
+        "headline": "Apple Introduces iPhone 17E",
+        "date": "2026-03-02"
+      }
+    ],
+    "reports": [
+      {
+        "title": "The stock, metals, and crypto markets have been completely dislocated for four months, with each dancing to its own tune. Going back to the late 1960s, the S&P 500 and gold have been highly correlated at times and highly negatively correlated at other times. Over that period, gold and silver have had a very negative correlation with the U.S. Dollar Index (USD), as most of the great advances in the metals have occurred during long periods of dollar weakness, and vice versa. One might think that a weak USD would coincide with strong stock-market returns, but that's just not always the case.   Starting in 2014, Bitcoin (BTC) was negatively correlated with the USD. The first two massive runs by BTC occurred when the USD was weak, while two of the BTC bear markets occurred when the USD was trending higher. That negative correlation seemed to break in 2024, and there have been periods of risk-on behavior when BTC has been highly correlated with the Nasdaq 100 (QQQ). Those times include 2017, March 2020 until November 2021, and a number of times since the end of the 2022 bear market.   But the BTC and QQQ correlation has also been busted of late. BTC topped in October 2025 and has witnessed a nasty bear market, while the QQQ has gone sideways since October.  John Murphy was the first technician to write about Intermarket Technical Analysis in his 1991 book, and he offers an important lesson: some correlations have (for the most part) lasted for decades and others simply last until they don't. Investors have to be flexible or the markets will throw them to the wolves. (Mark Arbeter, CMT)",
+        "date": "2026-02-12T12:16:03Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "We have three strategic asset-allocation models, targeting three risk-tolerance levels: Conservative, Growth, and Aggressive. On a regular basis, we make tactical adjustments to the models, based on our outlooks for the various segments of the capital markets. Performance matters, and we monitor it closely. So far in 2026, stocks have taken a modest lead over bonds. Looking ahead, from an asset-allocation standpoint, our Stock-Bond Barometer model still sees both asset classes near fair value, so portfolio weights ultimately will depend on strategic factors. We are over-weight on large-cap stocks at this stage of the market cycle. We favor large-caps for growth exposure and financial strength, as well as exposure to the IT sector. Our recommended exposure to small- and mid-caps is 10% of equity allocation, below the benchmark weighting.  We note strong early performance in small-caps this year -- and if earnings can continue to surprise on the upside, we may boost our allocation. One of the market surprises in 2025 was the performance of global stocks, which booked impressive results. We expect the long-term trend favoring U.S. stocks to ultimately re-emerge, given volatile global economic, political, geopolitical, and currency conditions. That said, international stocks still offer favorable near-term valuations, and we target an increased 15%-20% of equity exposure to the group. In terms of growth and value, over the longer term, we anticipate that growth, led by the Information Technology sector, will top returns from value, led by Energy, Real Estate, and Materials, due to favorable secular and demographic trends. Value has taken an early lead in 2026.",
+        "date": "2026-02-05T12:24:30Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Apple manufactures smartphones, tablets, PCs, software, and peripherals for a worldwide customer base. Its products include Mac desktop and mobile PCs, iPhone, iPad, Apple Watch, and various consumer products, including Air Pods, Beats headphones, and Apple TV. Apple services include App Store, iTunes, iCloud, Apple TV+, Apple Arcade, Apple Music, Apple Pay, and more.",
+        "date": "2026-01-30T12:18:43Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "insiders": [
+      {
+        "name": "ADAMS KATHERINE L",
+        "relation": "General Counsel",
+        "transaction": "Stock Gift",
+        "shares": 175408,
+        "date": "2025-11-12"
+      },
+      {
+        "name": "AUSTIN WANDA M",
+        "relation": "Director",
+        "transaction": "Conversion of Exercise of derivative security",
+        "shares": 2843,
+        "date": "2026-01-30"
+      },
+      {
+        "name": "GORSKY ALEX",
+        "relation": "Director",
+        "transaction": "Conversion of Exercise of derivative security",
+        "shares": 6794,
+        "date": "2026-01-30"
+      },
+      {
+        "name": "JUNG ANDREA",
+        "relation": "Director",
+        "transaction": "Conversion of Exercise of derivative security",
+        "shares": 77664,
+        "date": "2026-01-30"
+      },
+      {
+        "name": "KONDO CHRISTOPHER",
+        "relation": "Officer",
+        "transaction": "Sale",
+        "shares": 15098,
+        "date": "2025-11-07"
+      }
+    ],
+    "filings": [
+      {
+        "type": "10-Q",
+        "title": "Periodic Financial Reports",
+        "date": "2026-01-30",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-26-000006_320193"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2026-01-29",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-26-000005_320193"
+      },
+      {
+        "type": "DEF 14A",
+        "title": "Proxy Statements",
+        "date": "2026-01-08",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0001308179-26-000008_320193"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2026-01-02",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0001140361-26-000199_320193"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-12-05",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0001140361-25-044561_320193"
+      },
+      {
+        "type": "10-K",
+        "title": "Periodic Financial Reports",
+        "date": "2025-10-31",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-25-000079_320193"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-10-30",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-25-000077_320193"
+      },
+      {
+        "type": "S-8",
+        "title": "Offering Registrations",
+        "date": "2025-09-26",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0001140361-25-036310_320193"
+      },
+      {
+        "type": "10-Q",
+        "title": "Periodic Financial Reports",
+        "date": "2025-08-01",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-25-000073_320193"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-07-31",
+        "url": "https://finance.yahoo.com/sec-filing/AAPL/0000320193-25-000071_320193"
+      }
+    ],
+    "marketCap": 264720000000.00003
+  },
+  {
+    "symbol": "MSFT",
+    "price": 398.55,
+    "high52w": 555.45,
+    "low52w": 344.79,
+    "volume": 32492755,
+    "name": "Microsoft Corporation",
+    "exchange": "NasdaqGS",
+    "previousClose": 396.99,
+    "dayHigh": 401.19,
+    "dayLow": 390.63,
+    "change": 1.56,
+    "changePercent": 0.39,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 477.73
+      },
+      {
+        "date": "2025-12-04",
+        "close": 480.84
+      },
+      {
+        "date": "2025-12-05",
+        "close": 483.16
+      },
+      {
+        "date": "2025-12-08",
+        "close": 491.02
+      },
+      {
+        "date": "2025-12-09",
+        "close": 492.02
+      },
+      {
+        "date": "2025-12-10",
+        "close": 478.56
+      },
+      {
+        "date": "2025-12-11",
+        "close": 483.47
+      },
+      {
+        "date": "2025-12-12",
+        "close": 478.53
+      },
+      {
+        "date": "2025-12-15",
+        "close": 474.82
+      },
+      {
+        "date": "2025-12-16",
+        "close": 476.39
+      },
+      {
+        "date": "2025-12-17",
+        "close": 476.12
+      },
+      {
+        "date": "2025-12-18",
+        "close": 483.98
+      },
+      {
+        "date": "2025-12-19",
+        "close": 485.92
+      },
+      {
+        "date": "2025-12-22",
+        "close": 484.92
+      },
+      {
+        "date": "2025-12-23",
+        "close": 486.85
+      },
+      {
+        "date": "2025-12-24",
+        "close": 488.02
+      },
+      {
+        "date": "2025-12-26",
+        "close": 487.71
+      },
+      {
+        "date": "2025-12-29",
+        "close": 487.1
+      },
+      {
+        "date": "2025-12-30",
+        "close": 487.48
+      },
+      {
+        "date": "2025-12-31",
+        "close": 483.62
+      },
+      {
+        "date": "2026-01-02",
+        "close": 472.94
+      },
+      {
+        "date": "2026-01-05",
+        "close": 472.85
+      },
+      {
+        "date": "2026-01-06",
+        "close": 478.51
+      },
+      {
+        "date": "2026-01-07",
+        "close": 483.47
+      },
+      {
+        "date": "2026-01-08",
+        "close": 478.11
+      },
+      {
+        "date": "2026-01-09",
+        "close": 479.28
+      },
+      {
+        "date": "2026-01-12",
+        "close": 477.18
+      },
+      {
+        "date": "2026-01-13",
+        "close": 470.67
+      },
+      {
+        "date": "2026-01-14",
+        "close": 459.38
+      },
+      {
+        "date": "2026-01-15",
+        "close": 456.66
+      },
+      {
+        "date": "2026-01-16",
+        "close": 459.86
+      },
+      {
+        "date": "2026-01-20",
+        "close": 454.52
+      },
+      {
+        "date": "2026-01-21",
+        "close": 444.11
+      },
+      {
+        "date": "2026-01-22",
+        "close": 451.14
+      },
+      {
+        "date": "2026-01-23",
+        "close": 465.95
+      },
+      {
+        "date": "2026-01-26",
+        "close": 470.28
+      },
+      {
+        "date": "2026-01-27",
+        "close": 480.58
+      },
+      {
+        "date": "2026-01-28",
+        "close": 481.63
+      },
+      {
+        "date": "2026-01-29",
+        "close": 433.5
+      },
+      {
+        "date": "2026-01-30",
+        "close": 430.29
+      },
+      {
+        "date": "2026-02-02",
+        "close": 423.37
+      },
+      {
+        "date": "2026-02-03",
+        "close": 411.21
+      },
+      {
+        "date": "2026-02-04",
+        "close": 414.19
+      },
+      {
+        "date": "2026-02-05",
+        "close": 393.67
+      },
+      {
+        "date": "2026-02-06",
+        "close": 401.14
+      },
+      {
+        "date": "2026-02-09",
+        "close": 413.6
+      },
+      {
+        "date": "2026-02-10",
+        "close": 413.27
+      },
+      {
+        "date": "2026-02-11",
+        "close": 404.37
+      },
+      {
+        "date": "2026-02-12",
+        "close": 401.84
+      },
+      {
+        "date": "2026-02-13",
+        "close": 401.32
+      },
+      {
+        "date": "2026-02-17",
+        "close": 396.86
+      },
+      {
+        "date": "2026-02-18",
+        "close": 399.6
+      },
+      {
+        "date": "2026-02-19",
+        "close": 398.46
+      },
+      {
+        "date": "2026-02-20",
+        "close": 397.23
+      },
+      {
+        "date": "2026-02-23",
+        "close": 384.47
+      },
+      {
+        "date": "2026-02-24",
+        "close": 389.0
+      },
+      {
+        "date": "2026-02-25",
+        "close": 400.6
+      },
+      {
+        "date": "2026-02-26",
+        "close": 401.72
+      },
+      {
+        "date": "2026-02-27",
+        "close": 392.74
+      },
+      {
+        "date": "2026-03-02",
+        "close": 398.55
+      }
+    ],
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide. The Productivity and Business Processes segment offers Microsoft 365 commercial, enterprise mobility + security, windows commercial, power BI, exchange, sharepoint, Microsoft teams, security and compliance, and copilot; Microsoft 365 commercial products, such as Windows commercial on-premises and office licensed services; Microsoft 365 consumer products and cloud services, including Microsoft 365 consumer subscriptions, office licensed on-premises, and other consumer services; LinkedIn; dynamics products and cloud services, such as dynamics 365, cloud-based applications, and on-premises ERP and CRM applications. Its Intelligent Cloud segment provides Server products and cloud services comprising Azure and other cloud services, GitHub, Nuance Healthcare, virtual desktop offerings, and other cloud services; server products, including SQL and windows server, visual studio and system center related client access licenses, and other on-premises offerings; enterprise and partner services, such as enterprise support and nuance professional services, industry solutions, Microsoft partner network, and learning experience. The Personal Computing segment provides windows and devices, such as Windows OEM licensing and devices and surface and PC accessories; gaming services and solutions, such as Xbox hardware, content, and services, first- and third-party content Xbox game pass, subscriptions, and cloud gaming, advertising, and other cloud services; search and news advertising services that includes Bing and Copilot, Microsoft News and Edge, and third-party affiliates. It sells its products through OEMs, distributors, and resellers; and online and retail stores. The company was founded in 1975 and is headquartered in Redmond, Washington.",
+    "website": "https://www.microsoft.com",
+    "employees": 228000,
+    "city": "Redmond",
+    "state": "WA",
+    "country": "United States",
+    "shortTermOutlook": "Bullish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Bearish",
+    "support": 392.17,
+    "resistance": 417.84,
+    "stopLoss": 371.714315,
+    "valuationDescription": "Near Fair Value",
+    "valuationDiscount": "7%",
+    "relativeValue": "",
+    "targetPrice": 620.0,
+    "rating": "BUY",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 98,
+    "hiring": 97,
+    "sustainability": 14,
+    "insiderSentiment": 57,
+    "earningsReports": 82,
+    "dividends": 20,
+    "sigDevs": [
+      {
+        "headline": "OpenAI CEO Sam Altman Says Tonight, We Reached An Agreement With Department Of War To Deploy Our Models In Their Classified Network",
+        "date": "2026-02-28"
+      }
+    ],
+    "reports": [
+      {
+        "title": "Argus is hosting a five-part webinar series on Artificial Intelligence (AI), examining how this dynamic force will have an impact across the investing universe. Our team of analysts will identify companies we see as leaders or innovators in this evolving space. The series started on February 4 with a look at how AI is playing out in its dominant sector: Information Technology. Argus Analysts Jim Kelleher, CFA, and Joe Bonner, CFA, broke down the impact of AI on multiple industries within Information Technology. In subsequent webinars, we will examine the impact of AI on the Healthcare (March 4), Consumer (April 1), Financial (May 6), and Industrial/Energy (June 3) sectors. For our list this week, we present stocks that were featured in our initial webinar on IT, all of which are rated BUY at Argus.",
+        "date": "2026-02-09T12:49:42Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Last year was not much different from the previous quarter century. Growth stocks outperformed value stocks by more than 700 basis points. That makes 17 years of the past 23 (74%) when growth has won out. Still, in the 2000-2010 decade, including the Great Recession, value stocks were the better performers, advancing an admittedly low 8% -- but still better than growth, which declined 15% during the decade. Value investors trace their roots to the famous \"Security Analysis\" textbook, written by Ben Graham, an economics professor at Columbia University. Warren Buffett was one of his students. Why the recent deviation in performance? Reasons include changes in the make-up of the broad economy; innovation delivered by the IT sector, which is a pillar of the growth market; growth in intangible assets; and the current low level of interest rates, which reduces the discount rate on the future earnings of growth companies. So far this year, value stocks have taken the lead, with growth slumping 5% before a recovery on Friday. At Argus, we oversee numerous portfolios, including some focused on growth and others on value. Our policy is to manage risk in part by sticking to our disciplines, despite the twists and turns in the markets. Our current asset-allocation recommendations, published and updated monthly in our Investment Portfolio Guide, do indeed favor growth over value for the longer term. We anticipate that growth, led by the Information Technology sector, will top returns from value, led by Energy, Real Estate, and Materials, due to favorable secular and demographic trends. We don't expect the line will be straight up, but we anticipate that the historical outperformance trend behind growth will resume in the quarters ahead. In the meantime, we also have value ideas in our Min-Vol, High-Yield, and Equity Income model portfolios.",
+        "date": "2026-02-09T12:34:25Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Microsoft is the world's largest independent software developer. The company was founded on the MS Windows operating system and MS Office business applications suite for PCs. As it has grown, Microsoft has expanded into enterprise software with Windows Server, SQL Server, Dynamics CRM, SharePoint, Azure, and Lync; hardware with the Xbox gaming/media platform and the Surface tablet; and online services through Bing. More than 50% of revenue is generated outside the U.S.",
+        "date": "2026-01-30T12:18:43Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "insiders": [
+      {
+        "name": "ALTHOFF JUDSON",
+        "relation": "Officer",
+        "transaction": "Sale",
+        "shares": 129349,
+        "date": "2025-12-02"
+      },
+      {
+        "name": "COLEMAN AMY",
+        "relation": "Officer",
+        "transaction": "Stock Award(Grant)",
+        "shares": 45923,
+        "date": "2025-09-15"
+      },
+      {
+        "name": "HOGAN KATHLEEN T",
+        "relation": "Officer",
+        "transaction": "Stock Gift",
+        "shares": 151232,
+        "date": "2025-12-10"
+      },
+      {
+        "name": "LIST TERI",
+        "relation": "Director",
+        "transaction": "Stock Award(Grant)",
+        "shares": 2947,
+        "date": "2026-01-30"
+      },
+      {
+        "name": "MASON MARK A.L.",
+        "relation": "Director",
+        "transaction": "Stock Award(Grant)",
+        "shares": 1675,
+        "date": "2026-01-30"
+      }
+    ],
+    "filings": [
+      {
+        "type": "IRANNOTICE",
+        "title": "Notice of disclosure filed in Exchange Act quarterly and annual reports pursuant to Section 219 of the Iran Threat Reduction and Syria Human Rights Act of 2012 and Section 13(r) of the Exchange Act",
+        "date": "2026-01-28",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-26-027232_789019"
+      },
+      {
+        "type": "S-8",
+        "title": "Offering Registrations",
+        "date": "2025-12-30",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-337096_789019"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-12-08",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-311196_789019"
+      },
+      {
+        "type": "DEFA14A",
+        "title": "Proxy Statements",
+        "date": "2025-11-05",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-267270_789019"
+      },
+      {
+        "type": "DEFA14A",
+        "title": "Proxy Statements",
+        "date": "2025-10-31",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-260521_789019"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-10-29",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-256310_789019"
+      },
+      {
+        "type": "DEF 14A",
+        "title": "Proxy Statements",
+        "date": "2025-10-21",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-245150_789019"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-09-30",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-225125_789019"
+      },
+      {
+        "type": "10-K",
+        "title": "Periodic Financial Reports",
+        "date": "2025-07-30",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0000950170-25-100235_789019"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-07-01",
+        "url": "https://finance.yahoo.com/sec-filing/MSFT/0001193125-25-154103_789019"
+      }
+    ],
+    "marketCap": 398550000000.0
+  },
+  {
+    "symbol": "GOOGL",
+    "price": 306.52,
+    "high52w": 349.0,
+    "low52w": 140.53,
+    "volume": 34310346,
+    "name": "Alphabet Inc.",
+    "exchange": "NasdaqGS",
+    "previousClose": 170.28,
+    "dayHigh": 308.49,
+    "dayLow": 301.3,
+    "change": 136.24,
+    "changePercent": 80.01,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 319.63
+      },
+      {
+        "date": "2025-12-04",
+        "close": 317.62
+      },
+      {
+        "date": "2025-12-05",
+        "close": 321.27
+      },
+      {
+        "date": "2025-12-08",
+        "close": 313.72
+      },
+      {
+        "date": "2025-12-09",
+        "close": 317.08
+      },
+      {
+        "date": "2025-12-10",
+        "close": 320.21
+      },
+      {
+        "date": "2025-12-11",
+        "close": 312.43
+      },
+      {
+        "date": "2025-12-12",
+        "close": 309.29
+      },
+      {
+        "date": "2025-12-15",
+        "close": 308.22
+      },
+      {
+        "date": "2025-12-16",
+        "close": 306.57
+      },
+      {
+        "date": "2025-12-17",
+        "close": 296.72
+      },
+      {
+        "date": "2025-12-18",
+        "close": 302.46
+      },
+      {
+        "date": "2025-12-19",
+        "close": 307.16
+      },
+      {
+        "date": "2025-12-22",
+        "close": 309.78
+      },
+      {
+        "date": "2025-12-23",
+        "close": 314.35
+      },
+      {
+        "date": "2025-12-24",
+        "close": 314.09
+      },
+      {
+        "date": "2025-12-26",
+        "close": 313.51
+      },
+      {
+        "date": "2025-12-29",
+        "close": 313.56
+      },
+      {
+        "date": "2025-12-30",
+        "close": 313.85
+      },
+      {
+        "date": "2025-12-31",
+        "close": 313.0
+      },
+      {
+        "date": "2026-01-02",
+        "close": 315.15
+      },
+      {
+        "date": "2026-01-05",
+        "close": 316.54
+      },
+      {
+        "date": "2026-01-06",
+        "close": 314.34
+      },
+      {
+        "date": "2026-01-07",
+        "close": 321.98
+      },
+      {
+        "date": "2026-01-08",
+        "close": 325.44
+      },
+      {
+        "date": "2026-01-09",
+        "close": 328.57
+      },
+      {
+        "date": "2026-01-12",
+        "close": 331.86
+      },
+      {
+        "date": "2026-01-13",
+        "close": 335.97
+      },
+      {
+        "date": "2026-01-14",
+        "close": 335.84
+      },
+      {
+        "date": "2026-01-15",
+        "close": 332.78
+      },
+      {
+        "date": "2026-01-16",
+        "close": 330.0
+      },
+      {
+        "date": "2026-01-20",
+        "close": 322.0
+      },
+      {
+        "date": "2026-01-21",
+        "close": 328.38
+      },
+      {
+        "date": "2026-01-22",
+        "close": 330.54
+      },
+      {
+        "date": "2026-01-23",
+        "close": 327.93
+      },
+      {
+        "date": "2026-01-26",
+        "close": 333.26
+      },
+      {
+        "date": "2026-01-27",
+        "close": 334.55
+      },
+      {
+        "date": "2026-01-28",
+        "close": 336.01
+      },
+      {
+        "date": "2026-01-29",
+        "close": 338.25
+      },
+      {
+        "date": "2026-01-30",
+        "close": 338.0
+      },
+      {
+        "date": "2026-02-02",
+        "close": 343.69
+      },
+      {
+        "date": "2026-02-03",
+        "close": 339.71
+      },
+      {
+        "date": "2026-02-04",
+        "close": 333.04
+      },
+      {
+        "date": "2026-02-05",
+        "close": 331.25
+      },
+      {
+        "date": "2026-02-06",
+        "close": 322.86
+      },
+      {
+        "date": "2026-02-09",
+        "close": 324.32
+      },
+      {
+        "date": "2026-02-10",
+        "close": 318.58
+      },
+      {
+        "date": "2026-02-11",
+        "close": 310.96
+      },
+      {
+        "date": "2026-02-12",
+        "close": 309.0
+      },
+      {
+        "date": "2026-02-13",
+        "close": 305.72
+      },
+      {
+        "date": "2026-02-17",
+        "close": 302.02
+      },
+      {
+        "date": "2026-02-18",
+        "close": 303.33
+      },
+      {
+        "date": "2026-02-19",
+        "close": 302.85
+      },
+      {
+        "date": "2026-02-20",
+        "close": 314.98
+      },
+      {
+        "date": "2026-02-23",
+        "close": 311.49
+      },
+      {
+        "date": "2026-02-24",
+        "close": 310.9
+      },
+      {
+        "date": "2026-02-25",
+        "close": 312.9
+      },
+      {
+        "date": "2026-02-26",
+        "close": 307.38
+      },
+      {
+        "date": "2026-02-27",
+        "close": 311.76
+      },
+      {
+        "date": "2026-03-02",
+        "close": 306.52
+      }
+    ],
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "description": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California.",
+    "website": "https://abc.xyz",
+    "employees": 190820,
+    "city": "Mountain View",
+    "state": "CA",
+    "country": "United States",
+    "shortTermOutlook": "Bullish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Neutral",
+    "support": 165.21,
+    "resistance": 313.89,
+    "stopLoss": 293.511516,
+    "valuationDescription": "Overvalued",
+    "valuationDiscount": "-3%",
+    "relativeValue": "Premium",
+    "targetPrice": 385.0,
+    "rating": "BUY",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 98,
+    "hiring": 86,
+    "sustainability": 60,
+    "insiderSentiment": 33,
+    "earningsReports": 91,
+    "dividends": 1,
+    "sigDevs": [
+      {
+        "headline": "Google Strikes Multibillion-Dollar AI Chip Deal With Meta - The Information",
+        "date": "2026-02-26"
+      }
+    ],
+    "reports": [
+      {
+        "title": "Argus is hosting a five-part webinar series on Artificial Intelligence (AI), examining how this dynamic force will have an impact across the investing universe. Our team of analysts will identify companies we see as leaders or innovators in this evolving space. The series started on February 4 with a look at how AI is playing out in its dominant sector: Information Technology. Argus Analysts Jim Kelleher, CFA, and Joe Bonner, CFA, broke down the impact of AI on multiple industries within Information Technology. In subsequent webinars, we will examine the impact of AI on the Healthcare (March 4), Consumer (April 1), Financial (May 6), and Industrial/Energy (June 3) sectors. For our list this week, we present stocks that were featured in our initial webinar on IT, all of which are rated BUY at Argus.",
+        "date": "2026-02-09T12:49:42Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Alphabet, formerly called Google, maintains the largest online index of websites accessible through automated search technology. It generates revenue through online advertising, cloud services, and consumer devices. Google is now an operating segment of Alphabet. The company was founded in 1998 by Sergey Brin and Larry Page and went public in 2004. \r\n\r\nGoogle's AdWords is an auction-based program that lets businesses display ads along with particular search results. Google's AdSense program enables websites in the company's network to serve targeted ads, based on search terms or web content, from AdWords advertisers. Most of the revenue generated through AdSense is shared with network partners. In addition, Alphabet owns YouTube.com, the web-based video site. It has expanded into mobile telephony with its Android smartphone operating system, into cloud services, and most recently, into autonomous driving. About 52% of Alphabet's revenue is generated outside the U.S.\r\n\r\nOn April 3, 2014, Alphabet's non-voting class C shares began trading under the ticker GOOG, and Alphabet's publicly held class A shares switched to the ticker GOOGL. The effect of the class C share issuance was a non-economic 2-for-1 stock split. \r\n\r\nOn July 15, 2022, Alphabet executed a 20-for-1 stock split on its Class A, Class B, and Class C stock. The stock split had no impact on the economic value of GOOGL shares.",
+        "date": "2026-02-06T12:11:35Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "The S&P 500 (SPX) found technical support at its 50-day average on Wednesday, but that broke early Thursday morning. In addition, the index broke down and completed a bearish-ending diagonal. This is the fourth time since November that the index has undercut the 50-day, although two of the times it was only for a day. We have seen a bearish exponential moving average (EMA) crossover, and the SPX closed right on initial chart support from the most-recent low at 6,797. The next support comes in around 6,755 from the 21-week EMA and then at 6,720 from the December low. The 21-day rate-of-change (ROC) is negative and the daily moving-average convergence/divergence (MACD) is close to cycling into bearish territory. Like the Nasdaq 100 (QQQ) ETF, there have been five distribution days out of the past six days, and we are quite sure that the heavy selling volume is from the liquidation in Information Technology.   Everything is on sale, as the selling avalanche moves from one market to another. The pullback started in crypto, moved to the metals, and now, to a much-lesser degree, to the stock market.",
+        "date": "2026-02-06T11:56:35Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "marketCap": 306520000000.0
+  },
+  {
+    "symbol": "AMZN",
+    "price": 208.39,
+    "high52w": 258.6,
+    "low52w": 161.38,
+    "volume": 43410499,
+    "name": "Amazon.com, Inc.",
+    "exchange": "NasdaqGS",
+    "previousClose": 212.28,
+    "dayHigh": 209.72,
+    "dayLow": 203.48,
+    "change": -3.89,
+    "changePercent": -1.83,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 232.38
+      },
+      {
+        "date": "2025-12-04",
+        "close": 229.11
+      },
+      {
+        "date": "2025-12-05",
+        "close": 229.53
+      },
+      {
+        "date": "2025-12-08",
+        "close": 226.89
+      },
+      {
+        "date": "2025-12-09",
+        "close": 227.92
+      },
+      {
+        "date": "2025-12-10",
+        "close": 231.78
+      },
+      {
+        "date": "2025-12-11",
+        "close": 230.28
+      },
+      {
+        "date": "2025-12-12",
+        "close": 226.19
+      },
+      {
+        "date": "2025-12-15",
+        "close": 222.54
+      },
+      {
+        "date": "2025-12-16",
+        "close": 222.56
+      },
+      {
+        "date": "2025-12-17",
+        "close": 221.27
+      },
+      {
+        "date": "2025-12-18",
+        "close": 226.76
+      },
+      {
+        "date": "2025-12-19",
+        "close": 227.35
+      },
+      {
+        "date": "2025-12-22",
+        "close": 228.43
+      },
+      {
+        "date": "2025-12-23",
+        "close": 232.14
+      },
+      {
+        "date": "2025-12-24",
+        "close": 232.38
+      },
+      {
+        "date": "2025-12-26",
+        "close": 232.52
+      },
+      {
+        "date": "2025-12-29",
+        "close": 232.07
+      },
+      {
+        "date": "2025-12-30",
+        "close": 232.53
+      },
+      {
+        "date": "2025-12-31",
+        "close": 230.82
+      },
+      {
+        "date": "2026-01-02",
+        "close": 226.5
+      },
+      {
+        "date": "2026-01-05",
+        "close": 233.06
+      },
+      {
+        "date": "2026-01-06",
+        "close": 240.93
+      },
+      {
+        "date": "2026-01-07",
+        "close": 241.56
+      },
+      {
+        "date": "2026-01-08",
+        "close": 246.29
+      },
+      {
+        "date": "2026-01-09",
+        "close": 247.38
+      },
+      {
+        "date": "2026-01-12",
+        "close": 246.47
+      },
+      {
+        "date": "2026-01-13",
+        "close": 242.6
+      },
+      {
+        "date": "2026-01-14",
+        "close": 236.65
+      },
+      {
+        "date": "2026-01-15",
+        "close": 238.18
+      },
+      {
+        "date": "2026-01-16",
+        "close": 239.12
+      },
+      {
+        "date": "2026-01-20",
+        "close": 231.0
+      },
+      {
+        "date": "2026-01-21",
+        "close": 231.31
+      },
+      {
+        "date": "2026-01-22",
+        "close": 234.34
+      },
+      {
+        "date": "2026-01-23",
+        "close": 239.16
+      },
+      {
+        "date": "2026-01-26",
+        "close": 238.42
+      },
+      {
+        "date": "2026-01-27",
+        "close": 244.68
+      },
+      {
+        "date": "2026-01-28",
+        "close": 243.01
+      },
+      {
+        "date": "2026-01-29",
+        "close": 241.73
+      },
+      {
+        "date": "2026-01-30",
+        "close": 239.3
+      },
+      {
+        "date": "2026-02-02",
+        "close": 242.96
+      },
+      {
+        "date": "2026-02-03",
+        "close": 238.62
+      },
+      {
+        "date": "2026-02-04",
+        "close": 232.99
+      },
+      {
+        "date": "2026-02-05",
+        "close": 222.69
+      },
+      {
+        "date": "2026-02-06",
+        "close": 210.32
+      },
+      {
+        "date": "2026-02-09",
+        "close": 208.72
+      },
+      {
+        "date": "2026-02-10",
+        "close": 206.96
+      },
+      {
+        "date": "2026-02-11",
+        "close": 204.08
+      },
+      {
+        "date": "2026-02-12",
+        "close": 199.6
+      },
+      {
+        "date": "2026-02-13",
+        "close": 198.79
+      },
+      {
+        "date": "2026-02-17",
+        "close": 201.15
+      },
+      {
+        "date": "2026-02-18",
+        "close": 204.79
+      },
+      {
+        "date": "2026-02-19",
+        "close": 204.86
+      },
+      {
+        "date": "2026-02-20",
+        "close": 210.11
+      },
+      {
+        "date": "2026-02-23",
+        "close": 205.27
+      },
+      {
+        "date": "2026-02-24",
+        "close": 208.56
+      },
+      {
+        "date": "2026-02-25",
+        "close": 210.64
+      },
+      {
+        "date": "2026-02-26",
+        "close": 207.92
+      },
+      {
+        "date": "2026-02-27",
+        "close": 210.0
+      },
+      {
+        "date": "2026-03-02",
+        "close": 208.39
+      }
+    ],
+    "shortTermOutlook": "Bullish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Bearish",
+    "support": 185.07,
+    "resistance": 228.97,
+    "stopLoss": 195.837447,
+    "valuationDescription": "Overvalued",
+    "valuationDiscount": "-3%",
+    "relativeValue": "Premium",
+    "targetPrice": 325.0,
+    "rating": "BUY",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 99,
+    "hiring": 98,
+    "sustainability": 41,
+    "insiderSentiment": 4,
+    "earningsReports": 87,
+    "dividends": 0,
+    "sigDevs": [
+      {
+        "headline": "Amazon To Invest $50 Billion In OpenAI",
+        "date": "2026-02-27"
+      }
+    ],
+    "reports": [
+      {
+        "title": "Vickers Stock Research, a subsidiary of Argus Research Group, tracks and analyzes insider trading and institutional stock ownership trends. Form 13-Fs, which institutions must file to report their holdings, are due 45 days after the end of calendar quarters, and have now come in from 4Q25. We like to review the 13Fs of the major activist investors -- including Carl Icahn, Trian Fund Management, Jana Partners, Starboard Value and ValueAct Holdings, among others -- in order to determine their core holdings and new purchases. Activist investing has evolved in recent years and is now less about generating a short-term return on an underpriced stock and more about achieving long-term returns through an active management/investor partnership. Activists have made progress in the past year, with high-profile investments into blue-chip companies such as Fedex and Union Pacific. As reported by Vickers, here are some recent new purchases and key holdings of activist investors, as well as other high-profile money managers such as Warren Buffet of Berkshire Hathaway (his last as CEO of Berkshire Hathaway).",
+        "date": "2026-02-23T13:04:15Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Argus is hosting a five-part webinar series on Artificial Intelligence (AI), examining how this dynamic force will have an impact across the investing universe. Our team of analysts will identify companies we see as leaders or innovators in this evolving space. The series started on February 4 with a look at how AI is playing out in its dominant sector: Information Technology. Argus Analysts Jim Kelleher, CFA, and Joe Bonner, CFA, broke down the impact of AI on multiple industries within Information Technology. In subsequent webinars, we will examine the impact of AI on the Healthcare (March 4), Consumer (April 1), Financial (May 6), and Industrial/Energy (June 3) sectors. For our list this week, we present stocks that were featured in our initial webinar on IT, all of which are rated BUY at Argus.",
+        "date": "2026-02-09T12:49:42Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Amazon.com is the leading U.S. e-commerce retailer and among the top e-commerce sites globally. Amazon.com also includes Amazon Web Services (AWS), the global leader in cloud-based Infrastructure-as-a-Service (IaaS) platforms. The company's Prime membership platform is a key online retail differentiator, providing customers with free shipping (after an annual fee) along with exclusive media content (music, video, audible books, etc.). The company's Kindle reader and Alexa-based Echo and Dot digital voice assistants are category leaders.",
+        "date": "2026-02-06T12:11:35Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "marketCap": 208390000000.0
+  },
+  {
+    "symbol": "NVDA",
+    "price": 182.48,
+    "high52w": 212.19,
+    "low52w": 86.62,
+    "volume": 206465519,
+    "name": "NVIDIA Corporation",
+    "exchange": "NasdaqGS",
+    "previousClose": 124.92,
+    "dayHigh": 183.46,
+    "dayLow": 174.64,
+    "change": 57.56,
+    "changePercent": 46.08,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 179.59
+      },
+      {
+        "date": "2025-12-04",
+        "close": 183.38
+      },
+      {
+        "date": "2025-12-05",
+        "close": 182.41
+      },
+      {
+        "date": "2025-12-08",
+        "close": 185.55
+      },
+      {
+        "date": "2025-12-09",
+        "close": 184.97
+      },
+      {
+        "date": "2025-12-10",
+        "close": 183.78
+      },
+      {
+        "date": "2025-12-11",
+        "close": 180.93
+      },
+      {
+        "date": "2025-12-12",
+        "close": 175.02
+      },
+      {
+        "date": "2025-12-15",
+        "close": 176.29
+      },
+      {
+        "date": "2025-12-16",
+        "close": 177.72
+      },
+      {
+        "date": "2025-12-17",
+        "close": 170.94
+      },
+      {
+        "date": "2025-12-18",
+        "close": 174.14
+      },
+      {
+        "date": "2025-12-19",
+        "close": 180.99
+      },
+      {
+        "date": "2025-12-22",
+        "close": 183.69
+      },
+      {
+        "date": "2025-12-23",
+        "close": 189.21
+      },
+      {
+        "date": "2025-12-24",
+        "close": 188.61
+      },
+      {
+        "date": "2025-12-26",
+        "close": 190.53
+      },
+      {
+        "date": "2025-12-29",
+        "close": 188.22
+      },
+      {
+        "date": "2025-12-30",
+        "close": 187.54
+      },
+      {
+        "date": "2025-12-31",
+        "close": 186.5
+      },
+      {
+        "date": "2026-01-02",
+        "close": 188.85
+      },
+      {
+        "date": "2026-01-05",
+        "close": 188.12
+      },
+      {
+        "date": "2026-01-06",
+        "close": 187.24
+      },
+      {
+        "date": "2026-01-07",
+        "close": 189.11
+      },
+      {
+        "date": "2026-01-08",
+        "close": 185.04
+      },
+      {
+        "date": "2026-01-09",
+        "close": 184.86
+      },
+      {
+        "date": "2026-01-12",
+        "close": 184.94
+      },
+      {
+        "date": "2026-01-13",
+        "close": 185.81
+      },
+      {
+        "date": "2026-01-14",
+        "close": 183.14
+      },
+      {
+        "date": "2026-01-15",
+        "close": 187.05
+      },
+      {
+        "date": "2026-01-16",
+        "close": 186.23
+      },
+      {
+        "date": "2026-01-20",
+        "close": 178.07
+      },
+      {
+        "date": "2026-01-21",
+        "close": 183.32
+      },
+      {
+        "date": "2026-01-22",
+        "close": 184.84
+      },
+      {
+        "date": "2026-01-23",
+        "close": 187.67
+      },
+      {
+        "date": "2026-01-26",
+        "close": 186.47
+      },
+      {
+        "date": "2026-01-27",
+        "close": 188.52
+      },
+      {
+        "date": "2026-01-28",
+        "close": 191.52
+      },
+      {
+        "date": "2026-01-29",
+        "close": 192.51
+      },
+      {
+        "date": "2026-01-30",
+        "close": 191.13
+      },
+      {
+        "date": "2026-02-02",
+        "close": 185.61
+      },
+      {
+        "date": "2026-02-03",
+        "close": 180.34
+      },
+      {
+        "date": "2026-02-04",
+        "close": 174.19
+      },
+      {
+        "date": "2026-02-05",
+        "close": 171.88
+      },
+      {
+        "date": "2026-02-06",
+        "close": 185.41
+      },
+      {
+        "date": "2026-02-09",
+        "close": 190.04
+      },
+      {
+        "date": "2026-02-10",
+        "close": 188.54
+      },
+      {
+        "date": "2026-02-11",
+        "close": 190.05
+      },
+      {
+        "date": "2026-02-12",
+        "close": 186.94
+      },
+      {
+        "date": "2026-02-13",
+        "close": 182.81
+      },
+      {
+        "date": "2026-02-17",
+        "close": 184.97
+      },
+      {
+        "date": "2026-02-18",
+        "close": 187.98
+      },
+      {
+        "date": "2026-02-19",
+        "close": 187.9
+      },
+      {
+        "date": "2026-02-20",
+        "close": 189.82
+      },
+      {
+        "date": "2026-02-23",
+        "close": 191.55
+      },
+      {
+        "date": "2026-02-24",
+        "close": 192.85
+      },
+      {
+        "date": "2026-02-25",
+        "close": 195.56
+      },
+      {
+        "date": "2026-02-26",
+        "close": 184.89
+      },
+      {
+        "date": "2026-02-27",
+        "close": 177.19
+      },
+      {
+        "date": "2026-03-02",
+        "close": 182.48
+      }
+    ],
+    "shortTermOutlook": "Bearish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Neutral",
+    "support": 176.75,
+    "resistance": 186.58,
+    "stopLoss": 147.643339,
+    "valuationDescription": "Undervalued",
+    "valuationDiscount": "43%",
+    "relativeValue": "Discount",
+    "targetPrice": 220.0,
+    "rating": "BUY",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 88,
+    "hiring": 80,
+    "sustainability": 9,
+    "insiderSentiment": 1,
+    "earningsReports": 86,
+    "dividends": 0,
+    "sigDevs": [
+      {
+        "headline": "Nvidia Announces Strategic Partnership With Lumentum To Develop State-Of-The-Art Optics Technology",
+        "date": "2026-03-02"
+      }
+    ],
+    "reports": [
+      {
+        "title": "Nvidia Corp., based in Santa Clara, California, is a visual computing company with worldwide operations and markets. The company operates through two segments, Graphics and Compute & Networking. The company's four main markets are gaming, professional visualization, data center, and automotive. In calendar 2020, Nvidia completed the acquisition of data-center connectivity leader Mellanox.",
+        "date": "2026-02-26T12:22:57Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Wednesday was another good day for the major indices, but the action was not as broad as was the case on Tuesday. Wednesday's gains primarily came from Information Technology (XLK +2%) and Financial (XLF +1.8%), while weakness was seen in one of the hottest (and maybe most surprising) sectors this year. Consumer Staples (XLP) fell 0.8% but has popped over 14% in 2026. Other sector weakness was seen in the strongest 2026 performers, including Real Estate (XLRE), Industrials (XLI), Energy (XLE), and Materials (XLB).  Software stocks rose 3% after Tuesday's 2% gain. More importantly, Tuesday's volume on the iShares Tech-Software ETF (IGV) was a record at over 50 million shares -- yet Wednesday's preliminary volume was also heavy at over 36 million. That certainly helped the XLK, as $2.9 trillion market cap MSFT rose 3%, with smaller software names ORCL, PLTR, CRM, SHOP, and APP seeing gains of 1.2% to 7%. These stocks had fallen off a cliff, and an upside reversal could be dramatic as there is virtually no overhead supply (at least for quite a while). Just an oversold or countertrend rally back to the respective 50- or 200-day averages would provide very nice returns for the beaten-up names in the sector. Computer services also aided IT, as recently weak IBM bounced 3.6%.   For Financials, it was the same story. Some of the industries that have been smacked recently saw another day of recovery. Consumer finance (V, MA, AXP, and COF), investment services, banks, asset managers, and financial administration all rose at least 2%, with insurance brokers tacking on 1.3%.",
+        "date": "2026-02-26T12:07:57Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "We expect S&P 500 earnings to grow at a double-digit rate this year and we also like companies that increase their dividends at a 10%-plus rate. How does the AI marketplace stack up against those metrics? Pretty well. We derived a model of the size and scope of the global AI industry, based on our coverage of major publicly traded players and most of the mid-tier players, along with our industry knowledge of private players. We estimate that annual revenue from the global AI infrastructure industry -- data center spending, chips, network equipment, storage etc. -- amounted to $600 billion in 2025. We expect that to grow at a 40% CAGR through 2030, when total revenue is forecast to reach $3.0 trillion. Forecasters are making such claims because the market for AI technology is changing rapidly and broadening dramatically. In fact, in the months leading up to Nvidia's latest quarterly results release, the company announced multiple new AI partnership deals -- not with the hyperscalers that dominated earlier GPU demand, but with multiple neoclouds, large global enterprises, and sovereign clients. Indeed, as AI winnings are redeployed into other areas (healthcare, aerospace & defense, financial services), the industries can benefit from operational efficiencies, new products, new markets, and disruptive developments. From an investment standpoint, a market rotation of assets out of purely AI and into potentially beneficiary segments can be healthy for near-term stability in the stock market. The AI trade may be bumpy going forward. But like other transformational technology trades before it (cloud, internet, semiconductors, and PCs), it seems likely to be long and fruitful.",
+        "date": "2026-02-12T12:16:45Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "insiders": [
+      {
+        "name": "DABIRI JOHN O",
+        "relation": "Director",
+        "transaction": "Sale",
+        "shares": 17792,
+        "date": "2025-11-24"
+      },
+      {
+        "name": "DRELL PERSIS S",
+        "relation": "Director",
+        "transaction": "Sale",
+        "shares": 0,
+        "date": "2025-09-19"
+      },
+      {
+        "name": "HUANG JEN-HSUN",
+        "relation": "Chief Executive Officer",
+        "transaction": "Stock Gift",
+        "shares": 0,
+        "date": "2025-12-17"
+      },
+      {
+        "name": "JONES HARVEY C JR.",
+        "relation": "Director",
+        "transaction": "Sale",
+        "shares": 0,
+        "date": "2025-12-15"
+      },
+      {
+        "name": "KRESS COLETTE M.",
+        "relation": "Chief Financial Officer",
+        "transaction": "Sale",
+        "shares": 0,
+        "date": "2026-02-04"
+      }
+    ],
+    "filings": [
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2026-01-23",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-26-000003_1045810"
+      },
+      {
+        "type": "10-Q",
+        "title": "Periodic Financial Reports",
+        "date": "2025-11-19",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000230_1045810"
+      },
+      {
+        "type": "N-PX",
+        "title": "Annual Report of Proxy Voting Record of Registered Management Investment Companies filed on Form N-PX",
+        "date": "2025-08-29",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001104659-25-085649_1045810"
+      },
+      {
+        "type": "10-Q",
+        "title": "Periodic Financial Reports",
+        "date": "2025-08-27",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000209_1045810"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-08-05",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000197_1045810"
+      },
+      {
+        "type": "CORRESP",
+        "title": "A correspondence can be sent as a document with another submission type or can be sent as a separate submission",
+        "date": "2025-07-31",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000192_1045810"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-07-01",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000179_1045810"
+      },
+      {
+        "type": "SD",
+        "title": "Specialized Disclosure Report filed pursuant to Section 1502 of the Dodd-Frank Wall Street Reform and Consumer Protection Act relating to the use of conflict minerals (Rule 13p-1)",
+        "date": "2025-06-02",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000120_1045810"
+      },
+      {
+        "type": "S-3ASR",
+        "title": "Offering Registrations",
+        "date": "2025-05-28",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000118_1045810"
+      },
+      {
+        "type": "DEF 14A",
+        "title": "Proxy Statements",
+        "date": "2025-05-13",
+        "url": "https://finance.yahoo.com/sec-filing/NVDA/0001045810-25-000095_1045810"
+      }
+    ],
+    "marketCap": 182480000000.0
+  },
+  {
+    "symbol": "TSLA",
+    "price": 403.32,
+    "high52w": 498.83,
+    "low52w": 214.25,
+    "volume": 52697218,
+    "name": "Tesla, Inc.",
+    "exchange": "NasdaqGS",
+    "previousClose": 292.98,
+    "dayHigh": 404.54,
+    "dayLow": 388.25,
+    "change": 110.34,
+    "changePercent": 37.66,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 446.74
+      },
+      {
+        "date": "2025-12-04",
+        "close": 454.53
+      },
+      {
+        "date": "2025-12-05",
+        "close": 455.0
+      },
+      {
+        "date": "2025-12-08",
+        "close": 439.58
+      },
+      {
+        "date": "2025-12-09",
+        "close": 445.17
+      },
+      {
+        "date": "2025-12-10",
+        "close": 451.45
+      },
+      {
+        "date": "2025-12-11",
+        "close": 446.89
+      },
+      {
+        "date": "2025-12-12",
+        "close": 458.96
+      },
+      {
+        "date": "2025-12-15",
+        "close": 475.31
+      },
+      {
+        "date": "2025-12-16",
+        "close": 489.88
+      },
+      {
+        "date": "2025-12-17",
+        "close": 467.26
+      },
+      {
+        "date": "2025-12-18",
+        "close": 483.37
+      },
+      {
+        "date": "2025-12-19",
+        "close": 481.2
+      },
+      {
+        "date": "2025-12-22",
+        "close": 488.73
+      },
+      {
+        "date": "2025-12-23",
+        "close": 485.56
+      },
+      {
+        "date": "2025-12-24",
+        "close": 485.4
+      },
+      {
+        "date": "2025-12-26",
+        "close": 475.19
+      },
+      {
+        "date": "2025-12-29",
+        "close": 459.64
+      },
+      {
+        "date": "2025-12-30",
+        "close": 454.43
+      },
+      {
+        "date": "2025-12-31",
+        "close": 449.72
+      },
+      {
+        "date": "2026-01-02",
+        "close": 438.07
+      },
+      {
+        "date": "2026-01-05",
+        "close": 451.67
+      },
+      {
+        "date": "2026-01-06",
+        "close": 432.96
+      },
+      {
+        "date": "2026-01-07",
+        "close": 431.41
+      },
+      {
+        "date": "2026-01-08",
+        "close": 435.8
+      },
+      {
+        "date": "2026-01-09",
+        "close": 445.01
+      },
+      {
+        "date": "2026-01-12",
+        "close": 448.96
+      },
+      {
+        "date": "2026-01-13",
+        "close": 447.2
+      },
+      {
+        "date": "2026-01-14",
+        "close": 439.2
+      },
+      {
+        "date": "2026-01-15",
+        "close": 438.57
+      },
+      {
+        "date": "2026-01-16",
+        "close": 437.5
+      },
+      {
+        "date": "2026-01-20",
+        "close": 419.25
+      },
+      {
+        "date": "2026-01-21",
+        "close": 431.44
+      },
+      {
+        "date": "2026-01-22",
+        "close": 449.36
+      },
+      {
+        "date": "2026-01-23",
+        "close": 449.06
+      },
+      {
+        "date": "2026-01-26",
+        "close": 435.2
+      },
+      {
+        "date": "2026-01-27",
+        "close": 430.9
+      },
+      {
+        "date": "2026-01-28",
+        "close": 431.46
+      },
+      {
+        "date": "2026-01-29",
+        "close": 416.56
+      },
+      {
+        "date": "2026-01-30",
+        "close": 430.41
+      },
+      {
+        "date": "2026-02-02",
+        "close": 421.81
+      },
+      {
+        "date": "2026-02-03",
+        "close": 421.96
+      },
+      {
+        "date": "2026-02-04",
+        "close": 406.01
+      },
+      {
+        "date": "2026-02-05",
+        "close": 397.21
+      },
+      {
+        "date": "2026-02-06",
+        "close": 411.11
+      },
+      {
+        "date": "2026-02-09",
+        "close": 417.32
+      },
+      {
+        "date": "2026-02-10",
+        "close": 425.21
+      },
+      {
+        "date": "2026-02-11",
+        "close": 428.27
+      },
+      {
+        "date": "2026-02-12",
+        "close": 417.07
+      },
+      {
+        "date": "2026-02-13",
+        "close": 417.44
+      },
+      {
+        "date": "2026-02-17",
+        "close": 410.63
+      },
+      {
+        "date": "2026-02-18",
+        "close": 411.32
+      },
+      {
+        "date": "2026-02-19",
+        "close": 411.71
+      },
+      {
+        "date": "2026-02-20",
+        "close": 411.82
+      },
+      {
+        "date": "2026-02-23",
+        "close": 399.83
+      },
+      {
+        "date": "2026-02-24",
+        "close": 409.38
+      },
+      {
+        "date": "2026-02-25",
+        "close": 417.4
+      },
+      {
+        "date": "2026-02-26",
+        "close": 408.58
+      },
+      {
+        "date": "2026-02-27",
+        "close": 402.51
+      },
+      {
+        "date": "2026-03-02",
+        "close": 403.32
+      }
+    ],
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Manufacturers",
+    "description": "Tesla, Inc. designs, develops, manufactures, leases, and sells electric vehicles, and energy generation and storage systems in the United States, China, and internationally. The company operates in two segments, Automotive; and Energy Generation and Storage. The company offers electric vehicles, as well as sells automotive regulatory credits; and non-warranty maintenance services and collision, automotive insurance services, as well as part sales and retail merchandise sale. It also provides sedans and sport utility vehicles through direct and used vehicle sales, a network of Tesla Superchargers, and in-app upgrades; purchase financing and leasing services; services for electric vehicles through its company-owned service locations and Tesla mobile service technicians; and vehicle limited warranties and extended service plans. In addition, the company engages in the design, manufacture, installation, sale, and leasing of solar energy generation and energy storage products, and related services to residential, commercial, and industrial customers and utilities through its website, stores, and galleries, as well as through a network of channel partners. Further, it provides services and repairs to its energy product customers, including under warranty and extended service plans; and various financing options to its residential customers; lithium-ion battery energy storage products, such as Powerwall and Megapack; energy generation products, including solar panels and solar roof; self-driving development and artificial intelligence software, vehicle control and infotainment software, and battery and powertrain. The company was formerly known as Tesla Motors, Inc. and changed its name to Tesla, Inc. in February 2017. Tesla, Inc. was incorporated in 2003 and is headquartered in Austin, Texas.",
+    "website": "https://www.tesla.com",
+    "employees": 134785,
+    "city": "Austin",
+    "state": "TX",
+    "country": "United States",
+    "shortTermOutlook": "Bearish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Bullish",
+    "support": 328.71,
+    "resistance": 440.13,
+    "stopLoss": 355.922209,
+    "valuationDescription": "Overvalued",
+    "valuationDiscount": "-11%",
+    "relativeValue": "Premium",
+    "targetPrice": 0,
+    "rating": "HOLD",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 94,
+    "hiring": 79,
+    "sustainability": 44,
+    "insiderSentiment": 99,
+    "earningsReports": 100,
+    "dividends": 0,
+    "sigDevs": [
+      {
+        "headline": "Joe Ward, Tesla\u2019s VP for EMEA, will lead the company\u2019s sales, service and delivery organization- Bloomberg News",
+        "date": "2026-02-10"
+      }
+    ],
+    "reports": [
+      {
+        "title": "Tesla Inc. manufactures and sells electric vehicles and energy generation and storage systems. The company was founded in 2003 and went public in June 2010 with an initial public offering at $17 per share. As of December 31, 2024, Tesla had over 125,000 employees. It recently moved its headquarters to Austin, Texas, from Palo Alto, California, and its stock is a component of the S&P 500.",
+        "date": "2026-01-30T18:15:44Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "The major U.S. stock indices are lower at midday on Friday. Earnings news continues to drive the action, and that news, for this morning at least, has featured some high-profile companies that disappointed their shareholders. Meanwhile, President Trump has nominated former Fed Governor Kevin Warsh to be the next chairman of the Federal Reserve. Wall Street is monitoring the selection process with an eye towards both Fed policy and Fed independence. The Trump administration has been extraordinarily vocal in its opinions on interest rates in recent months, blurring the clear line of independence that has long existed between the White House and the Fed.",
+        "date": "2026-01-30T18:00:44Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "This week's list looks at the 20 stocks followed most closely by Argus clients in 2025. It contains well-known names and, not surprisingly, includes many technology or \"technology related\" names. One might have easily guessed that Nvidia is in the top spot, but might be surprised to see only three Healthcare companies, only one big box retailer, no big banks, and no Walmart. The list also includes the current Argus rating on each stock, the sector for each stock, and each stock's performance from 2025.",
+        "date": "2026-01-05T12:59:59Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "insiders": [
+      {
+        "name": "BAGLINO ANDREW D",
+        "relation": "Officer",
+        "transaction": "Sale",
+        "shares": 31230,
+        "date": "2024-04-01"
+      },
+      {
+        "name": "DENHOLM ROBYN M",
+        "relation": "Director",
+        "transaction": "Sale",
+        "shares": 85000,
+        "date": "2025-05-06"
+      },
+      {
+        "name": "EHRENPREIS IRA MATTHEW",
+        "relation": "Director",
+        "transaction": "Sale",
+        "shares": 855394,
+        "date": "2025-05-27"
+      },
+      {
+        "name": "GEBBIA JOSEPH",
+        "relation": "Director",
+        "transaction": "Purchase",
+        "shares": 0,
+        "date": "2025-04-24"
+      },
+      {
+        "name": "MURDOCH JAMES RUPERT",
+        "relation": "Director",
+        "transaction": "Sale",
+        "shares": 0,
+        "date": "2026-01-02"
+      }
+    ],
+    "filings": [
+      {
+        "type": "10-K",
+        "title": "Periodic Financial Reports",
+        "date": "2026-01-29",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001628280-26-003952_1318605"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2026-01-28",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001628280-26-003837_1318605"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2026-01-02",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001628280-26-000016_1318605"
+      },
+      {
+        "type": "S-8",
+        "title": "Offering Registrations",
+        "date": "2025-11-10",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001104659-25-108602_1318605"
+      },
+      {
+        "type": "8-K",
+        "title": "Corporate Changes & Voting Matters",
+        "date": "2025-11-07",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001104659-25-108507_1318605"
+      },
+      {
+        "type": "DEFA14A",
+        "title": "Proxy Statements",
+        "date": "2025-11-06",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001104659-25-107871_1318605"
+      },
+      {
+        "type": "DEFA14A",
+        "title": "Proxy Statements",
+        "date": "2025-11-05",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001104659-25-107096_1318605"
+      },
+      {
+        "type": "DEFA14A",
+        "title": "Proxy Statements",
+        "date": "2025-11-04",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001104659-25-106380_1318605"
+      },
+      {
+        "type": "DEFA14A",
+        "title": "Proxy Statements",
+        "date": "2025-11-03",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001104659-25-105632_1318605"
+      },
+      {
+        "type": "DEFA14A",
+        "title": "Proxy Statements",
+        "date": "2025-10-31",
+        "url": "https://finance.yahoo.com/sec-filing/TSLA/0001104659-25-104992_1318605"
+      }
+    ],
+    "marketCap": 403320000000.0
+  },
+  {
+    "symbol": "JPM",
+    "price": 297.56,
+    "high52w": 337.25,
+    "low52w": 202.16,
+    "volume": 8485214,
+    "name": "JPMorgan Chase & Co.",
+    "exchange": "NYSE",
+    "previousClose": 264.65,
+    "dayHigh": 299.98,
+    "dayLow": 293.23,
+    "change": 32.91,
+    "changePercent": 12.44,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 312.13
+      },
+      {
+        "date": "2025-12-04",
+        "close": 316.1
+      },
+      {
+        "date": "2025-12-05",
+        "close": 315.04
+      },
+      {
+        "date": "2025-12-08",
+        "close": 315.21
+      },
+      {
+        "date": "2025-12-09",
+        "close": 300.51
+      },
+      {
+        "date": "2025-12-10",
+        "close": 310.11
+      },
+      {
+        "date": "2025-12-11",
+        "close": 317.38
+      },
+      {
+        "date": "2025-12-12",
+        "close": 318.52
+      },
+      {
+        "date": "2025-12-15",
+        "close": 320.02
+      },
+      {
+        "date": "2025-12-16",
+        "close": 315.55
+      },
+      {
+        "date": "2025-12-17",
+        "close": 314.98
+      },
+      {
+        "date": "2025-12-18",
+        "close": 313.0
+      },
+      {
+        "date": "2025-12-19",
+        "close": 317.21
+      },
+      {
+        "date": "2025-12-22",
+        "close": 323.09
+      },
+      {
+        "date": "2025-12-23",
+        "close": 325.93
+      },
+      {
+        "date": "2025-12-24",
+        "close": 329.17
+      },
+      {
+        "date": "2025-12-26",
+        "close": 327.91
+      },
+      {
+        "date": "2025-12-29",
+        "close": 323.75
+      },
+      {
+        "date": "2025-12-30",
+        "close": 323.42
+      },
+      {
+        "date": "2025-12-31",
+        "close": 322.22
+      },
+      {
+        "date": "2026-01-02",
+        "close": 325.48
+      },
+      {
+        "date": "2026-01-05",
+        "close": 334.04
+      },
+      {
+        "date": "2026-01-06",
+        "close": 334.61
+      },
+      {
+        "date": "2026-01-07",
+        "close": 326.99
+      },
+      {
+        "date": "2026-01-08",
+        "close": 329.79
+      },
+      {
+        "date": "2026-01-09",
+        "close": 329.19
+      },
+      {
+        "date": "2026-01-12",
+        "close": 324.49
+      },
+      {
+        "date": "2026-01-13",
+        "close": 310.9
+      },
+      {
+        "date": "2026-01-14",
+        "close": 307.87
+      },
+      {
+        "date": "2026-01-15",
+        "close": 309.26
+      },
+      {
+        "date": "2026-01-16",
+        "close": 312.47
+      },
+      {
+        "date": "2026-01-20",
+        "close": 302.74
+      },
+      {
+        "date": "2026-01-21",
+        "close": 302.04
+      },
+      {
+        "date": "2026-01-22",
+        "close": 303.63
+      },
+      {
+        "date": "2026-01-23",
+        "close": 297.72
+      },
+      {
+        "date": "2026-01-26",
+        "close": 301.04
+      },
+      {
+        "date": "2026-01-27",
+        "close": 300.31
+      },
+      {
+        "date": "2026-01-28",
+        "close": 300.77
+      },
+      {
+        "date": "2026-01-29",
+        "close": 306.42
+      },
+      {
+        "date": "2026-01-30",
+        "close": 305.89
+      },
+      {
+        "date": "2026-02-02",
+        "close": 308.14
+      },
+      {
+        "date": "2026-02-03",
+        "close": 314.85
+      },
+      {
+        "date": "2026-02-04",
+        "close": 317.27
+      },
+      {
+        "date": "2026-02-05",
+        "close": 310.16
+      },
+      {
+        "date": "2026-02-06",
+        "close": 322.4
+      },
+      {
+        "date": "2026-02-09",
+        "close": 322.1
+      },
+      {
+        "date": "2026-02-10",
+        "close": 318.28
+      },
+      {
+        "date": "2026-02-11",
+        "close": 310.82
+      },
+      {
+        "date": "2026-02-12",
+        "close": 302.64
+      },
+      {
+        "date": "2026-02-13",
+        "close": 302.55
+      },
+      {
+        "date": "2026-02-17",
+        "close": 307.13
+      },
+      {
+        "date": "2026-02-18",
+        "close": 308.78
+      },
+      {
+        "date": "2026-02-19",
+        "close": 308.05
+      },
+      {
+        "date": "2026-02-20",
+        "close": 310.79
+      },
+      {
+        "date": "2026-02-23",
+        "close": 297.67
+      },
+      {
+        "date": "2026-02-24",
+        "close": 297.3
+      },
+      {
+        "date": "2026-02-25",
+        "close": 303.3
+      },
+      {
+        "date": "2026-02-26",
+        "close": 306.13
+      },
+      {
+        "date": "2026-02-27",
+        "close": 300.3
+      },
+      {
+        "date": "2026-03-02",
+        "close": 297.56
+      }
+    ],
+    "sector": "Financial Services",
+    "industry": "Banks - Diversified",
+    "description": "JPMorgan Chase & Co. operates as a bank and financial holding company in the United States, rest of North America, Europe, the Middle East, Africa, the Asia Pacific, Latin America, and the Caribbean. It operates in three segments: Consumer & Community Banking, Commercial & Investment Bank, and Asset & Wealth Management. The company offers deposit, investment and lending products, and cash management; mortgage origination and servicing activities; residential mortgages and home equity loans; and credit cards, payment solutions, travel services, merchant offers, lifestyle benefits, auto loans, and leases to consumers and small businesses through bank branches, ATMs, and digital and telephone banking. It also provides investment banking, market-making, financing, custody, and securities products and services; corporate strategy and structure advisory, equity and debt market capital-raising, and loan origination and syndication services; cash and derivative instruments, risk management solutions, prime brokerage, clearing, and research; and fund services, liquidity and trading services, and data solutions products for large corporations, financial institutions, merchants, start-ups, small and midsized companies, local governments, municipalities, nonprofits, and commercial real estate clients. In addition, the company offers multi-asset investment management solutions in equities, fixed income, alternatives, and money market funds to institutional clients and retail investors; retirement products and services, estate planning, lending, deposits, and investment management products to high-net-worth clients; and financial transaction processing. JPMorgan Chase & Co. was founded in 1799 and is headquartered in New York, New York.",
+    "website": "https://www.jpmorganchase.com",
+    "employees": 318512,
+    "city": "New York",
+    "state": "NY",
+    "country": "United States",
+    "shortTermOutlook": "Bearish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Bearish",
+    "support": 198.565,
+    "resistance": 308.9,
+    "stopLoss": 284.769496,
+    "valuationDescription": "Near Fair Value",
+    "valuationDiscount": "-2%",
+    "relativeValue": "",
+    "targetPrice": 340.0,
+    "rating": "BUY",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 96,
+    "hiring": 1,
+    "sustainability": 17,
+    "insiderSentiment": 2,
+    "earningsReports": 75,
+    "dividends": 14,
+    "sigDevs": [
+      {
+        "headline": "JPMorgan Exec Says Investments Will Drive Long-Term Growth, Profitability And Margins",
+        "date": "2026-02-23"
+      }
+    ],
+    "reports": [
+      {
+        "title": "As it does every year, the Argus analyst team prepared its top stock picks for 2026. Each analyst surveyed their coverage list, reviewed forward-looking indicators for companies, and forecast which companies they believe seem best positioned for growth and investment returns in the new year. Analysts weigh potential economic and corporate headwinds and tailwinds, and have solid relationships with management teams of the companies they follow. The Argus Investment Policy Committee, comprised of our most-senior staff, supports recommendations by providing macro outlooks for the economy, interest rates, earnings, and the stock market. The following are the Argus Top Stock Picks for 2026.",
+        "date": "2026-01-26T12:59:44Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "JPMorgan Chase is one of world's largest diversified-banking firms. The company operates a leading global corporate and investment bank and is the second-largest mortgage originator in the United States, after Wells Fargo. JPMorgan Chase also operates a large retail-banking network and is a leading credit card issuer.",
+        "date": "2026-01-14T12:07:03Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Another Winning Year: Our Monthly Survey of the Economy, Interest Rates, and Stocks The year 2025 was another good period for stocks. Following capital appreciation of 24.2% in 2023 and 23.3% in 2024, the S&P 500 increased 16.4% in 2025 (up 17.8% on a total-return basis including hypothetical dividends). The index has put together two consecutive winning years 16 times since 1960. Third-year returns after the two winners, however, have averaged just 3%. On that basis, 2025 beat the odds. Most indices and many stocks rose in fairly steady fashion from April 2025 through the end of October. While the S&P 500 did touch a new all-time high in December, the index level was little changed in the final two months. What did change, however, was relative sector momentum, as investors cashed out AI winnings and plowed them into neglected sectors, most notably Healthcare. All sectors were positive in 2025. And the delta between growth stocks and value stocks was in single-digit percentages, compared with a 20%-plus premium for growth over value in 2024.  A market weighted toward the three traditional growth sectors might have had a bumpy entrance into the new year. But we believe improved sector diversity sets the market up for a smoother transition into 2026.  The Economy, Interest Rates, and Earnings The federal government is back up and running, and we finally have access to preliminary 3Q25 GDP data. The Bureau of Economic Analysis (BEA) did not issue an advance (first) third-quarter 2025 GDP report. The preliminary (second) 3Q25 GDP report indicated annualized growth of 4.3%, better than the 3.2% consensus forecast and representing continued expansion from healthy 3.8% growth in 2Q25 GDP. The preliminary report was stronger than already-high expectations and appears to signal fundamental strength in the economy that superseded any challenges from tariffs, reduced immigration, and other factors.  The increase in third-quarter 2025 GDP reflected increases in consumer spending, exports, and government spending. These positives were offset by a decrease in gross private domestic investment. Imports, which are subtractive to GDP, decreased. Third-quarter 2025 personal consumption expenditures (PCE) increased 3.5%, better than Argus' expectations in the 2% range. In 2Q25, PCE rose by 2.5%. Total spending on goods increased to 3.1% in 3Q25 from 2.2% in 2Q25. Durable goods spending increased 1.6% in 3Q, while non-durable goods spending increased 3.9%. Durable goods spending was down from 2Q, while non-durable goods spending was up. Relative strength in non-durable goods spending likely reflects the much-discussed K-shaped economy, where lower-income consumers have focused their spending on necessities. Services, which is the biggest spending category at 45% of total 3Q25 GDP, rose by 3.7% in 3Q after a 2.6% gain in 2Q25.  Non-residential fixed investment, the proxy for corporate capital spending, grew at a subdued 2.8% annualized rate in 3Q25, down from 7.3% in 2Q25 and from 9.5% in 1Q25. The AI boom drove 5.4% growth in both equipment and intellectual property products, but corporate spending on structures declined 6.3%. PCE and non-residential fixed investment normally constitute 80%-85% of GDP. These two categories contributed 2.8 percentage points to 3Q25 GDP growth. Residential investment declined 5.1% in 3Q25, its fifth decline in the past six quarters.  Exports surged 8.8% in 3Q25, while imports contracted 4.7%. Both first- and second-quarter GDP featured outsized swings in the imports and private inventory categories due to trade positioning ahead of the implementation of tariffs. The third quarter of 2025 was expected to be the first period in which those two categories did not meaningfully distort overall GDP growth, but it appears that some trade-positioning impacts may have lingered. The net of exports and imports added 1.59 points to GDP growth, while the change in private inventories subtracted 0.22 percentage point. Government spending rose 2.2% in 3Q25 after being down 0.1% in 2Q25. Federal spending was up 2.9%, led by 5.8% growth in national defense spending. State and local spending increased 1.8%. The core PCE price index (excluding food and energy) rose 2.9% in 3Q25, in line with the Argus estimate of 3.0%. The change in core PCE prices is in-line with the 3.0% range prevailing since summer 2025.  Outside the GDP accounts, the September and November nonfarm payrolls reports showed some recovery from the weak and worrisome summer jobs growth, but also some worsening in unemployment. There was no standalone October non-farm payrolls report. The November report included some October data but not an October unemployment rate.  According to the Bureau of Labor Statistics (BLS), the U.S. economy generated 50,000 new non-farm jobs in December, up from a revised 56,000 in November and below the consensus forecast of 60,000. In October, the U.S. economy lost a downwardly revised 173,000 jobs. Many of the October job losses were from federal employees laid off in winter 2025 who had exhausted their severance. Based on December and November payrolls and the steep decline in October, non-farm payrolls averaged a decline of 22,000 for October-December, compared with an average gain of 22,000 for the September-November period.  Federal employment has declined by over 270,000 since January 2025. With federal employment now relatively stable, the total employment picture is less likely to see outsized impacts from policy changes such as those affecting October 2025 employment.  The unemployment rate eased to 4.4% in December from (revised) 4.5% in November. Average hourly earnings grew 3.8% annually for December, rising from a 3.5% annual rate for November. The breakeven level of jobs growth, required to hold the unemployment rate steady, is now lower than the 150K range in recent years because of trends in population growth. Due to sharply reduced immigration and secular decline in native-born birth rates, the St. Louis Fed now estimates breakeven employment growth of 32,000-82,000 per month. Thus, job gains in the neighborhood of consensus estimates would likely keep unemployment stable. Other reports delayed by the shutdown have now been released. The November all-items consumer price index (CPI) rose by 2.7% annually, while the core CPI increased by 2.6% from a year earlier. Both all-items and core CPI rose 0.2% month over month. While monthly and annual CPI growth were better than consensus, formerly stubborn categories such as shelter (one-third of CPI inputs) and airfares notably declined. Economists blamed a shortened data-collection period for incomplete data and expect the December CPI to paint a truer picture of consumer inflation. Based on sentiment surveys and diffusion indices, the business community appears guardedly optimistic while consumers are worried about new jobs scarcity. The ISM's manufacturing purchasing managers' index (PMI) fell from 48.7% in October to 48.2% in November, the lowest in four months. ISM's services PMI rose from 52.4% for October to 52.6% for November, which was the highest reading in nine months. The Conference Board's consumer confidence index fell to 89.1% in December from 92.9% (revised) in November. Within this series, the expectations index reading held steady at 70.7% for both November and December while remaining below the 80% threshold that some investors believe signals a recession ahead. The consumer sentiment survey from the University of Michigan finally rose month over month, to 52.9% in December from 51.0% in November. This consumer sentiment reading was 74.0% a year earlier in December 2024.  Given the positive trend in GDP growth across the middle quarters of the year, Argus Chief Economist Chris Graja, CFA, has raised the Argus GDP growth forecast to 2.5% for 2025 from a prior of 1.9%. Chris has also increased the Argus GDP growth forecast for 2026, to 2.0% from a prior 1.9%. The U.S. Federal Reserve is tasked with the dual mandate of optimizing employment while keeping inflation in check. After raising rates aggressively throughout 2022 and early 2023, the Fed maintained its policy rate at 5.25%-5.50% from September 2023 until August 2024. Beginning in August 2024, the Fed cut rates by a cumulative 100 bps over the next three FOMC meetings. It then moved to the sidelines for the first nine months of 2025. The central bank then cut the fed funds rate in September 2025 and again by a quarter point each at the end of October and in the middle of December.  After the October meeting, Fed Chair Powell stated that a December rate cut 'was not a foregone conclusion.' While a cut was indeed made in December, the Fed chair issued commentary that was similarly cautionary. Many investors now believe the December 2025 rate cut will be the last under Jerome Powell, whose tenure as chairman ends in May 2026.  The Fed appears to have determined that the balance of risks had shifted away from rising prices and toward weakness in the employment economy. The recent trend in monthly non-farm payrolls growth signals at best uncertainty and at worst weakening in the employment situation. U.S. Treasury yields were little changed in September and October before moving lower in November in anticipation of a December rate cut. Rates continued moving lower at the short end in December while edging higher at the long end. The 10-year Treasury yield was 4.14% as of the end of December 2025, compared with 4.09% as of the end of November. The cycle peak for the 10-year yield was 4.9% in October 2023. The two-year Treasury yield was 3.45% as of the end of December 2025, versus 3.51% as of the end of November 2025. The cycle peak for the two-year yield was 5.2% as of October 2023.  Over the course of 2025, the 10-year yield declined by 43 basis points (bps); and the two-year Treasury yield declined by 80 bps. The two's-10's spread at year-end 2025 showed a positive slope of 69 basis points, up from 32 bps at year-end 2024; a negative (inverted slope) 41 bps at year-end 2023; and a negative 48 bps at year-end 2022. The two's-10's slope in the yield curve at year-end 2025 was the most positive since year-end 2021 (79 bps), before inflation emerged and the Fed began its inflation fight. Argus expects short-term yields to move lower from current levels, although the pace of decline could moderate if the Fed stands pat through the end of Powell's term. A more aggressive approach from a new Fed chair, however, could get short rates moving down again. Long yields over time are expected to widen their relative premium to short yields.  With the Fed now done for 2025, Argus Fixed Income Strategist Kevin Heal continues to model one rate cut in in 2026. We see little likelihood of first-half rate cut and an increased likelihood of a second-half 2026 rate cut as leadership changes hands at the Fed. In the absence of government data, calendar 3Q25 earnings season had an outsized and largely positive impact on stocks. Expectations heading into earnings season, for high-single to low-double-digit growth, were the most positive in at least four quarters. Third-quarter 2025 earnings season was better than those positive expectations.  The annual growth rate for calendar 3Q25 earnings was in the mid-teens range, with different agencies reporting slightly different rates. More than 82% of companies reported earnings above the pre-reporting consensus, which is higher than the long-term 75% average. The magnitude of the EPS beat against expectations, in the high-single-digit range, was above the midpoint of the long-term range of 5%-9%.  The best growth in 3Q25 earnings season came from the Information Technology, Financial, Utilities, Materials, and Industrials sectors. The weakest sectors included Consumer Staples, Healthcare, and Energy. The single-digit decline in Energy earnings is actually the most moderate of any quarter in the past year. Revenue growth in high-single-digit percentages for 3Q25 was also the best in over a year. Nearly all sectors are growing revenue, which is partly a reflection of still-present inflation.   An analysis of earnings-call transcripts suggests that while tariffs are still a topic, they are no longer the all-consuming topic. The overall message was positive, with earnings for calendar 4Q25 expected to rise in high-single-digit percentages. Third-quarter earnings season also featured expansion in non-GAAP operating margins to the 12.4% range, which is up about 50 bps year over year. Companies have learned to live with or at least navigate around tariffs, by sourcing locally to end markets and flexing variable costs whenever possible. Assuming the S&P 500 can sustain recent revenue growth exceeding 5% annually, we see room for further margin expansion ahead as volume leverage supersedes higher costs and tariffs.  We are reiterating our forecasts for S&P 500 earnings from continuing operations of $270 for 2025 and $300 for 2026. Our preliminary forecast for 2027 earnings from continuing operations is $325. Domestic and Global Markets The major indices rallied steadily from April through the end of October. Although the S&P 500 pushed to fractionally higher all-time highs right before Christmas, the index generally back-filled across November and December and finished 2025 below all-time highs. The S&P 500 was up 17.8% on a total-return basis in 2025, while the index price finished about 1.2% below its all-time closing high. The Nasdaq delivered total return of 21.2% in 2025 and finished about 3% below its all-time closing high. The Dow Jones Industrial Average finished 2025 up 14.9% and finished less than a point below its all-time high.   Wilshire Large-Cap Growth was up 23.4% as of the end of 2025, while Wilshire Large-Cap Value was up 17.0% at the end of the year. In a clear sign of year-end rotation away from growth names, the growth-to-value premium narrowed to 6.4%, compared with 24.2% for 2024. The Russell 2000 was up 12.7% for the year, as small-caps lost some steam in the final quarter.  The Barclays Bloomberg U.S. Bond Index was up 6.9% in 2025, easing from its highest level of the year attained in November. Bond returns could continue higher in 2026 particularly if a new Fed chair adopts a more accommodative monetary stance.  The S&P 500 edged up 0.1% in November before declining 0.1% in December on an index price (not total return) basis. But that does not mean nothing happened in the market in those two months. AI winnings were redeployed into other sectors into year-end. Fourth-quarter stock performance at the sector level shows where some of those AI winnings went, while an analysis of full-year performance suggests that investors are not giving up on the AI trade altogether.  For 4Q25, the best sector performer by far was Healthcare (IYH), which rose 10.9% in the quarter. The S&P 500, by contrast, rose 2.3% in 4Q25, with all of that strength coming in October. The Healthcare sector has been helped by President Trump's intervention to lower the monthly price of GLP-1 drugs and to strike pricing deals with other major drug companies.  Four other sectors were positive in 4Q25: Materials, Information Technology, Financial, and Industrial.Utilities, which was strong for most of the year, declined in 4Q25 after Fed commentary signaled the potential for fewer rate cuts ahead, at least until Mr. Powell steps down. Other sectors that were down in 4Q25 included Real Estate, Consumer Staples, Communication Services, and Consumer Discretionary, while Energy was unchanged. The AI trade showed some cracks in the foundation during the fourth quarter of 2025. Nvidia released its highest-ever revenue and adjusted EPS for its fiscal 3Q26, beat the 3Q26 revenue consensus by billions, and guided fiscal 4Q26 revenue billions of dollars above consensus. But the NVDA shares fell post-earnings, dragging the AI trade down with it.  The redeployment of AI winnings during 4Q25 had the effect of smoothing the overall sector map for full-year 2025. As of the end of 2025, all sectors were positive. Sectors that rose in single-digit percentages for 2025 included (in ascending order) Real Estate, Consumer Staples, Consumer Discretionary, and Energy. Sectors that rose in double-digit percentage for 2025 included (in ascending order) Materials, Healthcare, Financial, Utilities, Industrials, Information Technology, and Communication Services.  The rise of generative AI is sort of turning every company into a technology company. But there are still a few sectors that sell the digital pickaxes to the AI gold rush. Information Technology has been the chief beneficiary of the AI economy. As of the end of December 2025, the Information Technology sector was 34.4% of overall S&P 500 market capitalization - up two percentage points in a year, but down a point and a half in the last two months of 2025 amid AI profit-taking and sector rotation. Two other sectors, each of which include two so-called 'Magnificent 7' stocks, have been major beneficiaries of the AI revolution. Communication Services has grown steadily since inception, even though the stock prices and market caps of the big telecom names (VZ, T) have not changed much in the past few years. The sector's two Mag 7 names, GOOGL and META, are leaders in AI areas including large language models (LLMs), model training, inference, and more-recent growth opportunities including multi-modal models, agentic AI, and physical AI. Communication Services ended 2025 at 10.6% of total S&P 500 market capitalization, up from 9.4% a year ago.  Consumer Discretionary is a multi-industry sector and also houses two of the Mag 7 giants in TSLA and AMZN. Retailers and restaurants are suffering loss of business from lower-tier consumers in a K-shaped economy. Builders and automakers are being impacted by high financing costs and affordability issues. Consumer Discretionary ended 2025 at 10.4% of S&P 500 sector weight, down from 11.4% at year-end 2024, as strength in TSLA and a flat AMZN were unable to offset weakness in retail, restaurants, lodging & gaming, auto OEM & parts, and homebuilders & builders supply.  We adjusted our recommended sector weightings as we do each quarter at the beginning of March, June, September, and December. We raised the Healthcare sector to Over-Weight from Market-Weight. Healthcare stocks have benefited from the perception that the sector was oversold based on difficult trends being reported by a single niche, the healthcare insurers. The Healthcare sector overall has been helped by President Trump's intervention to lower the monthly price of GLP-1 drugs. While that may depress profit margin in the near term for Lilly and Novo Nordisk, it could lead to enough volume leverage to offset pricing pressures. The president has now forged deals with multiple other drug companies to lower prices.  The calendar 2025 year-end expiration of Affordable Care Act subsidies was the issue behind the longest government shutdown in history. On balance for the sector, we expect this risk to be offset by improvement in consumer utilization of elective healthcare services and improvement in segment margins related to increased digitization and agentic AI. Like the U.S. market, global stocks did better in 2023 than they did in 2022; and most carried that momentum across 2024. In 2025, overseas markets mainly did better than the U.S. market. Tariffs have both scared foreign investors out of U.S. equities and realigned leadership around the world. All nine global bourses in our tally were positive for 2025, but leadership changed since early in the year.   Most global markets strengthened into year-end as trade-related tensions continued to wind down. Some of the worst markets in 2024, such as Mexico, were at the top of the leaderboard in 2025; U.S. tariffs have been a net positive for Mexico. Conversely, some of 2024's winners such as India relatively underperformed in 2025. India alone lagged the U.S. market (S&P 500) for the full year.  In terms of our themes, resources economies won 2025 with a gain of 31.6%. Americas markets advanced 29.7% in 2025, fueled by recovery in Mexico and Canada. Mature economies (up 22.9%) edged past Asia (up 22.2%). BRICs-minus-Russia rose 18.6% in 2025. Conclusion Even after a three-year winning streak in the market, investors are sure to be asking, 'What have you done for me lately?' should there be any early-year stumble in stocks. On balance, we see some challenges facing the market in 2026, but a reasonably positive set-up all the same. If following two winning years is tough, following three is even tougher. And 2026 is the second year in the presidential cycle, which historically has been the weakest. Since 1980, returns in the second year of a presidential term have averaged 3.3%, compared to average returns of 15.6% in the first year, 16.5% in the third year, and 7.2% in the fourth year. The market has also yet to experience a full-year of in-place tariffs, as it might in 2026, along with the employment growth and consumption impacts of a full year of stiffer immigration policy. The administration's actions in Venezuela and ambitions toward Greenland have added geopolitics to the mix early in 2026. There is a lot to like in the outlook, too. The U.S. is coming off two strong growth quarters, with GDP rising 3.8% in 2Q25 and 4.3% (on a preliminary basis) in 3Q25. The preliminary report was stronger than already-high expectations and appears to signal fundamental strength in the economy that superseded any challenges from tariffs, reduced immigration, and other factors. Earnings growth has been excellent, rising in the mid-teens in 3Q25 on upper-single-digit revenue growth and featuring 12.4% operating margins. The year 2025 ended with a positive 69 bps slope in the two's-10's Treasury-yield relationship, the best since the end of 2021 (before inflation emerged and the Fed began its inflation battle). A positively sloped yield curve is regarded as positive for the economic outlook.   According to Argus President & CEO John Eade, the Argus base case for the stock market (the S&P 500) in 2026 is for another winning year, but with a more-moderate 5%-10% gain in prospect. This more-conservative outlook reflects a market coming off three straight double-digit gain years, the second year of the presidential cycle, and the potential shift in leadership away from Magnificent 7 and the AI trade.",
+        "date": "2026-01-14T11:52:03Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "marketCap": 297560000000.0
+  },
+  {
+    "symbol": "V",
+    "price": 320.51,
+    "high52w": 375.51,
+    "low52w": 299.0,
+    "volume": 6662015,
+    "name": "Visa Inc.",
+    "exchange": "NYSE",
+    "previousClose": 362.71,
+    "dayHigh": 322.58,
+    "dayLow": 314.595,
+    "change": -42.2,
+    "changePercent": -11.63,
+    "priceHistory": [
+      {
+        "date": "2025-12-03",
+        "close": 329.61
+      },
+      {
+        "date": "2025-12-04",
+        "close": 327.1
+      },
+      {
+        "date": "2025-12-05",
+        "close": 331.24
+      },
+      {
+        "date": "2025-12-08",
+        "close": 326.84
+      },
+      {
+        "date": "2025-12-09",
+        "close": 326.5
+      },
+      {
+        "date": "2025-12-10",
+        "close": 325.73
+      },
+      {
+        "date": "2025-12-11",
+        "close": 345.63
+      },
+      {
+        "date": "2025-12-12",
+        "close": 347.83
+      },
+      {
+        "date": "2025-12-15",
+        "close": 346.89
+      },
+      {
+        "date": "2025-12-16",
+        "close": 345.11
+      },
+      {
+        "date": "2025-12-17",
+        "close": 344.41
+      },
+      {
+        "date": "2025-12-18",
+        "close": 346.01
+      },
+      {
+        "date": "2025-12-19",
+        "close": 349.25
+      },
+      {
+        "date": "2025-12-22",
+        "close": 352.09
+      },
+      {
+        "date": "2025-12-23",
+        "close": 353.38
+      },
+      {
+        "date": "2025-12-24",
+        "close": 355.14
+      },
+      {
+        "date": "2025-12-26",
+        "close": 355.0
+      },
+      {
+        "date": "2025-12-29",
+        "close": 354.61
+      },
+      {
+        "date": "2025-12-30",
+        "close": 353.62
+      },
+      {
+        "date": "2025-12-31",
+        "close": 350.71
+      },
+      {
+        "date": "2026-01-02",
+        "close": 346.48
+      },
+      {
+        "date": "2026-01-05",
+        "close": 353.8
+      },
+      {
+        "date": "2026-01-06",
+        "close": 357.56
+      },
+      {
+        "date": "2026-01-07",
+        "close": 355.88
+      },
+      {
+        "date": "2026-01-08",
+        "close": 352.23
+      },
+      {
+        "date": "2026-01-09",
+        "close": 349.77
+      },
+      {
+        "date": "2026-01-12",
+        "close": 343.2
+      },
+      {
+        "date": "2026-01-13",
+        "close": 327.88
+      },
+      {
+        "date": "2026-01-14",
+        "close": 329.17
+      },
+      {
+        "date": "2026-01-15",
+        "close": 327.75
+      },
+      {
+        "date": "2026-01-16",
+        "close": 328.3
+      },
+      {
+        "date": "2026-01-20",
+        "close": 325.82
+      },
+      {
+        "date": "2026-01-21",
+        "close": 325.28
+      },
+      {
+        "date": "2026-01-22",
+        "close": 326.36
+      },
+      {
+        "date": "2026-01-23",
+        "close": 326.18
+      },
+      {
+        "date": "2026-01-26",
+        "close": 328.49
+      },
+      {
+        "date": "2026-01-27",
+        "close": 325.26
+      },
+      {
+        "date": "2026-01-28",
+        "close": 326.98
+      },
+      {
+        "date": "2026-01-29",
+        "close": 331.8
+      },
+      {
+        "date": "2026-01-30",
+        "close": 321.83
+      },
+      {
+        "date": "2026-02-02",
+        "close": 333.84
+      },
+      {
+        "date": "2026-02-03",
+        "close": 328.93
+      },
+      {
+        "date": "2026-02-04",
+        "close": 329.95
+      },
+      {
+        "date": "2026-02-05",
+        "close": 329.13
+      },
+      {
+        "date": "2026-02-06",
+        "close": 331.58
+      },
+      {
+        "date": "2026-02-09",
+        "close": 325.58
+      },
+      {
+        "date": "2026-02-10",
+        "close": 328.17
+      },
+      {
+        "date": "2026-02-11",
+        "close": 329.24
+      },
+      {
+        "date": "2026-02-12",
+        "close": 324.18
+      },
+      {
+        "date": "2026-02-13",
+        "close": 314.08
+      },
+      {
+        "date": "2026-02-17",
+        "close": 319.5
+      },
+      {
+        "date": "2026-02-18",
+        "close": 320.3
+      },
+      {
+        "date": "2026-02-19",
+        "close": 318.93
+      },
+      {
+        "date": "2026-02-20",
+        "close": 320.95
+      },
+      {
+        "date": "2026-02-23",
+        "close": 306.52
+      },
+      {
+        "date": "2026-02-24",
+        "close": 307.22
+      },
+      {
+        "date": "2026-02-25",
+        "close": 312.99
+      },
+      {
+        "date": "2026-02-26",
+        "close": 316.7
+      },
+      {
+        "date": "2026-02-27",
+        "close": 320.14
+      },
+      {
+        "date": "2026-03-02",
+        "close": 320.51
+      }
+    ],
+    "sector": "Financial Services",
+    "industry": "Credit Services",
+    "description": "Visa Inc. operates as a payment technology company in the United States and internationally. The company operates VisaNet, a transaction processing network that enables authorization, clearing, and settlement of payment transactions. It also offers credit, debit, and prepaid card products; tap to pay, tokenization, and click to pay services; Visa Direct, a platform which facilitates money movement, enabling clients to collect, hold, convert, and send funds across its network; and issuing solutions, such as airport lounge access, dining reservations, shopping experiences, event tickets, and seller offers. In addition, the company provides acceptance solutions, an omnichannel payment integration with e-commerce platforms; risk detection and prevention solutions; and advisory and other services comprising consulting practice, proprietary analytics models, data scientists and economists, marketing services, and managed services. It provides its services under the Visa, Visa Electron, V PAY, Interlink, and PLUS brands. The company serves consumers, sellers, financial institutions, and government entities. Visa Inc. was founded in 1958 and is headquartered in San Francisco, California.",
+    "website": "https://www.visa.com",
+    "employees": 0,
+    "city": "San Francisco",
+    "state": "CA",
+    "country": "United States",
+    "shortTermOutlook": "Bullish",
+    "intermediateOutlook": "Bearish",
+    "longTermOutlook": "Bearish",
+    "support": 278.28,
+    "resistance": 351.2499,
+    "stopLoss": 301.100914,
+    "valuationDescription": "Near Fair Value",
+    "valuationDiscount": "3%",
+    "relativeValue": "",
+    "targetPrice": 396.0,
+    "rating": "BUY",
+    "ratingProvider": "Argus Research",
+    "innovativeness": 99,
+    "hiring": 92,
+    "sustainability": 8,
+    "insiderSentiment": 5,
+    "earningsReports": 86,
+    "dividends": 3,
+    "sigDevs": [
+      {
+        "headline": "Visa Creates New Sub-Region Comprising Egypt, Libya, And Sudan",
+        "date": "2026-02-17"
+      }
+    ],
+    "reports": [
+      {
+        "title": "We have several ways of looking at market valuations, and most are signaling that stocks are reasonably valued, though hardly at bargain levels. Our Stock Bond Barometer is indicating that the two major portfolio asset classes are near parity as far as valuation is concerned. This model, our most comprehensive goes back to 1960. It takes into account real-time price levels, historical growth rates, and forward-looking forecasts of short-term and long-term government and corporate fixed-income yields, inflation, stock prices, GDP, and corporate earnings, among other factors. The output is expressed in terms of standard deviations to the mean, or sigma. The mean reading from the model is a modest premium for stocks, of 0.18 sigma, with a standard deviation of 1.07. So stocks normally sell for a slight premium compared to bonds. The valuation level now is a 0.50 sigma premium for stocks, not a discount but within the normal range. Other valuation measures also show reasonable multiples for stocks. The current forward P/E ratio for the S&P 500 is about 21, within the normal range of 15-24. On price/book, stocks are priced at the high end of the historical range of 5.5-1.8, given that tech stocks, with low capital bases, are the biggest component of the market. The current S&P 500 dividend yield of 1.13% is below the historical average of 2.9%, but the relative reading to the 10-year Treasury bond yield is 27% compared to the long-run average of 39%. On price/sales, the current ratio of 3.3 is above the historical average of 1.8, but well below the 4.0 multiple at the peak of the dot-com bubble. Further, the gap between the S&P 500 earnings yield and the benchmark 10-year government bond yield is 280 basis points, compared to the historical average of 400. Lastly, the ratio of the S&P 500 price to an ounce of gold is 1.5, not far from the midpoint of the historical range of 1-3. These valuation measures suggest to us that the stock market is not in danger of entering bubble territory at this juncture.",
+        "date": "2026-02-04T12:22:32Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "Visa Inc. operates the world's largest electronic payments network, providing processing services and payment product platforms, including credit, debit, prepaid, and commercial payments, under the brands Visa, Visa Electron, Interlink, and PLUS. Visa/PLUS is one of the world's largest ATM networks, offering cash access in local currency in more than 200 countries and territories. Visa has around 31,000 employees, is headquartered in San Francisco, California, and, as of 1Q26, has 5.0 billion cards (debit and credit) in circulation.",
+        "date": "2026-01-30T18:15:44Z",
+        "provider": "Argus Research"
+      },
+      {
+        "title": "The major U.S. stock indices are lower at midday on Friday. Earnings news continues to drive the action, and that news, for this morning at least, has featured some high-profile companies that disappointed their shareholders. Meanwhile, President Trump has nominated former Fed Governor Kevin Warsh to be the next chairman of the Federal Reserve. Wall Street is monitoring the selection process with an eye towards both Fed policy and Fed independence. The Trump administration has been extraordinarily vocal in its opinions on interest rates in recent months, blurring the clear line of independence that has long existed between the White House and the Fed.",
+        "date": "2026-01-30T18:00:44Z",
+        "provider": "Argus Research"
+      }
+    ],
+    "marketCap": 320510000000.0
+  }
+]

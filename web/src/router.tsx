@@ -3,13 +3,20 @@ import { Route as rootRoute } from "./routes/__root"
 import { AuthPage } from "./features/auth/AuthPage"
 import { StudentDashboard } from "./features/student/StudentDashboard"
 import { TeacherDashboard } from "./features/teacher/TeacherDashboard"
-// import { ClassControl } from "./features/teacher/ClassControl"
 import { AppShell } from "./components/layout/AppShell"
 import { supabase } from "./lib/api"
 import React, { Suspense } from "react"
 import { Loading } from "./components/ui/loading"
 import { StudentLeaderboardContainer } from "./features/leaderboard/StudentLeaderboardContainer"
 import { HomePage } from "./features/home/HomePage"
+
+// Public pages
+import { AboutPage } from "./features/public/AboutPage"
+import { FeaturesPage } from "./features/public/FeaturesPage"
+import { PricingPage } from "./features/public/PricingPage"
+import { ResourcesPage } from "./features/public/ResourcesPage"
+import { PrivacyPage } from "./features/public/PrivacyPage"
+import { TermsPage } from "./features/public/TermsPage"
 
 // Lazy Load Heavy Components
 const TradePage = React.lazy(() => import("./features/trade/TradePage").then(m => ({ default: m.TradePage })))
@@ -21,8 +28,9 @@ const ChallengesPage = React.lazy(() => import("./features/challenges/Challenges
 const ResearchPage = React.lazy(() => import("./features/research/ResearchPage").then(m => ({ default: m.ResearchPage })))
 const MarketHeatmapPage = React.lazy(() => import("./features/markets/MarketHeatmapPage").then(m => ({ default: m.MarketHeatmapPage })))
 const LessonBuilder = React.lazy(() => import("./features/teacher/LessonBuilder").then(m => ({ default: m.LessonBuilder })))
-
-
+const CasinoMathRoom = React.lazy(() => import("./features/casino/CasinoMathRoom").then(m => ({ default: m.CasinoMathRoom })))
+const SettingsPage = React.lazy(() => import("./features/settings/SettingsPage").then(m => ({ default: m.SettingsPage })))
+const StockResearchPage = React.lazy(() => import("./features/stock-research/StockResearchPage").then(m => ({ default: m.StockResearchPage })))
 
 const authenticatedRoute = createRoute({
     getParentRoute: () => rootRoute,
@@ -58,6 +66,7 @@ const teacherLayoutRoute = createRoute({
     },
 })
 
+// ─── Public Routes ───
 const indexRoute = createRoute({
     getParentRoute: () => rootRoute,
     path: "/",
@@ -70,7 +79,6 @@ const indexRoute = createRoute({
             }
             throw redirect({ to: "/app" })
         }
-        // Unauthenticated users see the public home page
     },
     component: HomePage,
 })
@@ -87,6 +95,43 @@ const authRoute = createRoute({
     }
 })
 
+const aboutRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: "/about",
+    component: AboutPage,
+})
+
+const featuresRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: "/features",
+    component: FeaturesPage,
+})
+
+const pricingRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: "/pricing",
+    component: PricingPage,
+})
+
+const resourcesRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: "/resources",
+    component: ResourcesPage,
+})
+
+const privacyRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: "/privacy",
+    component: PrivacyPage,
+})
+
+const termsRoute = createRoute({
+    getParentRoute: () => rootRoute,
+    path: "/terms",
+    component: TermsPage,
+})
+
+// ─── App Routes ───
 const appDashboardRoute = createRoute({
     getParentRoute: () => appLayoutRoute,
     path: "/app",
@@ -123,32 +168,6 @@ const appLeaderboardRoute = createRoute({
                 <StudentLeaderboardContainer />
             </Suspense>
         </AppShell>
-    ),
-})
-
-const teacherDashboardRoute = createRoute({
-    getParentRoute: () => teacherLayoutRoute,
-    path: "/teacher",
-    component: TeacherDashboard,
-})
-
-const classControlRoute = createRoute({
-    getParentRoute: () => teacherLayoutRoute,
-    path: "/teacher/class/$classId",
-    component: () => (
-        <Suspense fallback={<Loading />}>
-            <ClassControl />
-        </Suspense>
-    ),
-})
-
-const lessonBuilderRoute = createRoute({
-    getParentRoute: () => teacherLayoutRoute,
-    path: "/teacher/lessons",
-    component: () => (
-        <Suspense fallback={<Loading />}>
-            <LessonBuilder />
-        </Suspense>
     ),
 })
 
@@ -212,9 +231,73 @@ const appHeatmapRoute = createRoute({
     ),
 })
 
+const appCasinoRoute = createRoute({
+    getParentRoute: () => appLayoutRoute,
+    path: "/app/casino",
+    component: () => (
+        <Suspense fallback={<Loading />}>
+            <CasinoMathRoom />
+        </Suspense>
+    ),
+})
+
+const appSettingsRoute = createRoute({
+    getParentRoute: () => appLayoutRoute,
+    path: "/app/settings",
+    component: () => (
+        <Suspense fallback={<Loading />}>
+            <SettingsPage />
+        </Suspense>
+    ),
+})
+
+const appStockResearchRoute = createRoute({
+    getParentRoute: () => appLayoutRoute,
+    path: "/app/stock-research",
+    component: () => (
+        <Suspense fallback={<Loading />}>
+            <StockResearchPage />
+        </Suspense>
+    ),
+})
+
+// ─── Teacher Routes ───
+const teacherDashboardRoute = createRoute({
+    getParentRoute: () => teacherLayoutRoute,
+    path: "/teacher",
+    component: TeacherDashboard,
+})
+
+const classControlRoute = createRoute({
+    getParentRoute: () => teacherLayoutRoute,
+    path: "/teacher/class/$classId",
+    component: () => (
+        <Suspense fallback={<Loading />}>
+            <ClassControl />
+        </Suspense>
+    ),
+})
+
+const lessonBuilderRoute = createRoute({
+    getParentRoute: () => teacherLayoutRoute,
+    path: "/teacher/lessons",
+    component: () => (
+        <Suspense fallback={<Loading />}>
+            <LessonBuilder />
+        </Suspense>
+    ),
+})
+
+// ─── Route Tree ───
 const routeTree = rootRoute.addChildren([
     indexRoute,
     authRoute,
+    aboutRoute,
+    featuresRoute,
+    pricingRoute,
+    resourcesRoute,
+    privacyRoute,
+    termsRoute,
     authenticatedRoute.addChildren([
         appLayoutRoute.addChildren([
             appDashboardRoute,
@@ -227,6 +310,9 @@ const routeTree = rootRoute.addChildren([
             appChallengesRoute,
             appResearchRoute,
             appHeatmapRoute,
+            appCasinoRoute,
+            appSettingsRoute,
+            appStockResearchRoute,
         ]),
         teacherLayoutRoute.addChildren([
             teacherDashboardRoute,

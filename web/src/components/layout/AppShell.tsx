@@ -4,7 +4,7 @@ import type { LinkProps } from "@tanstack/react-router"
 import { useAuth } from "@/features/auth/AuthContextObject"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Home, Activity, Trophy, GraduationCap, LogOut, ChevronLeft, ChevronRight, PieChart, BookOpen, PenLine, Target } from "lucide-react"
+import { Menu, Home, Activity, Trophy, GraduationCap, LogOut, ChevronLeft, ChevronRight, PieChart, BookOpen, PenLine, Target, Dice1, BarChart3, Settings } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { CompetitionBanner } from "@/components/competition-banner"
@@ -69,6 +69,9 @@ export function AppShell({ children, role }: AppShellProps) {
         { href: "/app/learn", label: "Learn", icon: BookOpen },
         { href: "/app/journal", label: "Journal", icon: PenLine },
         { href: "/app/challenges", label: "Challenges", icon: Target },
+        { href: "/app/stock-research", label: "Research", icon: BarChart3 },
+        { href: "/app/casino", label: "Casino Math", icon: Dice1 },
+        { href: "/app/settings", label: "Settings", icon: Settings },
     ]
 
     const teacherLinks: NavLink[] = [

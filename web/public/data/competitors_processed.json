@@ -1,0 +1,304 @@
+[
+  {
+    "domain": "investopedia.com",
+    "globalRank": 4302,
+    "monthlyVisits": 7801118,
+    "visitsTrend": [
+      {
+        "date": "2025-07",
+        "visits": 10331807
+      },
+      {
+        "date": "2025-08",
+        "visits": 10115736
+      },
+      {
+        "date": "2025-09",
+        "visits": 10484775
+      },
+      {
+        "date": "2025-10",
+        "visits": 10777593
+      },
+      {
+        "date": "2025-11",
+        "visits": 9493743
+      },
+      {
+        "date": "2025-12",
+        "visits": 7801118
+      }
+    ],
+    "bounceRate": 66.6,
+    "bounceRateTrend": [
+      {
+        "date": "2025-07",
+        "rate": 68.2
+      },
+      {
+        "date": "2025-08",
+        "rate": 68.4
+      },
+      {
+        "date": "2025-09",
+        "rate": 67.4
+      },
+      {
+        "date": "2025-10",
+        "rate": 66.9
+      },
+      {
+        "date": "2025-11",
+        "rate": 66.1
+      },
+      {
+        "date": "2025-12",
+        "rate": 66.6
+      }
+    ],
+    "trafficSources": {},
+    "topCountries": [
+      {
+        "country": "United States",
+        "share": 49.5,
+        "visits": 27155181
+      },
+      {
+        "country": "India",
+        "share": 10.7,
+        "visits": 5887886
+      },
+      {
+        "country": "Canada",
+        "share": 4.9,
+        "visits": 2660622
+      },
+      {
+        "country": "United Kingdom",
+        "share": 4.5,
+        "visits": 2468360
+      },
+      {
+        "country": "Australia",
+        "share": 2.7,
+        "visits": 1491668
+      }
+    ]
+  },
+  {
+    "domain": "robinhood.com",
+    "globalRank": 1038,
+    "monthlyVisits": 30200487,
+    "visitsTrend": [
+      {
+        "date": "2025-07",
+        "visits": 36863815
+      },
+      {
+        "date": "2025-08",
+        "visits": 34860262
+      },
+      {
+        "date": "2025-09",
+        "visits": 34300371
+      },
+      {
+        "date": "2025-10",
+        "visits": 40305423
+      },
+      {
+        "date": "2025-11",
+        "visits": 31743855
+      },
+      {
+        "date": "2025-12",
+        "visits": 30200487
+      }
+    ],
+    "bounceRate": 36.9,
+    "bounceRateTrend": [
+      {
+        "date": "2025-07",
+        "rate": 41.8
+      },
+      {
+        "date": "2025-08",
+        "rate": 43.2
+      },
+      {
+        "date": "2025-09",
+        "rate": 41.1
+      },
+      {
+        "date": "2025-10",
+        "rate": 37.2
+      },
+      {
+        "date": "2025-11",
+        "rate": 36.9
+      },
+      {
+        "date": "2025-12",
+        "rate": 36.9
+      }
+    ],
+    "trafficSources": {},
+    "topCountries": [
+      {
+        "country": "United States",
+        "share": 92.9,
+        "visits": 115048714
+      },
+      {
+        "country": "Mexico",
+        "share": 1.1,
+        "visits": 1346823
+      },
+      {
+        "country": "United Kingdom",
+        "share": 0.9,
+        "visits": 1118381
+      },
+      {
+        "country": "Canada",
+        "share": 0.8,
+        "visits": 1002511
+      },
+      {
+        "country": "India",
+        "share": 0.5,
+        "visits": 677432
+      }
+    ]
+  },
+  {
+    "domain": "finance.yahoo.com",
+    "globalRank": 198,
+    "monthlyVisits": 124120109,
+    "visitsTrend": [
+      {
+        "date": "2025-07",
+        "visits": 142254304
+      },
+      {
+        "date": "2025-08",
+        "visits": 137413726
+      },
+      {
+        "date": "2025-09",
+        "visits": 129992381
+      },
+      {
+        "date": "2025-10",
+        "visits": 149600172
+      },
+      {
+        "date": "2025-11",
+        "visits": 125070962
+      },
+      {
+        "date": "2025-12",
+        "visits": 124120109
+      }
+    ],
+    "bounceRate": 55.7,
+    "bounceRateTrend": [
+      {
+        "date": "2025-07",
+        "rate": 54.2
+      },
+      {
+        "date": "2025-08",
+        "rate": 53.8
+      },
+      {
+        "date": "2025-09",
+        "rate": 54.4
+      },
+      {
+        "date": "2025-10",
+        "rate": 53.9
+      },
+      {
+        "date": "2025-11",
+        "rate": 55.0
+      },
+      {
+        "date": "2025-12",
+        "rate": 55.7
+      }
+    ],
+    "trafficSources": {},
+    "topCountries": []
+  },
+  {
+    "domain": "tradingview.com",
+    "globalRank": 96,
+    "monthlyVisits": 169799042,
+    "visitsTrend": [
+      {
+        "date": "2025-07",
+        "visits": 176472388
+      },
+      {
+        "date": "2025-08",
+        "visits": 175444275
+      },
+      {
+        "date": "2025-09",
+        "visits": 171439516
+      },
+      {
+        "date": "2025-10",
+        "visits": 193573783
+      },
+      {
+        "date": "2025-11",
+        "visits": 175126470
+      },
+      {
+        "date": "2025-12",
+        "visits": 169799042
+      }
+    ],
+    "bounceRate": 48.8,
+    "bounceRateTrend": [
+      {
+        "date": "2025-07",
+        "rate": 50.1
+      },
+      {
+        "date": "2025-08",
+        "rate": 49.8
+      },
+      {
+        "date": "2025-09",
+        "rate": 48.9
+      },
+      {
+        "date": "2025-10",
+        "rate": 48.3
+      },
+      {
+        "date": "2025-11",
+        "rate": 48.4
+      },
+      {
+        "date": "2025-12",
+        "rate": 48.8
+      }
+    ],
+    "trafficSources": {},
+    "topCountries": []
+  },
+  {
+    "domain": "marketwatch.com",
+    "globalRank": 0,
+    "monthlyVisits": 0,
+    "visitsTrend": [],
+    "bounceRate": 0,
+    "bounceRateTrend": [],
+    "trafficSources": {},
+    "topCountries": []
+  }
+]

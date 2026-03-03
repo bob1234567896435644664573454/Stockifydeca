@@ -1,0 +1,923 @@
+{
+  "investopedia.com": {
+    "global_rank": [
+      {
+        "date": "2026-02",
+        "global_rank": 4302
+      }
+    ],
+    "visits": [
+      {
+        "date": "2025-07-01",
+        "visits": 10331807.17519651
+      },
+      {
+        "date": "2025-08-01",
+        "visits": 10115736.25739942
+      },
+      {
+        "date": "2025-09-01",
+        "visits": 10484774.648534698
+      },
+      {
+        "date": "2025-10-01",
+        "visits": 10777592.856866475
+      },
+      {
+        "date": "2025-11-01",
+        "visits": 9493743.444055703
+      },
+      {
+        "date": "2025-12-01",
+        "visits": 7801117.500012567
+      }
+    ],
+    "bounce_rate": [
+      {
+        "date": "2025-07-01",
+        "bounce_rate": 0.6821866849435767
+      },
+      {
+        "date": "2025-08-01",
+        "bounce_rate": 0.6839149391686404
+      },
+      {
+        "date": "2025-09-01",
+        "bounce_rate": 0.6737788719556694
+      },
+      {
+        "date": "2025-10-01",
+        "bounce_rate": 0.6690282179651955
+      },
+      {
+        "date": "2025-11-01",
+        "bounce_rate": 0.6609847948534737
+      },
+      {
+        "date": "2025-12-01",
+        "bounce_rate": 0.6660392974958423
+      }
+    ],
+    "traffic_sources": {
+      "meta": {
+        "request": {
+          "granularity": "Monthly",
+          "main_domain_only": false,
+          "mtd": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "investopedia.com",
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-01-31"
+      },
+      "visits": {
+        "investopedia.com": [
+          {
+            "source_type": "Search",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 7420862.042000001,
+                "paid": 2696.249
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 6451783.793,
+                "paid": 7861.459
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 5226100.190999999,
+                "paid": 7227.7880000000005
+              }
+            ]
+          },
+          {
+            "source_type": "Social",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 22916.868000000006,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 18659.725999999995,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 18242.516000000003,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Mail",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 5128.163,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 4684.7429999999995,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 3790.24,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Display Ads",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 0.0,
+                "paid": 24025.854000000003
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 0.0,
+                "paid": 24423.772000000004
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 0.0,
+                "paid": 21098.979
+              }
+            ]
+          },
+          {
+            "source_type": "Direct",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 2922758.536,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 2637955.3819999998,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 2234134.445,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Referrals",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 379205.14800000004,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 348374.567,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 290523.344,
+                "paid": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "top_countries": [
+      {
+        "country": 840,
+        "share": 0.49547167346332577,
+        "visits": 27155181.3737867,
+        "pages_per_visit": 2.153498270519433,
+        "average_time": 111.78887570465199,
+        "bounce_rate": 0.7433500543302483,
+        "rank": 1642,
+        "country_name": "United States"
+      },
+      {
+        "country": 356,
+        "share": 0.10742997831366838,
+        "visits": 5887885.629662682,
+        "pages_per_visit": 1.9816525474844586,
+        "average_time": 125.3072695312767,
+        "bounce_rate": 0.7280919017691653,
+        "rank": 2508,
+        "country_name": "India"
+      },
+      {
+        "country": 124,
+        "share": 0.048545533864603765,
+        "visits": 2660621.8833178077,
+        "pages_per_visit": 2.8048810110810805,
+        "average_time": 145.3451099484564,
+        "bounce_rate": 0.655117457584544,
+        "rank": 1745,
+        "country_name": "Canada"
+      },
+      {
+        "country": 826,
+        "share": 0.04503753916528933,
+        "visits": 2468360.171054217,
+        "pages_per_visit": 2.040932101877443,
+        "average_time": 111.45171864810726,
+        "bounce_rate": 0.7152998326216906,
+        "rank": 2933,
+        "country_name": "United Kingdom"
+      },
+      {
+        "country": 36,
+        "share": 0.027216880184915207,
+        "visits": 1491668.156695742,
+        "pages_per_visit": 2.0141643329203918,
+        "average_time": 120.94941204357002,
+        "bounce_rate": 0.5591605055389156,
+        "rank": 2959,
+        "country_name": "Australia"
+      }
+    ]
+  },
+  "robinhood.com": {
+    "global_rank": [
+      {
+        "date": "2026-02",
+        "global_rank": 1038
+      }
+    ],
+    "visits": [
+      {
+        "date": "2025-07-01",
+        "visits": 36863815.2265031
+      },
+      {
+        "date": "2025-08-01",
+        "visits": 34860262.44361515
+      },
+      {
+        "date": "2025-09-01",
+        "visits": 34300370.6423915
+      },
+      {
+        "date": "2025-10-01",
+        "visits": 40305423.40623679
+      },
+      {
+        "date": "2025-11-01",
+        "visits": 31743854.857745495
+      },
+      {
+        "date": "2025-12-01",
+        "visits": 30200486.951346237
+      }
+    ],
+    "bounce_rate": [
+      {
+        "date": "2025-07-01",
+        "bounce_rate": 0.4175337519590843
+      },
+      {
+        "date": "2025-08-01",
+        "bounce_rate": 0.43244903578465
+      },
+      {
+        "date": "2025-09-01",
+        "bounce_rate": 0.41129767828906627
+      },
+      {
+        "date": "2025-10-01",
+        "bounce_rate": 0.37215990050013986
+      },
+      {
+        "date": "2025-11-01",
+        "bounce_rate": 0.3687071502845844
+      },
+      {
+        "date": "2025-12-01",
+        "bounce_rate": 0.3691846568055379
+      }
+    ],
+    "traffic_sources": {
+      "meta": {
+        "request": {
+          "granularity": "Monthly",
+          "main_domain_only": false,
+          "mtd": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "robinhood.com",
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-01-31"
+      },
+      "visits": {
+        "robinhood.com": [
+          {
+            "source_type": "Search",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 5241019.471,
+                "paid": 938113.2839999999
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 3647156.053,
+                "paid": 678379.21
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 3811112.7500000005,
+                "paid": 607062.446
+              }
+            ]
+          },
+          {
+            "source_type": "Social",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 323955.507,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 269999.91799999995,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 276740.602,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Mail",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 43081.725999999995,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 31393.135000000006,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 29112.954999999994,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Display Ads",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 0.0,
+                "paid": 93558.658
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 0.0,
+                "paid": 73183.21899999998
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 0.0,
+                "paid": 70308.791
+              }
+            ]
+          },
+          {
+            "source_type": "Direct",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 32698820.469,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 26274852.495999996,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 24667648.162999995,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Referrals",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 966874.294,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 768890.824,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 738501.2389999998,
+                "paid": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "top_countries": [
+      {
+        "country": 840,
+        "share": 0.9285986478532781,
+        "visits": 115048714.24822317,
+        "pages_per_visit": 6.0542021360732035,
+        "average_time": 442.0658214283447,
+        "bounce_rate": 0.36815845327582364,
+        "rank": 274,
+        "country_name": "United States"
+      },
+      {
+        "country": 484,
+        "share": 0.010870682863831844,
+        "visits": 1346823.0751523285,
+        "pages_per_visit": 3.8916148551244745,
+        "average_time": 475.2514842582458,
+        "bounce_rate": 0.20695380577132752,
+        "rank": 2667,
+        "country_name": "Mexico"
+      },
+      {
+        "country": 826,
+        "share": 0.009026843328381424,
+        "visits": 1118380.6061437698,
+        "pages_per_visit": 5.922191446708798,
+        "average_time": 379.1460740600334,
+        "bounce_rate": 0.4746659730977806,
+        "rank": 5307,
+        "country_name": "United Kingdom"
+      },
+      {
+        "country": 124,
+        "share": 0.008091618716154528,
+        "visits": 1002510.9681481328,
+        "pages_per_visit": 3.6085997982855083,
+        "average_time": 260.32207624019526,
+        "bounce_rate": 0.4382567580317225,
+        "rank": 4520,
+        "country_name": "Canada"
+      },
+      {
+        "country": 356,
+        "share": 0.0054677894222579316,
+        "visits": 677431.6808074915,
+        "pages_per_visit": 6.644826372857474,
+        "average_time": 424.78717408729676,
+        "bounce_rate": 0.29124652216123925,
+        "rank": 10005,
+        "country_name": "India"
+      }
+    ]
+  },
+  "finance.yahoo.com": {
+    "global_rank": [
+      {
+        "date": "2026-02",
+        "global_rank": 198
+      }
+    ],
+    "visits": [
+      {
+        "date": "2025-07-01",
+        "visits": 142254303.8644283
+      },
+      {
+        "date": "2025-08-01",
+        "visits": 137413726.40272743
+      },
+      {
+        "date": "2025-09-01",
+        "visits": 129992380.95847763
+      },
+      {
+        "date": "2025-10-01",
+        "visits": 149600171.8664825
+      },
+      {
+        "date": "2025-11-01",
+        "visits": 125070962.07322419
+      },
+      {
+        "date": "2025-12-01",
+        "visits": 124120108.91466306
+      }
+    ],
+    "bounce_rate": [
+      {
+        "date": "2025-07-01",
+        "bounce_rate": 0.5417071286241164
+      },
+      {
+        "date": "2025-08-01",
+        "bounce_rate": 0.5384686151775833
+      },
+      {
+        "date": "2025-09-01",
+        "bounce_rate": 0.5444712952226199
+      },
+      {
+        "date": "2025-10-01",
+        "bounce_rate": 0.5390913820639038
+      },
+      {
+        "date": "2025-11-01",
+        "bounce_rate": 0.5499594813120872
+      },
+      {
+        "date": "2025-12-01",
+        "bounce_rate": 0.5567275005773427
+      }
+    ],
+    "traffic_sources": {
+      "meta": {
+        "request": {
+          "granularity": "Monthly",
+          "main_domain_only": false,
+          "mtd": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "finance.yahoo.com",
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-01-31"
+      },
+      "visits": {
+        "finance.yahoo.com": [
+          {
+            "source_type": "Search",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 30835738.396999996,
+                "paid": 1167.045
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 24156697.259999998,
+                "paid": 2344.479999999999
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 22995663.167999998,
+                "paid": 1122.528
+              }
+            ]
+          },
+          {
+            "source_type": "Social",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 749355.9249999999,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 1003223.273,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 818425.3659999998,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Mail",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 105541.75499999998,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 84725.487,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 81277.59100000001,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Display Ads",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 0.0,
+                "paid": 336318.521
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 0.0,
+                "paid": 286141.61799999996
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 0.0,
+                "paid": 279364.714
+              }
+            ]
+          },
+          {
+            "source_type": "Direct",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 95409061.59899998,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 80408230.72099999,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 80605929.66399999,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Referrals",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 22162988.627,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 19129599.231999993,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 19338325.889,
+                "paid": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "top_countries": []
+  },
+  "tradingview.com": {
+    "global_rank": [
+      {
+        "date": "2026-02",
+        "global_rank": 96
+      }
+    ],
+    "visits": [
+      {
+        "date": "2025-07-01",
+        "visits": 176472387.9358788
+      },
+      {
+        "date": "2025-08-01",
+        "visits": 175444274.75660652
+      },
+      {
+        "date": "2025-09-01",
+        "visits": 171439516.46993446
+      },
+      {
+        "date": "2025-10-01",
+        "visits": 193573783.13569203
+      },
+      {
+        "date": "2025-11-01",
+        "visits": 175126470.47059372
+      },
+      {
+        "date": "2025-12-01",
+        "visits": 169799042.33192185
+      }
+    ],
+    "bounce_rate": [
+      {
+        "date": "2025-07-01",
+        "bounce_rate": 0.501187788139822
+      },
+      {
+        "date": "2025-08-01",
+        "bounce_rate": 0.4975841727517458
+      },
+      {
+        "date": "2025-09-01",
+        "bounce_rate": 0.4889334323013224
+      },
+      {
+        "date": "2025-10-01",
+        "bounce_rate": 0.48269335756872744
+      },
+      {
+        "date": "2025-11-01",
+        "bounce_rate": 0.48377232595611025
+      },
+      {
+        "date": "2025-12-01",
+        "bounce_rate": 0.48788846925234164
+      }
+    ],
+    "traffic_sources": {
+      "meta": {
+        "request": {
+          "granularity": "Monthly",
+          "main_domain_only": false,
+          "mtd": false,
+          "show_verified": false,
+          "state": null,
+          "format": "json",
+          "domain": "tradingview.com",
+          "start_date": "2025-10-01",
+          "end_date": "2025-12-31",
+          "country": "world"
+        },
+        "status": "Success",
+        "last_updated": "2026-01-31"
+      },
+      "visits": {
+        "tradingview.com": [
+          {
+            "source_type": "Search",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 30657376.728,
+                "paid": 778223.7390000001
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 26759651.795999996,
+                "paid": 970373.107
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 26095534.575,
+                "paid": 953511.2430000001
+              }
+            ]
+          },
+          {
+            "source_type": "Social",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 658682.4850000001,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 536877.0049999999,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 562757.363,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Mail",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 63657.01500000001,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 55100.01200000001,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 50258.18400000001,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Display Ads",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 0.0,
+                "paid": 170316.936
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 0.0,
+                "paid": 146282.807
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 0.0,
+                "paid": 144685.165
+              }
+            ]
+          },
+          {
+            "source_type": "Direct",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 156722394.22600004,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 142502520.64499998,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 138109188.778,
+                "paid": 0.0
+              }
+            ]
+          },
+          {
+            "source_type": "Referrals",
+            "visits": [
+              {
+                "date": "2025-10-01",
+                "organic": 4523132.014,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-11-01",
+                "organic": 4155665.0920000006,
+                "paid": 0.0
+              },
+              {
+                "date": "2025-12-01",
+                "organic": 3883107.0279999995,
+                "paid": 0.0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "top_countries": []
+  },
+  "marketwatch.com": {
+    "global_rank": [],
+    "visits": [],
+    "bounce_rate": [],
+    "traffic_sources": [],
+    "top_countries": []
+  }
+}
