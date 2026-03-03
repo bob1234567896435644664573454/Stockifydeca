@@ -2,11 +2,11 @@ import { useNavigate } from "@tanstack/react-router"
 import {
     TrendingUp, BookOpen, Shield, BarChart3, GraduationCap,
     Sparkles, ChevronRight, PlayCircle, Trophy,
-    MessageSquare, CheckCircle2, AlertTriangle, Brain,
-    Target, PieChart, ArrowRight, Users, Zap,
-    LineChart, DollarSign, Award, Lock,
-    FlaskConical, Lightbulb, ShieldCheck, BarChart2,
-    School, Star, Rocket, Eye
+    CheckCircle2, AlertTriangle, Brain,
+    Target, ArrowRight,
+    LineChart, Award, Lock,
+    FlaskConical, ShieldCheck, BarChart2,
+    School, Rocket
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -55,14 +55,6 @@ const TEACHER_FEATURES = [
     "Track AI-computed 'Process Scores' for each student",
     "View real-time leaderboards with risk-adjusted scoring",
     "Export detailed performance reports and analytics",
-]
-
-const PILOT_SCHOOLS = [
-    { name: "Lincoln High School", location: "Portland, OR", students: 120 },
-    { name: "Westview Academy", location: "Austin, TX", students: 85 },
-    { name: "Brookfield DECA Chapter", location: "Chicago, IL", students: 64 },
-    { name: "Summit Prep", location: "San Jose, CA", students: 200 },
-    { name: "Eastside Business Academy", location: "New York, NY", students: 150 },
 ]
 
 const FAQS = [
@@ -163,8 +155,8 @@ export function HomePage() {
                                 <div className="flex-1 flex flex-col gap-4">
                                     <div className="flex gap-4">
                                         {[
-                                            { label: "Portfolio Value", value: "$127,450.00", change: "+12.4%" },
-                                            { label: "Today's P&L", value: "+$1,234.56", change: "+0.98%" },
+                                            { label: "Portfolio Value", value: "Sample value", change: "+X.X%" },
+                                            { label: "Today's P&L", value: "Sample P&L", change: "+X.XX%" },
                                             { label: "XP Level", value: "Level 7", change: "2,450 XP" },
                                         ].map((stat, i) => (
                                             <div key={i} className="flex-1 bg-background/80 backdrop-blur rounded-xl border p-4 shadow-sm">
@@ -351,17 +343,16 @@ export function HomePage() {
                         ))}
                     </div>
 
-                    {/* Pilot Metrics */}
+                    {/* What We Measure */}
                     <div className="mt-16 grid md:grid-cols-4 gap-6">
                         {[
-                            { metric: "92%", label: "Student engagement rate", note: "Pilot data" },
-                            { metric: "3.2x", label: "More trades journaled vs. control", note: "Pilot data" },
-                            { metric: "78%", label: "Improved financial literacy scores", note: "Pre/post assessment" },
-                            { metric: "4.8/5", label: "Teacher satisfaction rating", note: "Pilot survey" },
+                            { label: "Lesson completion", note: "Engagement metric" },
+                            { label: "Journal completion rate", note: "Reflection metric" },
+                            { label: "Diversification improvement", note: "HHI reduction" },
+                            { label: "Pre/post assessment deltas", note: "Learning outcome" },
                         ].map((m, i) => (
                             <Card key={i} className="bg-primary/5 border-primary/20 text-center">
                                 <CardContent className="p-6">
-                                    <div className="text-3xl font-extrabold text-primary mb-1">{m.metric}</div>
                                     <p className="text-sm font-medium mb-1">{m.label}</p>
                                     <p className="text-xs text-muted-foreground">{m.note}</p>
                                 </CardContent>
@@ -371,58 +362,27 @@ export function HomePage() {
                 </div>
             </section>
 
-            {/* ─── Proof & Validation: Schools Using Stockify ─── */}
+            {/* ─── Pilot Program ─── */}
             <section className="py-24 px-4 bg-muted/30 border-t">
                 <div className="container mx-auto max-w-6xl">
-                    <div className="text-center mb-16 max-w-3xl mx-auto">
+                    <div className="text-center mb-12 max-w-3xl mx-auto">
                         <Badge variant="outline" className="mb-4 border-[hsl(var(--accent-indigo))]/30 text-[hsl(var(--accent-indigo))] bg-[hsl(var(--accent-indigo))]/5">
-                            <School className="h-3 w-3 mr-2" /> Proof & Validation
+                            <School className="h-3 w-3 mr-2" /> Pilot Program
                         </Badge>
                         <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
-                            Trusted by schools nationwide
+                            Launching with DECA chapters and classrooms
                         </h2>
                         <p className="text-lg text-muted-foreground">
-                            Pilot schools and DECA chapters are already using Stockify to transform financial education.
+                            We are building Stockify in partnership with educators. Request early access to join our pilot program and shape the product from the ground up.
                         </p>
                     </div>
-
-                    {/* Schools Band */}
-                    <div className="flex flex-wrap justify-center gap-6 mb-16">
-                        {PILOT_SCHOOLS.map((school, i) => (
-                            <div key={i} className="flex items-center gap-3 bg-background border rounded-xl px-5 py-3 shadow-sm hover:shadow-md transition-all">
-                                <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                                    <School className="h-5 w-5 text-primary" />
-                                </div>
-                                <div>
-                                    <div className="text-sm font-semibold">{school.name}</div>
-                                    <div className="text-xs text-muted-foreground">{school.location} · {school.students} students</div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Testimonials */}
-                    <div className="grid md:grid-cols-3 gap-6">
-                        {[
-                            { quote: "It transformed my econ class. The AI coach asks questions I wish I had time to ask every student individually.", author: "Sarah J.", role: "Economics Teacher, Lincoln HS", rating: 5 },
-                            { quote: "Way better than the clunky 90s simulators. The Behavioral Finance Lab was an eye-opener for students who thought they could beat the house.", author: "Mark T.", role: "High School Administrator", rating: 5 },
-                            { quote: "I finally understand the difference between gambling and investing. The risk preview saved my simulated portfolio from disaster.", author: "Alex D.", role: "11th Grade Student", rating: 5 },
-                        ].map((t, i) => (
-                            <Card key={i} className="text-left bg-background">
-                                <CardContent className="p-8">
-                                    <div className="flex gap-1 mb-4">
-                                        {Array.from({ length: t.rating }).map((_, j) => (
-                                            <Star key={j} className="h-4 w-4 fill-primary text-primary" />
-                                        ))}
-                                    </div>
-                                    <p className="text-lg leading-relaxed mb-8 font-medium">"{t.quote}"</p>
-                                    <div>
-                                        <div className="font-bold">{t.author}</div>
-                                        <div className="text-sm text-muted-foreground">{t.role}</div>
-                                    </div>
-                                </CardContent>
-                            </Card>
-                        ))}
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                        <Button size="lg" onClick={() => window.location.href = 'mailto:hello@stockify.app?subject=Pilot Program Request'} className="rounded-full gradient-brand text-white shadow-md">
+                            Request a Pilot <ChevronRight className="ml-1 h-4 w-4" />
+                        </Button>
+                        <Button size="lg" variant="outline" onClick={() => navigate({ to: "/about" })} className="rounded-full">
+                            Learn More About Us
+                        </Button>
                     </div>
                 </div>
             </section>

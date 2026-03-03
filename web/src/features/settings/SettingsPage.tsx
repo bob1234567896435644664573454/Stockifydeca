@@ -3,16 +3,13 @@ import { AppShell } from "@/components/layout/AppShell"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { Switch } from "@/components/ui/switch"
 import { useAuth } from "@/features/auth/AuthContextObject"
 import { supabase } from "@/lib/api"
 import {
     Settings, Mail, Github, User, Bell, Shield, Palette,
-    CheckCircle2, XCircle, ExternalLink, Loader2, Link2, Unlink
+    CheckCircle2, XCircle, Loader2, Link2, Unlink
 } from "lucide-react"
-import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 interface ConnectionStatus {
@@ -26,7 +23,7 @@ export function SettingsPage() {
         gmail: { connected: false },
         github: { connected: false },
     })
-    const [loading, setLoading] = useState(true)
+    const [, setLoading] = useState(true)
     const [connecting, setConnecting] = useState<string | null>(null)
     const [notifications, setNotifications] = useState({
         tradeConfirmations: true,
