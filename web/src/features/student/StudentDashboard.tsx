@@ -136,13 +136,16 @@ function AllocationDonut({ allocation, cash, equity }: {
                 <text x="50" y="57" textAnchor="middle" className="fill-muted-foreground text-[5px]">positions</text>
             </svg>
             <div className="space-y-1 flex-1 min-w-0 max-h-[120px] overflow-y-auto scrollbar-thin">
-                {items.map((item, i) => (
-                    <div key={i} className="flex items-center gap-2 text-xs">
-                        <div className="h-2.5 w-2.5 rounded-sm shrink-0" style={{ backgroundColor: item.color }} />
-                        <span className="font-medium truncate">{item.label}</span>
-                        <span className="text-muted-foreground ml-auto">{(item.pct * 100).toFixed(1)}%</span>
-                    </div>
-                ))}
+                {items.map((item, i) => {
+                    const pct = total > 0 ? item.value / total : 0
+                    return (
+                        <div key={i} className="flex items-center gap-2 text-xs">
+                            <div className="h-2.5 w-2.5 rounded-sm shrink-0" style={{ backgroundColor: item.color }} />
+                            <span className="font-medium truncate">{item.label}</span>
+                            <span className="text-muted-foreground ml-auto">{(pct * 100).toFixed(1)}%</span>
+                        </div>
+                    )
+                })}
             </div>
         </div>
     )

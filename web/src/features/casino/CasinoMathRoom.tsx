@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import {
-    Spade, CircleDot, Grid3X3, Bird, AlertTriangle, BarChart3,
+    Spade, CircleDot, Grid3X3, Bird, BarChart3,
     ArrowLeft, RotateCcw, Info, FlaskConical, Eye, Brain,
     TrendingUp, Lightbulb, ChevronDown, ChevronUp, Dice1
 } from "lucide-react"
