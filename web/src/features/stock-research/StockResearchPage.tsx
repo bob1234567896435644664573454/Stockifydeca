@@ -8,8 +8,11 @@ import {
     Search, TrendingUp, TrendingDown, Building2, BarChart3,
     Globe, DollarSign, Users, FileText, Loader2, ExternalLink,
     ArrowUpRight, ArrowDownRight, Activity, PieChart, Shield,
-    Target, Zap, Leaf, Eye, Award, ChevronRight, Newspaper
+    Target, Zap, Leaf, Eye, Award, ChevronRight, Newspaper,
+    Bookmark, BookmarkCheck, AlertTriangle, StickyNote, Plus, X
 } from "lucide-react"
+import { Textarea } from "@/components/ui/textarea"
+import { supabase } from "@/lib/api"
 import { cn } from "@/lib/utils"
 
 /* ─── Types ─── */
@@ -132,6 +135,183 @@ function ScoreBar({ label, value, icon: Icon }: { label: string; value: number; 
     )
 }
 
+/* ─── Risk Flags ─── */
+function RiskFlags({ stock }: { stock: ProcessedStock }) {
+    const flags: { label: string; severity: "high" | "medium" | "low"; detail: string }[] = []
+
+    // High volatility
+    if (stock.high52w > 0 && stock.low52w > 0) {
+        const range52w = (stock.high52w - stock.low52w) / stock.low52w * 100
+        if (range52w > 80) flags.push({ label: "High Volatility", severity: "high", detail: `52W range: ${range52w.toFixed(0)}%` })
+        else if (range52w > 50) flags.push({ label: "Moderate Volatility", severity: "medium", detail: `52W range: ${range52w.toFixed(0)}%` })
+    }
+
+    // Near 52W high
+    if (stock.price > 0 && stock.high52w > 0 && stock.price > stock.high52w * 0.95) {
+        flags.push({ label: "Near 52W High", severity: "medium", detail: `${((stock.price / stock.high52w) * 100).toFixed(1)}% of high` })
+    }
+
+    // Near 52W low
+    if (stock.price > 0 && stock.low52w > 0 && stock.price < stock.low52w * 1.1) {
+        flags.push({ label: "Near 52W Low", severity: "high", detail: `${((stock.price / stock.low52w) * 100).toFixed(1)}% of low` })
+    }
+
+    // Bearish outlook
+    const outlooks = [stock.shortTermOutlook, stock.intermediateOutlook, stock.longTermOutlook]
+    const bearishCount = outlooks.filter(o => o?.toLowerCase().includes("bear")).length
+    if (bearishCount >= 2) flags.push({ label: "Multiple Bearish Signals", severity: "high", detail: `${bearishCount}/3 outlooks bearish` })
+
+    // Low insider sentiment
+    if (stock.insiderSentiment > 0 && stock.insiderSentiment < 30) {
+        flags.push({ label: "Low Insider Confidence", severity: "medium", detail: `Insider sentiment: ${stock.insiderSentiment}%` })
+    }
+
+    if (flags.length === 0) return null
+
+    return (
+        <Card className="border-amber-500/30 bg-amber-500/5">
+            <CardHeader className="pb-2">
+                <CardTitle className="text-base flex items-center gap-2">
+                    <AlertTriangle className="h-4 w-4 text-amber-500" /> Risk Flags
+                </CardTitle>
+            </CardHeader>
+            <CardContent className="space-y-2">
+                {flags.map((f, i) => (
+                    <div key={i} className="flex items-center gap-2 text-sm">
+                        <div className={cn("h-2 w-2 rounded-full flex-shrink-0",
+                            f.severity === "high" ? "bg-red-500" : f.severity === "medium" ? "bg-amber-500" : "bg-blue-500"
+                        )} />
+                        <span className="font-medium">{f.label}</span>
+                        <span className="text-muted-foreground text-xs">— {f.detail}</span>
+                    </div>
+                ))}
+            </CardContent>
+        </Card>
+    )
+}
+
+/* ─── Catalyst Notes ─── */
+function CatalystNotes({ symbol }: { symbol: string }) {
+    const [notes, setNotes] = useState<{ id: string; text: string; date: string }[]>([])
+    const [newNote, setNewNote] = useState("")
+    const [showInput, setShowInput] = useState(false)
+
+    // Load from localStorage
+    useState(() => {
+        try {
+            const saved = JSON.parse(localStorage.getItem(`stockify_catalysts_${symbol}`) || '[]')
+            setNotes(saved)
+        } catch { /* ignore */ }
+    })
+
+    const addNote = () => {
+        if (!newNote.trim()) return
+        const updated = [{ id: crypto.randomUUID(), text: newNote.trim(), date: new Date().toISOString() }, ...notes]
+        setNotes(updated)
+        localStorage.setItem(`stockify_catalysts_${symbol}`, JSON.stringify(updated))
+        setNewNote("")
+        setShowInput(false)
+    }
+
+    const removeNote = (id: string) => {
+        const updated = notes.filter(n => n.id !== id)
+        setNotes(updated)
+        localStorage.setItem(`stockify_catalysts_${symbol}`, JSON.stringify(updated))
+    }
+
+    return (
+        <Card className="glass border-border/50">
+            <CardHeader className="pb-2">
+                <div className="flex items-center justify-between">
+                    <CardTitle className="text-base flex items-center gap-2">
+                        <StickyNote className="h-4 w-4 text-primary" /> Catalyst Notes
+                    </CardTitle>
+                    <Button variant="ghost" size="sm" className="h-7 text-xs" onClick={() => setShowInput(!showInput)}>
+                        <Plus className="h-3 w-3 mr-1" /> Add
+                    </Button>
+                </div>
+                <CardDescription className="text-xs">Track upcoming events, earnings, catalysts</CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-2">
+                {showInput && (
+                    <div className="flex gap-2">
+                        <Textarea value={newNote} onChange={e => setNewNote(e.target.value)} placeholder="e.g. Earnings on March 15, new product launch..." className="h-16 text-sm" />
+                        <Button onClick={addNote} size="sm" className="shrink-0 self-end">Save</Button>
+                    </div>
+                )}
+                {notes.length === 0 && !showInput && (
+                    <p className="text-xs text-muted-foreground">No catalyst notes yet. Add upcoming events or key dates.</p>
+                )}
+                {notes.map(n => (
+                    <div key={n.id} className="flex items-start gap-2 p-2 rounded-lg bg-muted/30 border text-sm group">
+                        <div className="flex-1">
+                            <p>{n.text}</p>
+                            <p className="text-[10px] text-muted-foreground mt-1">{new Date(n.date).toLocaleDateString()}</p>
+                        </div>
+                        <button onClick={() => removeNote(n.id)} className="opacity-0 group-hover:opacity-100 transition-opacity">
+                            <X className="h-3.5 w-3.5 text-muted-foreground hover:text-destructive" />
+                        </button>
+                    </div>
+                ))}
+            </CardContent>
+        </Card>
+    )
+}
+
+/* ─── Watchlist Button ─── */
+function WatchlistButton({ symbol }: { symbol: string }) {
+    const [inWatchlist, setInWatchlist] = useState(false)
+    const [loading, setLoading] = useState(false)
+
+    // Check if symbol is in any watchlist
+    useState(() => {
+        supabase.from("watchlist_items").select("id").eq("symbol", symbol).limit(1)
+            .then(({ data }) => { if (data && data.length > 0) setInWatchlist(true) })
+            .catch(() => {
+                // Fallback to localStorage
+                const saved = JSON.parse(localStorage.getItem('stockify_watchlist') || '[]')
+                setInWatchlist(saved.includes(symbol))
+            })
+    })
+
+    const toggle = async () => {
+        setLoading(true)
+        try {
+            if (inWatchlist) {
+                await supabase.from("watchlist_items").delete().eq("symbol", symbol)
+                setInWatchlist(false)
+            } else {
+                // Get or create default watchlist
+                const { data: wl } = await supabase.from("watchlists").select("id").limit(1).single()
+                if (wl) {
+                    await supabase.from("watchlist_items").insert({ watchlist_id: wl.id, symbol })
+                    setInWatchlist(true)
+                }
+            }
+        } catch {
+            // Fallback to localStorage
+            const saved = JSON.parse(localStorage.getItem('stockify_watchlist') || '[]')
+            if (inWatchlist) {
+                localStorage.setItem('stockify_watchlist', JSON.stringify(saved.filter((s: string) => s !== symbol)))
+                setInWatchlist(false)
+            } else {
+                saved.push(symbol)
+                localStorage.setItem('stockify_watchlist', JSON.stringify(saved))
+                setInWatchlist(true)
+            }
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    return (
+        <Button variant={inWatchlist ? "default" : "outline"} size="sm" onClick={toggle} disabled={loading} className="gap-1.5">
+            {inWatchlist ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}
+            {inWatchlist ? "Watching" : "Watch"}
+        </Button>
+    )
+}
+
 export function StockResearchPage() {
     const [stocks, setStocks] = useState<ProcessedStock[]>([])
     const [competitors, setCompetitors] = useState<Competitor[]>([])
@@ -226,6 +406,9 @@ export function StockResearchPage() {
                                                     )}
                                                 </div>
                                                 <p className="text-muted-foreground">{selected.name}</p>
+                                            </div>
+                                            <div className="flex items-center gap-2">
+                                                <WatchlistButton symbol={selected.symbol} />
                                             </div>
                                             <div className="text-right">
                                                 <div className="text-3xl font-bold stat-number">{fmt(selected.price)}</div>
@@ -454,6 +637,12 @@ export function StockResearchPage() {
                                         </CardContent>
                                     </Card>
                                 )}
+
+                                {/* Risk Flags */}
+                                <RiskFlags stock={selected} />
+
+                                {/* Catalyst Notes */}
+                                <CatalystNotes symbol={selected.symbol} />
 
                                 <div className="flex gap-3">
                                     <Button onClick={() => setSelected(null)} variant="outline">Back to List</Button>

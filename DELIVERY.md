@@ -15,7 +15,7 @@
 ### Public Marketing Pages (7 Pages)
 
 | Page | Route | Description |
-|------|-------|-------------|
+| --- | --- | --- |
 | **Home** | `/` | Premium landing page with hero section, animated dashboard mockup, crisis statistics (FINRA, TIAA, NCAA, NCPG data), gambling vs. investing comparison, 5-step "How It Works" flow, 6-feature grid, schools/teacher dashboard section, testimonials, FAQ accordion, and CTA footer |
 | **About** | `/about` | Mission statement, "Who We Serve" (students, teachers, schools, clubs), core philosophy (transparency, process, education, safety), gambling vs. investing perspective, and "How Stockify Is Built" section |
 | **Features** | `/features` | 15+ features organized into Learning, Trading Simulation, Competition & Classroom, Casino Math Room, and Safety & Compliance categories |
@@ -27,7 +27,7 @@
 ### Authentication System
 
 | Feature | Implementation |
-|---------|---------------|
+| --- | --- |
 | **Google OAuth** | "Continue with Google" button with Supabase OAuth provider |
 | **GitHub OAuth** | "Continue with GitHub" button with Supabase OAuth provider |
 | **Email/Password** | Traditional email + password sign-in/sign-up |
@@ -37,7 +37,7 @@
 ### Casino Math Room (5 Educational Games)
 
 | Game | House Edge | Educational Purpose |
-|------|-----------|-------------------|
+| --- | --- | --- |
 | **Blackjack** | ~2% | Card counting, expected value, decision trees |
 | **Roulette** | 5.26% | Probability, independent events, gambler's fallacy |
 | **Slots** | 10% | Random number generation, variable reward schedules |
@@ -51,7 +51,7 @@ Each game features transparent house edge display, running balance tracking, and
 Data was fetched using the **stock-analysis** and **similarweb-analytics** skills:
 
 | Data Source | Stocks/Sites | Data Points |
-|-------------|-------------|-------------|
+| --- | --- | --- |
 | **Yahoo Finance Profiles** | AAPL, MSFT, GOOGL, AMZN, NVDA, TSLA, META, JPM | Market cap, P/E ratio, sector, industry, description, employees |
 | **Yahoo Finance Insights** | Same 8 stocks | Technical signals, analyst recommendations, company events |
 | **Yahoo Finance Insider Holdings** | Same 8 stocks | Top institutional holders, insider transactions |
@@ -73,7 +73,7 @@ The app shell sidebar was updated with three new navigation items: **Casino Math
 Four new tables were created via migration:
 
 | Table | Purpose | RLS |
-|-------|---------|-----|
+| --- | --- | --- |
 | `casino_sessions` | Tracks individual game sessions (game type, bets, results, balance changes) | Users can only read/write their own sessions |
 | `casino_balances` | Stores per-user virtual casino balance | Users can only read/update their own balance |
 | `gmail_connections` | Stores Gmail OAuth connection metadata | Users can only manage their own connections |
@@ -84,7 +84,7 @@ Four new tables were created via migration:
 ## All Connected Connectors Used
 
 | Connector | How It Was Used |
-|-----------|----------------|
+| --- | --- |
 | **Supabase MCP** | Created 4 database tables with RLS policies via `apply_migration`; listed projects and tables; retrieved project URL and anon key |
 | **Vercel MCP** | Listed teams and projects; searched deployment documentation; `vercel.json` configured for Vercel deployment |
 | **Playwright MCP** | Installed Firefox browser; ran smoke tests on all 8 routes (Home, About, Features, Pricing, Resources, Privacy, Terms, Auth) — all passed |
@@ -96,7 +96,7 @@ Four new tables were created via migration:
 ## Tech Stack
 
 | Layer | Technology |
-|-------|-----------|
+| --- | --- |
 | Frontend | Vite + React 18 + TypeScript + TailwindCSS |
 | UI Components | shadcn/ui (Button, Card, Tabs, Switch, etc.) |
 | Routing | TanStack Router |
@@ -113,11 +113,16 @@ Four new tables were created via migration:
 To deploy permanently, connect the GitHub repo to Vercel:
 
 1. Go to [vercel.com/new](https://vercel.com/new)
-2. Import the `bob1234567896435644664573454/Stockifydeca` repository
-3. Set the **Root Directory** to `web`
-4. Set the **Framework Preset** to `Vite`
-5. Add environment variables: `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`
-6. Click **Deploy**
+
+1. Import the `bob1234567896435644664573454/Stockifydeca` repository
+
+1. Set the **Root Directory** to `web`
+
+1. Set the **Framework Preset** to `Vite`
+
+1. Add environment variables: `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`
+
+1. Click **Deploy**
 
 The `vercel.json` file is already configured with SPA rewrites, build command, and output directory.
 
@@ -126,7 +131,7 @@ The `vercel.json` file is already configured with SPA rewrites, build command, a
 ## File Summary
 
 | Category | Files Changed/Added |
-|----------|-------------------|
+| --- | --- |
 | Public pages | 7 new files (`AboutPage.tsx`, `FeaturesPage.tsx`, `PricingPage.tsx`, `ResourcesPage.tsx`, `PrivacyPage.tsx`, `TermsPage.tsx`, `PublicNav.tsx`, `PublicFooter.tsx`) |
 | App features | 3 new files (`CasinoMathRoom.tsx`, `SettingsPage.tsx`, `StockResearchPage.tsx`) |
 | Auth | 1 modified (`AuthPage.tsx` — upgraded with OAuth) |
@@ -136,3 +141,4 @@ The `vercel.json` file is already configured with SPA rewrites, build command, a
 | Config | 2 new files (`vercel.json`, `.gitignore`) |
 | Scripts | 4 data-fetching Python scripts |
 | **Total** | **34 files changed, 8,130 lines added** |
+

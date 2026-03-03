@@ -4,7 +4,7 @@ import type { LinkProps } from "@tanstack/react-router"
 import { useAuth } from "@/features/auth/AuthContextObject"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu, Home, Activity, Trophy, GraduationCap, LogOut, ChevronLeft, ChevronRight, PieChart, BookOpen, PenLine, Target, Dice1, BarChart3, Settings } from "lucide-react"
+import { Menu, Home, Activity, Trophy, GraduationCap, LogOut, ChevronLeft, ChevronRight, PieChart, BookOpen, PenLine, Target, FlaskConical, BarChart3, Settings, Swords } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { CompetitionBanner } from "@/components/competition-banner"
@@ -66,11 +66,12 @@ export function AppShell({ children, role }: AppShellProps) {
         { href: "/app/trade", label: "Trade", icon: Activity },
         { href: "/app/portfolio", label: "Portfolio", icon: PieChart },
         { href: "/app/leaderboard", label: "Leaderboard", icon: Trophy },
+        { href: "/app/competition", label: "Compete", icon: Swords },
         { href: "/app/learn", label: "Learn", icon: BookOpen },
         { href: "/app/journal", label: "Journal", icon: PenLine },
         { href: "/app/challenges", label: "Challenges", icon: Target },
         { href: "/app/stock-research", label: "Research", icon: BarChart3 },
-        { href: "/app/casino", label: "Casino Math", icon: Dice1 },
+        { href: "/app/casino", label: "Finance Lab", icon: FlaskConical },
         { href: "/app/settings", label: "Settings", icon: Settings },
     ]
 

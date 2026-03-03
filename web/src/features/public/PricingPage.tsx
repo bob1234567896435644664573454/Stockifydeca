@@ -17,7 +17,7 @@ const PLANS = [
             "Paper trading with real data",
             "5 interactive lessons",
             "Basic portfolio analytics",
-            "Casino Math Room access",
+            "Behavioral Finance Lab access",
             "Community support",
         ],
         cta: "Get Started Free",

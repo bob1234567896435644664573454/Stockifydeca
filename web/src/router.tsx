@@ -9,6 +9,7 @@ import React, { Suspense } from "react"
 import { Loading } from "./components/ui/loading"
 import { StudentLeaderboardContainer } from "./features/leaderboard/StudentLeaderboardContainer"
 import { HomePage } from "./features/home/HomePage"
+import { NotFoundPage } from "./features/public/NotFoundPage"
 
 // Public pages
 import { AboutPage } from "./features/public/AboutPage"
@@ -31,6 +32,7 @@ const LessonBuilder = React.lazy(() => import("./features/teacher/LessonBuilder"
 const CasinoMathRoom = React.lazy(() => import("./features/casino/CasinoMathRoom").then(m => ({ default: m.CasinoMathRoom })))
 const SettingsPage = React.lazy(() => import("./features/settings/SettingsPage").then(m => ({ default: m.SettingsPage })))
 const StockResearchPage = React.lazy(() => import("./features/stock-research/StockResearchPage").then(m => ({ default: m.StockResearchPage })))
+const CompetitionPage = React.lazy(() => import("./features/competition/CompetitionPage").then(m => ({ default: m.CompetitionPage })))
 
 const authenticatedRoute = createRoute({
     getParentRoute: () => rootRoute,
@@ -261,6 +263,16 @@ const appStockResearchRoute = createRoute({
     ),
 })
 
+const appCompetitionRoute = createRoute({
+    getParentRoute: () => appLayoutRoute,
+    path: "/app/competition",
+    component: () => (
+        <Suspense fallback={<Loading />}>
+            <CompetitionPage />
+        </Suspense>
+    ),
+})
+
 // ─── Teacher Routes ───
 const teacherDashboardRoute = createRoute({
     getParentRoute: () => teacherLayoutRoute,
@@ -313,6 +325,7 @@ const routeTree = rootRoute.addChildren([
             appCasinoRoute,
             appSettingsRoute,
             appStockResearchRoute,
+            appCompetitionRoute,
         ]),
         teacherLayoutRoute.addChildren([
             teacherDashboardRoute,
@@ -322,7 +335,10 @@ const routeTree = rootRoute.addChildren([
     ]),
 ])
 
-export const router = createRouter({ routeTree })
+export const router = createRouter({
+    routeTree,
+    defaultNotFoundComponent: NotFoundPage,
+})
 
 declare module "@tanstack/react-router" {
     interface Register {

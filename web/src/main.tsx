@@ -5,6 +5,9 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './index.css'
 import { router } from './router'
 
+// Validate env vars on startup — surfaces missing config immediately
+import './lib/env'
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

@@ -4,7 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
-import { Dice1, Spade, CircleDot, Grid3X3, Bird, TrendingDown, AlertTriangle, BarChart3, ArrowLeft, RotateCcw, Info } from "lucide-react"
+import {
+    Spade, CircleDot, Grid3X3, Bird, AlertTriangle, BarChart3,
+    ArrowLeft, RotateCcw, Info, FlaskConical, Eye, Brain,
+    TrendingUp, Lightbulb, ChevronDown, ChevronUp, Dice1
+} from "lucide-react"
 import { cn } from "@/lib/utils"
 
 /* ─── Types ─── */
@@ -14,11 +18,51 @@ interface GameResult { outcome: "win" | "loss" | "push"; amount: number; message
 /* ─── Constants ─── */
 const STARTING_BALANCE = 10000
 const GAMES = [
-    { id: "blackjack" as GameType, title: "Blackjack", icon: Spade, houseEdge: "~2%", description: "Try to beat the dealer by getting closer to 21 without going over.", color: "text-red-500", bg: "bg-red-500/10" },
-    { id: "roulette" as GameType, title: "Roulette", icon: CircleDot, houseEdge: "5.26%", description: "Bet on where the ball lands. American roulette with 0 and 00.", color: "text-green-500", bg: "bg-green-500/10" },
-    { id: "slots" as GameType, title: "Slots", icon: Dice1, houseEdge: "~8%", description: "Spin the reels and hope for matching symbols. Pure luck.", color: "text-purple-500", bg: "bg-purple-500/10" },
-    { id: "mines" as GameType, title: "Mines", icon: Grid3X3, houseEdge: "~3%", description: "Reveal tiles on a grid. Avoid the mines. Cash out anytime.", color: "text-yellow-500", bg: "bg-yellow-500/10" },
-    { id: "chicken" as GameType, title: "Chicken Cross", icon: Bird, houseEdge: "~4%", description: "Cross lanes of traffic. Each lane survived multiplies your bet. Stop anytime.", color: "text-blue-500", bg: "bg-blue-500/10" },
+    {
+        id: "blackjack" as GameType, title: "Blackjack", icon: Spade,
+        houseEdge: "~2%", evFormula: "EV = -0.02 × bet",
+        description: "Try to beat the dealer by getting closer to 21 without going over.",
+        color: "text-red-500", bg: "bg-red-500/10",
+        bias: "Illusion of Control",
+        biasExplain: "Players feel their decisions (hit/stand) give them control, but the house edge persists regardless of strategy.",
+        investingBridge: "In investing, the illusion of control appears when traders believe frequent trading improves returns. Studies show that passive index investors outperform active traders 85% of the time over 15 years.",
+    },
+    {
+        id: "roulette" as GameType, title: "Roulette", icon: CircleDot,
+        houseEdge: "5.26%", evFormula: "EV = -2/38 × bet = -5.26%",
+        description: "Bet on where the ball lands. American roulette with 0 and 00.",
+        color: "text-green-500", bg: "bg-green-500/10",
+        bias: "Gambler's Fallacy",
+        biasExplain: "After 5 reds in a row, players bet on black — but each spin is independent. Past results don't affect future probabilities.",
+        investingBridge: "In investing, the gambler's fallacy appears when investors assume a stock that has fallen must 'bounce back.' Mean reversion exists, but individual stocks can decline to zero. Diversification protects against this bias.",
+    },
+    {
+        id: "slots" as GameType, title: "Slots", icon: Dice1,
+        houseEdge: "~8%", evFormula: "EV ≈ -0.08 × bet",
+        description: "Spin the reels and hope for matching symbols. Pure luck.",
+        color: "text-purple-500", bg: "bg-purple-500/10",
+        bias: "Variable Ratio Reinforcement",
+        biasExplain: "Unpredictable rewards create the strongest addictive response. Slots are designed to deliver small wins frequently to keep you playing.",
+        investingBridge: "In investing, checking your portfolio constantly creates the same dopamine cycle. Research shows investors who check daily trade 3x more and earn 2% less annually than those who check quarterly.",
+    },
+    {
+        id: "mines" as GameType, title: "Mines", icon: Grid3X3,
+        houseEdge: "~3%", evFormula: "EV = -0.03 × bet (varies by strategy)",
+        description: "Reveal tiles on a grid. Avoid the mines. Cash out anytime.",
+        color: "text-yellow-500", bg: "bg-yellow-500/10",
+        bias: "Sunk Cost Fallacy",
+        biasExplain: "After revealing several safe tiles, players feel compelled to continue rather than cash out — because they've 'invested' effort. This increases risk exposure.",
+        investingBridge: "In investing, the sunk cost fallacy appears when investors hold losing positions because they've 'already lost so much.' Smart investors cut losses based on current outlook, not past investment.",
+    },
+    {
+        id: "chicken" as GameType, title: "Chicken Cross", icon: Bird,
+        houseEdge: "~4%", evFormula: "EV = -0.04 × bet (varies by lanes crossed)",
+        description: "Cross lanes of traffic. Each lane survived multiplies your bet. Stop anytime.",
+        color: "text-blue-500", bg: "bg-blue-500/10",
+        bias: "Overconfidence Bias",
+        biasExplain: "After surviving several lanes, players overestimate their ability to continue safely. Each lane has the same independent crash probability.",
+        investingBridge: "In investing, overconfidence leads to concentrated positions and excessive leverage. Overconfident investors trade 45% more and earn significantly lower returns. Diversification is the antidote.",
+    },
 ]
 
 /* ─── Helpers ─── */
@@ -43,6 +87,59 @@ function cardDisplay(c: number): string {
 const SLOT_SYMBOLS = ["🍒", "🍋", "🍊", "🍇", "💎", "7️⃣", "🔔"]
 const SLOT_PAYOUTS: Record<string, number> = { "7️⃣": 50, "💎": 25, "🔔": 15, "🍇": 10, "🍊": 5, "🍋": 3, "🍒": 2 }
 
+/* ─── Transparency Panel Component ─── */
+function TransparencyPanel({ game }: { game: typeof GAMES[0] }) {
+    const [expanded, setExpanded] = useState(false)
+    return (
+        <Card className="bg-muted/30 border-muted">
+            <CardContent className="p-4">
+                <button onClick={() => setExpanded(!expanded)} className="w-full flex items-center justify-between text-left">
+                    <div className="flex items-center gap-2">
+                        <Eye className="h-4 w-4 text-primary" />
+                        <span className="text-sm font-semibold">Transparency & Learning</span>
+                    </div>
+                    {expanded ? <ChevronUp className="h-4 w-4 text-muted-foreground" /> : <ChevronDown className="h-4 w-4 text-muted-foreground" />}
+                </button>
+                {expanded && (
+                    <div className="mt-4 space-y-4 animate-fade-in">
+                        {/* Math */}
+                        <div className="flex items-start gap-3">
+                            <div className="h-8 w-8 rounded-lg bg-destructive/10 flex items-center justify-center shrink-0">
+                                <BarChart3 className="h-4 w-4 text-destructive" />
+                            </div>
+                            <div>
+                                <div className="text-xs font-semibold text-destructive mb-1">House Edge: {game.houseEdge}</div>
+                                <div className="text-xs text-muted-foreground font-mono">{game.evFormula}</div>
+                                <div className="text-xs text-muted-foreground mt-1">Over 1,000 bets of $100, you expect to lose {game.houseEdge === "~2%" ? "$2,000" : game.houseEdge === "5.26%" ? "$5,260" : game.houseEdge === "~8%" ? "$8,000" : game.houseEdge === "~3%" ? "$3,000" : "$4,000"}.</div>
+                            </div>
+                        </div>
+                        {/* Cognitive Bias */}
+                        <div className="flex items-start gap-3">
+                            <div className="h-8 w-8 rounded-lg bg-[hsl(var(--accent-indigo))]/10 flex items-center justify-center shrink-0">
+                                <Brain className="h-4 w-4 text-[hsl(var(--accent-indigo))]" />
+                            </div>
+                            <div>
+                                <div className="text-xs font-semibold text-[hsl(var(--accent-indigo))] mb-1">Cognitive Bias: {game.bias}</div>
+                                <div className="text-xs text-muted-foreground">{game.biasExplain}</div>
+                            </div>
+                        </div>
+                        {/* Connect to Investing */}
+                        <div className="flex items-start gap-3">
+                            <div className="h-8 w-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                                <TrendingUp className="h-4 w-4 text-primary" />
+                            </div>
+                            <div>
+                                <div className="text-xs font-semibold text-primary mb-1">Connect to Investing</div>
+                                <div className="text-xs text-muted-foreground">{game.investingBridge}</div>
+                            </div>
+                        </div>
+                    </div>
+                )}
+            </CardContent>
+        </Card>
+    )
+}
+
 /* ─── Main Component ─── */
 export function CasinoMathRoom() {
     const [game, setGame] = useState<GameType>("menu")
@@ -56,6 +153,10 @@ export function CasinoMathRoom() {
     const totalWon = useMemo(() => history.filter(h => h.amount > 0).reduce((s, h) => s + h.amount, 0), [history])
     const totalLost = useMemo(() => history.filter(h => h.amount < 0).reduce((s, h) => s + Math.abs(h.amount), 0), [history])
     const netPnL = balance - STARTING_BALANCE
+    const gamesPlayed = history.length
+    const winRate = gamesPlayed > 0 ? ((history.filter(h => h.amount > 0).length / gamesPlayed) * 100).toFixed(1) : "0"
+
+    const currentGameData = GAMES.find(g => g.id === game)
 
     const addResult = useCallback((gameName: string, result: GameResult) => {
         setBalance(b => b + result.amount)
@@ -82,12 +183,13 @@ export function CasinoMathRoom() {
                                     <ArrowLeft className="h-5 w-5" />
                                 </Button>
                             )}
-                            <h1 className="text-3xl font-bold tracking-tight">Casino Math Room</h1>
-                            <Badge variant="outline" className="border-destructive/30 text-destructive bg-destructive/5">
-                                <AlertTriangle className="h-3 w-3 mr-1" /> Educational Only
+                            <FlaskConical className="h-7 w-7 text-primary" />
+                            <h1 className="text-3xl font-bold tracking-tight">Behavioral Finance Lab</h1>
+                            <Badge variant="outline" className="border-primary/30 text-primary bg-primary/5">
+                                <Lightbulb className="h-3 w-3 mr-1" /> Educational
                             </Badge>
                         </div>
-                        <p className="text-muted-foreground">Experience why the house always wins. All games use virtual chips — no real money.</p>
+                        <p className="text-muted-foreground">Learn probability, expected value, and cognitive biases through transparent simulations. All virtual — no real money.</p>
                     </div>
                     <div className="flex items-center gap-4">
                         <div className="text-right">
@@ -101,12 +203,13 @@ export function CasinoMathRoom() {
                 </div>
 
                 {/* Stats Bar */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                     {[
                         { label: "Total Wagered", value: fmt(totalWagered) },
                         { label: "Total Won", value: fmt(totalWon), color: "text-green-500" },
                         { label: "Total Lost", value: fmt(totalLost), color: "text-red-500" },
                         { label: "Net P&L", value: fmt(netPnL), color: netPnL >= 0 ? "text-green-500" : "text-red-500" },
+                        { label: "Win Rate", value: `${winRate}%`, color: Number(winRate) >= 50 ? "text-green-500" : "text-red-500" },
                     ].map((s, i) => (
                         <Card key={i} className="bg-card/50">
                             <CardContent className="p-4">
@@ -122,7 +225,7 @@ export function CasinoMathRoom() {
                     <CardContent className="p-4 flex items-start gap-3">
                         <Info className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                         <div className="text-sm text-muted-foreground">
-                            <strong className="text-foreground">Why this matters:</strong> Every casino game has a negative expected value (EV). Over many plays, you are mathematically guaranteed to lose money. Compare this to investing in a diversified index fund, which has historically returned ~10% annually (positive EV). The house edge is small per bet but devastating over time.
+                            <strong className="text-foreground">Why this matters:</strong> Every simulation below has a <strong>negative expected value (EV)</strong>. Over many plays, you are mathematically guaranteed to lose money. Compare this to investing in a diversified index fund, which has historically returned ~10% annually (<strong>positive EV</strong>). The house edge is small per bet but devastating over time. Each simulation also teaches a specific <strong>cognitive bias</strong> that affects real investing decisions.
                         </div>
                     </CardContent>
                 </Card>
@@ -141,29 +244,42 @@ export function CasinoMathRoom() {
                                         <g.icon className={cn("h-7 w-7", g.color)} />
                                     </div>
                                     <h3 className="font-bold mb-1">{g.title}</h3>
-                                    <p className="text-xs text-muted-foreground mb-3">{g.description}</p>
-                                    <Badge variant="secondary" className="text-xs">House Edge: {g.houseEdge}</Badge>
+                                    <p className="text-xs text-muted-foreground mb-2">{g.description}</p>
+                                    <Badge variant="secondary" className="text-xs mb-2">House Edge: {g.houseEdge}</Badge>
+                                    <div className="mt-2 pt-2 border-t">
+                                        <div className="flex items-center gap-1 justify-center">
+                                            <Brain className="h-3 w-3 text-[hsl(var(--accent-indigo))]" />
+                                            <span className="text-xs text-[hsl(var(--accent-indigo))] font-medium">{g.bias}</span>
+                                        </div>
+                                    </div>
                                 </CardContent>
                             </Card>
                         ))}
                     </div>
                 ) : (
                     <div className="grid lg:grid-cols-3 gap-6">
-                        <div className="lg:col-span-2">
+                        <div className="lg:col-span-2 space-y-4">
                             {game === "blackjack" && <BlackjackGame balance={balance} bet={bet} setBet={setBet} onResult={(r) => addResult("Blackjack", r)} />}
                             {game === "roulette" && <RouletteGame balance={balance} bet={bet} setBet={setBet} onResult={(r) => addResult("Roulette", r)} />}
                             {game === "slots" && <SlotsGame balance={balance} bet={bet} setBet={setBet} onResult={(r) => addResult("Slots", r)} />}
                             {game === "mines" && <MinesGame balance={balance} bet={bet} setBet={setBet} onResult={(r) => addResult("Mines", r)} />}
                             {game === "chicken" && <ChickenGame balance={balance} bet={bet} setBet={setBet} onResult={(r) => addResult("Chicken Cross", r)} />}
+
+                            {/* Transparency Panel for current game */}
+                            {currentGameData && <TransparencyPanel game={currentGameData} />}
                         </div>
+
                         {/* History Sidebar */}
                         <Card>
                             <CardHeader className="pb-3">
                                 <CardTitle className="text-lg flex items-center gap-2"><BarChart3 className="h-5 w-5" /> Session History</CardTitle>
+                                <CardDescription className="text-xs">
+                                    {gamesPlayed} games played · Win rate: {winRate}%
+                                </CardDescription>
                             </CardHeader>
                             <CardContent className="max-h-[500px] overflow-y-auto space-y-2">
                                 {history.length === 0 ? (
-                                    <p className="text-sm text-muted-foreground text-center py-8">No games played yet.</p>
+                                    <p className="text-sm text-muted-foreground text-center py-8">No games played yet. Play a few rounds and watch the math in action.</p>
                                 ) : history.map((h, i) => (
                                     <div key={i} className="flex items-center justify-between p-2 rounded-lg bg-muted/30 text-sm">
                                         <span className="font-medium">{h.game}</span>
@@ -172,9 +288,52 @@ export function CasinoMathRoom() {
                                         </span>
                                     </div>
                                 ))}
+                                {history.length >= 10 && (
+                                    <Card className="bg-destructive/5 border-destructive/20 mt-4">
+                                        <CardContent className="p-3">
+                                            <div className="text-xs text-destructive font-semibold mb-1">Pattern Alert</div>
+                                            <div className="text-xs text-muted-foreground">
+                                                After {gamesPlayed} games, your net P&L is {fmt(netPnL)}.
+                                                {netPnL < 0
+                                                    ? " This is the house edge at work. Over time, negative EV guarantees losses."
+                                                    : " You're ahead for now — but the math will catch up. The house edge is relentless over time."}
+                                            </div>
+                                        </CardContent>
+                                    </Card>
+                                )}
                             </CardContent>
                         </Card>
                     </div>
+                )}
+
+                {/* Investing Comparison (always visible) */}
+                {game === "menu" && (
+                    <Card className="bg-gradient-to-r from-primary/5 to-[hsl(var(--accent-indigo))]/5 border-primary/20">
+                        <CardContent className="p-6">
+                            <div className="flex items-center gap-3 mb-4">
+                                <TrendingUp className="h-6 w-6 text-primary" />
+                                <h3 className="text-lg font-bold">Compare: Gambling vs. Investing</h3>
+                            </div>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <div className="text-sm font-semibold text-destructive mb-2">Gambling (Negative EV)</div>
+                                    <ul className="space-y-2 text-sm text-muted-foreground">
+                                        <li>$100/day × 365 days × -5% house edge = <strong className="text-destructive">-$1,825/year</strong></li>
+                                        <li>Over 10 years: <strong className="text-destructive">-$18,250 guaranteed loss</strong></li>
+                                        <li>No amount of "skill" or "strategy" overcomes the math</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div className="text-sm font-semibold text-primary mb-2">Investing (Positive EV)</div>
+                                    <ul className="space-y-2 text-sm text-muted-foreground">
+                                        <li>$100/month × 10% annual return × 30 years = <strong className="text-primary">$226,049</strong></li>
+                                        <li>Total invested: $36,000 → <strong className="text-primary">6.3x return</strong></li>
+                                        <li>Compounding + diversification + time = wealth creation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </CardContent>
+                    </Card>
                 )}
             </div>
         </AppShell>
@@ -254,7 +413,7 @@ function BlackjackGame({ balance, bet, setBet, onResult }: { balance: number; be
         <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-2"><Spade className="h-5 w-5 text-red-500" /> Blackjack</CardTitle>
-                <CardDescription>House edge: ~2%. Get closer to 21 than the dealer without going over.</CardDescription>
+                <CardDescription>House edge: ~2%. Get closer to 21 than the dealer without going over. Teaches: <strong>Illusion of Control</strong></CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
                 {phase === "bet" && <BetControls bet={bet} setBet={setBet} balance={balance} onPlay={deal} playLabel="Deal" />}
@@ -286,9 +445,7 @@ function BlackjackGame({ balance, bet, setBet, onResult }: { balance: number; be
                                 <Button onClick={stand} className="gradient-brand text-white">Stand</Button>
                             </div>
                         )}
-                        {phase === "done" && (
-                            <Button onClick={() => setPhase("bet")} variant="outline">New Hand</Button>
-                        )}
+                        {phase === "done" && <Button onClick={() => setPhase("bet")} variant="outline">New Hand</Button>}
                     </div>
                 )}
             </CardContent>
@@ -307,7 +464,7 @@ function RouletteGame({ balance, bet, setBet, onResult }: { balance: number; bet
     const spin = () => {
         setSpinning(true)
         setTimeout(() => {
-            const num = rand(0, 37) // 0-36 + 37 = 00
+            const num = rand(0, 37)
             setResult(num)
             setSpinning(false)
             const isGreen = num === 0 || num === 37
@@ -335,7 +492,7 @@ function RouletteGame({ balance, bet, setBet, onResult }: { balance: number; bet
         <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-2"><CircleDot className="h-5 w-5 text-green-500" /> Roulette</CardTitle>
-                <CardDescription>House edge: 5.26% (American). The 0 and 00 give the house its edge.</CardDescription>
+                <CardDescription>House edge: 5.26% (American). The 0 and 00 give the house its edge. Teaches: <strong>Gambler's Fallacy</strong></CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
                 <div className="flex gap-2 flex-wrap">
@@ -394,7 +551,7 @@ function SlotsGame({ balance, bet, setBet, onResult }: { balance: number; bet: n
         <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-2"><Dice1 className="h-5 w-5 text-purple-500" /> Slots</CardTitle>
-                <CardDescription>House edge: ~8%. Pure luck — no skill involved. Triple match for big wins.</CardDescription>
+                <CardDescription>House edge: ~8%. Pure luck — no skill involved. Teaches: <strong>Variable Ratio Reinforcement</strong></CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
                 <div className="flex items-center justify-center gap-4 py-8">
@@ -458,7 +615,7 @@ function MinesGame({ balance, bet, setBet, onResult }: { balance: number; bet: n
         <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-2"><Grid3X3 className="h-5 w-5 text-yellow-500" /> Mines</CardTitle>
-                <CardDescription>House edge: ~3%. {MINE_COUNT} mines hidden in a 5×5 grid. Reveal tiles to increase your multiplier.</CardDescription>
+                <CardDescription>House edge: ~3%. {MINE_COUNT} mines hidden in a 5x5 grid. Teaches: <strong>Sunk Cost Fallacy</strong></CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
                 {phase === "bet" && <BetControls bet={bet} setBet={setBet} balance={balance} onPlay={startGame} playLabel="Start Game" />}
@@ -504,7 +661,7 @@ function MinesGame({ balance, bet, setBet, onResult }: { balance: number; bet: n
 /* ─── CHICKEN CROSS ─── */
 function ChickenGame({ balance, bet, setBet, onResult }: { balance: number; bet: number; setBet: (b: number) => void; onResult: (r: GameResult) => void }) {
     const LANES = 8
-    const CRASH_PROB = 0.2 // 20% chance per lane
+    const CRASH_PROB = 0.2
     const [lane, setLane] = useState(0)
     const [phase, setPhase] = useState<"bet" | "play" | "done">("bet")
     const [crashed, setCrashed] = useState(false)
@@ -541,7 +698,7 @@ function ChickenGame({ balance, bet, setBet, onResult }: { balance: number; bet:
         <Card>
             <CardHeader>
                 <CardTitle className="flex items-center gap-2"><Bird className="h-5 w-5 text-blue-500" /> Chicken Cross</CardTitle>
-                <CardDescription>House edge: ~4%. Each lane has a 20% crash chance. Cross more lanes for higher multiplier.</CardDescription>
+                <CardDescription>House edge: ~4%. Each lane has a 20% crash chance. Teaches: <strong>Overconfidence Bias</strong></CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
                 {phase === "bet" && <BetControls bet={bet} setBet={setBet} balance={balance} onPlay={startGame} playLabel="Start Crossing" />}

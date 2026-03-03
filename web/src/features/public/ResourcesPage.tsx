@@ -20,7 +20,7 @@ const RESOURCES = [
         items: [
             { title: "Introduction to Investing", description: "A 10-lesson curriculum covering stocks, bonds, ETFs, risk, diversification, and portfolio construction.", icon: BookOpen, type: "Curriculum" },
             { title: "Understanding Risk & Reward", description: "Interactive lesson plans on probability, expected value, and the mathematics of gambling vs. investing.", icon: FileText, type: "Lesson Plan" },
-            { title: "Casino Math: Why the House Always Wins", description: "Classroom activity guide for using the Casino Math Room to teach expected value and house edge.", icon: FileText, type: "Activity" },
+            { title: "Behavioral Finance Lab: Why the House Always Wins", description: "Classroom activity guide for using the Behavioral Finance Lab to teach expected value, house edge, and cognitive biases.", icon: FileText, type: "Activity" },
         ]
     },
     {
