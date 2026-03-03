@@ -397,7 +397,7 @@ function BlackjackGame({ balance, bet, setBet, onResult }: { balance: number; be
 
     const stand = () => {
         setDealerRevealed(true)
-        let dh = [...dealerHand]
+        const dh = [...dealerHand]
         while (handValue(dh) < 17) dh.push(dealCard())
         setDealerHand(dh)
         setPhase("done")

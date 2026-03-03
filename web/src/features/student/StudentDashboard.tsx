@@ -28,6 +28,11 @@ function StatCard({ title, value, subtitle, icon: Icon, change, loading, classNa
     icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>
     change?: number; loading?: boolean; className?: string
 }) {
+    const animationDelay = useMemo(() => {
+        let hash = 0
+        for (let i = 0; i < title.length; i++) hash = ((hash << 5) - hash + title.charCodeAt(i)) | 0
+        return `${(Math.abs(hash) % 200) / 100}s`
+    }, [title])
     return (
         <Card className={`card-hover animate-slide-up overflow-hidden relative glass border-border/50 ${className || ''}`}>
             <div className="absolute -top-12 -right-12 w-32 h-32 bg-primary/20 rounded-full blur-3xl pointer-events-none animate-glow-pulse" />
@@ -39,7 +44,7 @@ function StatCard({ title, value, subtitle, icon: Icon, change, loading, classNa
                         <div className="flex items-center justify-between mb-3">
                             <span className="text-xs font-medium text-muted-foreground uppercase tracking-wider">{title}</span>
                             <div className="h-8 w-8 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                                <Icon className="h-4 w-4 text-primary animate-float" style={{ animationDelay: `${Math.random() * 2}s` }} />
+                                <Icon className="h-4 w-4 text-primary animate-float" style={{ animationDelay }} />
                             </div>
                         </div>
                         <div className="stat-number text-2xl font-bold tracking-tight text-foreground/90">{value}</div>

@@ -42,37 +42,45 @@ function MetricRow({ label, value, description, valueColor }: {
 /** SVG donut chart for allocation */
 function AllocationDonut({ segments }: { segments: { label: string; value: number; color: string }[] }) {
     const total = segments.reduce((s, seg) => s + seg.value, 0)
-    if (total === 0) return <div className="text-center py-8 text-sm text-muted-foreground">No positions</div>
 
-    let accumulated = 0
     const size = 120
     const radius = 48
     const cx = size / 2
     const cy = size / 2
 
+    const paths = useMemo(() => {
+        if (total === 0) return []
+        const result: { d: string; color: string }[] = []
+        segments.reduce((acc, seg) => {
+            const pct = seg.value / total
+            const startAngle = acc * 2 * Math.PI - Math.PI / 2
+            const nextAcc = acc + pct
+            const endAngle = nextAcc * 2 * Math.PI - Math.PI / 2
+            const largeArc = pct > 0.5 ? 1 : 0
+            const x1 = cx + radius * Math.cos(startAngle)
+            const y1 = cy + radius * Math.sin(startAngle)
+            const x2 = cx + radius * Math.cos(endAngle)
+            const y2 = cy + radius * Math.sin(endAngle)
+            result.push({ d: `M ${cx} ${cy} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2} Z`, color: seg.color })
+            return nextAcc
+        }, 0)
+        return result
+    }, [segments, total, cx, cy, radius])
+
+    if (total === 0) return <div className="text-center py-8 text-sm text-muted-foreground">No positions</div>
+
     return (
         <div className="flex items-center gap-6">
             <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
-                {segments.map((seg, i) => {
-                    const pct = seg.value / total
-                    const startAngle = accumulated * 2 * Math.PI - Math.PI / 2
-                    accumulated += pct
-                    const endAngle = accumulated * 2 * Math.PI - Math.PI / 2
-                    const largeArc = pct > 0.5 ? 1 : 0
-                    const x1 = cx + radius * Math.cos(startAngle)
-                    const y1 = cy + radius * Math.sin(startAngle)
-                    const x2 = cx + radius * Math.cos(endAngle)
-                    const y2 = cy + radius * Math.sin(endAngle)
-                    return (
-                        <path
-                            key={i}
-                            d={`M ${cx} ${cy} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2} Z`}
-                            fill={seg.color}
-                            stroke="hsl(var(--card))"
-                            strokeWidth="2"
-                        />
-                    )
-                })}
+                {paths.map((p, i) => (
+                    <path
+                        key={i}
+                        d={p.d}
+                        fill={p.color}
+                        stroke="hsl(var(--card))"
+                        strokeWidth="2"
+                    />
+                ))}
                 <circle cx={cx} cy={cy} r={radius * 0.55} fill="hsl(var(--card))" />
             </svg>
             <div className="space-y-1.5 flex-1">

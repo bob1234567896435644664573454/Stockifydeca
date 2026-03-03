@@ -140,5 +140,5 @@ export function useLightweightChart(
         }
     }, [containerRef, data, resolvedTheme, seriesType, options])
 
-    return { chart: chartRef.current, series: seriesRef.current, tooltipData }
+    return { chartRef, seriesRef, tooltipData }
 }
