@@ -175,7 +175,7 @@ export function MentorPanel({ className }: { className?: string }) {
         scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" })
     }, [messages])
 
-    const getRulesResponse = useCallback((userMsg: string): string => {
+    const getRulesResponse = useCallback((_userMsg: string): string => {
         const pool = RULES_RESPONSES[mode] || RULES_RESPONSES.coach
         const candidate = pool[Math.floor(Math.random() * pool.length)]
         const parsed = safeParseTradeMentorResponse({

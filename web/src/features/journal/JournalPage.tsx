@@ -11,8 +11,8 @@ import type { JournalEntry as JournalEntryType } from "@/features/journal/hooks"
 import {
     PenLine, ArrowUpRight, ArrowDownRight, BookOpen, Brain,
     CheckCircle2, Star, ChevronDown, ChevronUp, Lightbulb,
-    TrendingUp, Calendar, FileText, Target, AlertTriangle,
-    Flame, BarChart3, Sparkles, Clock
+    Calendar, FileText, Target, AlertTriangle,
+    Flame, BarChart3, Sparkles
 } from "lucide-react"
 
 /* ─── Types ─── */

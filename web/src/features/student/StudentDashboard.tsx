@@ -136,7 +136,7 @@ function AllocationDonut({ allocation, cash, equity }: {
                 <text x="50" y="57" textAnchor="middle" className="fill-muted-foreground text-[5px]">positions</text>
             </svg>
             <div className="space-y-1 flex-1 min-w-0 max-h-[120px] overflow-y-auto scrollbar-thin">
-                {items.map((item, i) => (
+                {paths.map((item, i) => (
                     <div key={i} className="flex items-center gap-2 text-xs">
                         <div className="h-2.5 w-2.5 rounded-sm shrink-0" style={{ backgroundColor: item.color }} />
                         <span className="font-medium truncate">{item.label}</span>
