@@ -1,5 +1,5 @@
 import { useNavigate } from "@tanstack/react-router"
-import { BookOpen, FileText, Video, Download, ExternalLink, ChevronRight } from "lucide-react"
+import { BookOpen, FileText, ExternalLink, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"

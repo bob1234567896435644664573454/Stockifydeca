@@ -261,7 +261,7 @@ export function useActivityData() {
     const activeDays = new Set(activityData.map(d => d.date))
 
     let streak = 0
-    let checkDate = new Date()
+    const checkDate = new Date()
     while (true) {
         const key = checkDate.toISOString().split("T")[0]
         if (activeDays.has(key)) {

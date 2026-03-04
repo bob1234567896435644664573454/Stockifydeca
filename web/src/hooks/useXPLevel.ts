@@ -28,10 +28,11 @@ export function useXPLevel() {
 
     useEffect(() => {
         const lastLevel = parseInt(localStorage.getItem(STORAGE_KEY) || "0", 10)
-        if (level > lastLevel && lastLevel > 0) {
-            setShowLevelUp(true)
-        }
         localStorage.setItem(STORAGE_KEY, String(level))
+        if (level > lastLevel && lastLevel > 0) {
+            const id = requestAnimationFrame(() => setShowLevelUp(true))
+            return () => cancelAnimationFrame(id)
+        }
     }, [level])
 
     const dismissLevelUp = () => setShowLevelUp(false)

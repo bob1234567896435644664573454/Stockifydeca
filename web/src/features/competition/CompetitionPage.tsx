@@ -8,9 +8,9 @@ import { useActiveCompetition } from "@/features/student/hooks"
 import { useStudentLeaderboard } from "@/features/leaderboard/hooks"
 import { formatCurrency } from "@/lib/utils"
 import {
-    Trophy, Users, TrendingUp, TrendingDown, Clock, Star,
+    Trophy, Users, Clock, Star,
     Crown, Medal, Award, Target, Zap, ChevronRight,
-    Copy, CheckCircle2, ArrowUpRight, ArrowDownRight, Minus,
+    ArrowUpRight, ArrowDownRight, Minus,
     BarChart3, Shield, Flame
 } from "lucide-react"
 import { EmptyState, SkeletonGrid } from "@/components/ui/states"
@@ -117,7 +117,7 @@ function RankingRow({ ranking, onClick }: { ranking: Ranking; onClick?: () => vo
 }
 
 /* ─── Competition Stats ─── */
-function CompetitionStats({ rankings, competitionName }: { rankings: Ranking[]; competitionName: string }) {
+function CompetitionStats({ rankings, competitionName: _competitionName }: { rankings: Ranking[]; competitionName: string }) {
     const stats = useMemo(() => {
         if (rankings.length === 0) return null
         const returns = rankings.map(r => r.return_pct)
@@ -188,7 +188,7 @@ function CompetitionStats({ rankings, competitionName }: { rankings: Ranking[]; 
 /* ─── Join Competition Card ─── */
 function JoinCompetitionCard() {
     const [code, setCode] = useState("")
-    const [copied, setCopied] = useState(false)
+    const [_copied, _setCopied] = useState(false)
 
     return (
         <Card className="glass border-border/50 overflow-hidden relative">

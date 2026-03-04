@@ -2,11 +2,11 @@ import { useNavigate } from "@tanstack/react-router"
 import {
     TrendingUp, BookOpen, Shield, BarChart3, GraduationCap,
     Sparkles, ChevronRight, PlayCircle, Trophy,
-    MessageSquare, CheckCircle2, AlertTriangle, Brain,
-    Target, PieChart, ArrowRight, Users, Zap,
-    LineChart, DollarSign, Award, Lock,
-    FlaskConical, Lightbulb, ShieldCheck, BarChart2,
-    School, Star, Rocket, Eye
+    CheckCircle2, AlertTriangle, Brain,
+    Target, ArrowRight,
+    LineChart, Award, Lock,
+    FlaskConical, ShieldCheck, BarChart2,
+    School, Star, Rocket
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"

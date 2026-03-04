@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 import {
     Search, TrendingUp, TrendingDown, Building2, BarChart3,
     Globe, DollarSign, Users, FileText, Loader2, ExternalLink,
-    ArrowUpRight, ArrowDownRight, Activity, PieChart, Shield,
+    ArrowUpRight, ArrowDownRight, Activity, Shield,
     Target, Zap, Leaf, Eye, Award, ChevronRight, Newspaper,
     Bookmark, BookmarkCheck, AlertTriangle, StickyNote, Plus, X
 } from "lucide-react"
@@ -75,12 +75,6 @@ interface Competitor {
 }
 
 const fmt = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD", minimumFractionDigits: 2 })
-const fmtLarge = (n: number) => {
-    if (n >= 1e12) return `$${(n / 1e12).toFixed(2)}T`
-    if (n >= 1e9) return `$${(n / 1e9).toFixed(2)}B`
-    if (n >= 1e6) return `$${(n / 1e6).toFixed(2)}M`
-    return fmt(n)
-}
 const fmtVol = (n: number) => {
     if (n >= 1e9) return `${(n / 1e9).toFixed(1)}B`
     if (n >= 1e6) return `${(n / 1e6).toFixed(1)}M`
@@ -265,7 +259,7 @@ function WatchlistButton({ symbol }: { symbol: string }) {
 
     // Check if symbol is in any watchlist
     useState(() => {
-        supabase.from("watchlist_items").select("id").eq("symbol", symbol).limit(1)
+        Promise.resolve(supabase.from("watchlist_items").select("id").eq("symbol", symbol).limit(1))
             .then(({ data }) => { if (data && data.length > 0) setInWatchlist(true) })
             .catch(() => {
                 // Fallback to localStorage

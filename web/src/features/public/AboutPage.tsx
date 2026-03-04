@@ -5,9 +5,9 @@ import { Badge } from "@/components/ui/badge"
 import { PublicNav } from "./PublicNav"
 import { PublicFooter } from "./PublicFooter"
 import {
-    TrendingUp, Users, GraduationCap, Shield, Brain,
-    FlaskConical, BarChart3, Target, Eye, Lightbulb,
-    CheckCircle2, ChevronRight, Heart, Zap, BookOpen,
+    Users, GraduationCap, Brain,
+    Target, Eye,
+    CheckCircle2, ChevronRight, Zap, BookOpen,
     Lock, Award, Rocket
 } from "lucide-react"
 
